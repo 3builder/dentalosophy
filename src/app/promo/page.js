@@ -8,7 +8,7 @@ const Promo = () => {
       <div className="px-5 container mx-auto max-w-screen-lg">
         <h1 className="text-yellow xs:text-center">PROMO</h1>
         <h2 className="text-4xl text-gray mb-6">
-          Dapatkan promo menarik dari Dentalosophy
+          Get the best dental care with our special promotions
         </h2>
 
         {promoData.map((item, index) => {
