@@ -1,11 +1,41 @@
 "use client";
-import blogData from "@utils/static/blogData";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { fetchPosts as fetchPostsApi } from "../../lib/wp";
 
 const Blog = () => {
   const [isFetching, setIsFetching] = useState(false);
   const [error, setError] = useState(null);
+  const [posts, setPosts] = useState([]);
+  const [page, setPage] = useState(1);
+  const [hasMore, setHasMore] = useState(true);
+
+  const fetchPosts = async (targetPage = 1) => {
+    setIsFetching(true);
+    setError(null);
+    try {
+      const { posts: newPosts, totalPages } = await fetchPostsApi({
+        page: targetPage,
+      });
+      setPosts((prev) => (targetPage === 1 ? newPosts : [...prev, ...newPosts]));
+      setPage(targetPage);
+      setHasMore(targetPage < totalPages);
+    } catch (e) {
+      setError("Failed to load articles");
+    } finally {
+      setIsFetching(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchPosts(1);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const loadMoreItems = () => {
+    if (isFetching || !hasMore) return;
+    fetchPosts(page + 1);
+  };
 
   return (
     <>
@@ -16,7 +46,7 @@ const Blog = () => {
         </h2>
         <div className="mt-5 text-gray">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {blogData?.articles?.map((item, index) => {
+            {posts?.map((item, index) => {
               return (
                 <div key={index} className="">
                   {/* {item.node.featuredImage?.node?.mediaItemUrl && (
@@ -45,16 +75,19 @@ const Blog = () => {
                     ))}
                   </div>
                   <p className="text-xs text-yellow">
-                    {item.date} - {item.author}
+                    {new Date(item.date).toDateString()}
                   </p>
 
                   <Link href={`/blog/${item.slug}/`} passHref>
                     <h2 className="text-xl font-bold hover:cursor-pointer hover:text-emerald transition duration-300 ease-in-out">
-                      {item.title}
+                      {item?.title?.rendered || item.title}
                     </h2>
                   </Link>
 
-                  <div className="font-light">{item.description}</div>
+                  <div
+                    className="font-light"
+                    dangerouslySetInnerHTML={{ __html: item?.excerpt?.rendered || "" }}
+                  />
                   <Link href={`/blog/${item.slug}/`} passHref>
                     <button className="text-yellow hover:text-emerald transition duration-300 ease-in-out">
                       Read more...
@@ -65,14 +98,14 @@ const Blog = () => {
             })}
           </div>
 
-          {blogData.nextPage !== null ? (
+          {hasMore ? (
             <div className="text-center mt-16">
               {isFetching ? (
                 <div className="">Loading...</div>
               ) : (
                 <button
                   className="px-4 py-2 text-center border border-emerald text-emerald hover:cursor-pointer hover:bg-emerald hover:text-white transition duration-200 ease-in-out"
-                  onClick={() => loadMoreItems(endCursor)}
+                  onClick={loadMoreItems}
                 >
                   Load more
                 </button>
@@ -91,3 +124,4 @@ const Blog = () => {
 };
 
 export default Blog;
+
