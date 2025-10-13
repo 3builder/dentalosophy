@@ -7,24 +7,32 @@ export function buildPostsUrl({ page = 1, perPage = PER_PAGE_DEFAULT } = {}) {
 }
 
 export async function fetchPosts({ page = 1, perPage = PER_PAGE_DEFAULT } = {}) {
-  const url = buildPostsUrl({ page, perPage });
-  const res = await fetch(url);
-  if (!res.ok) {
-    throw new Error(`Request failed: ${res.status}`);
+  try {
+    const url = buildPostsUrl({ page, perPage });
+    const res = await fetch(url);
+    if (!res.ok) {
+      return { posts: [], totalPages: 1 };
+    }
+    const totalPages = parseInt(res.headers.get("X-WP-TotalPages") || "1", 10);
+    const data = await res.json();
+    return { posts: data, totalPages };
+  } catch (e) {
+    return { posts: [], totalPages: 1 };
   }
-  const totalPages = parseInt(res.headers.get("X-WP-TotalPages") || "1", 10);
-  const data = await res.json();
-  return { posts: data, totalPages };
 }
 
 export async function fetchPostBySlug(slug) {
-  const url = `${BASE_URL}&slug=${encodeURIComponent(slug)}`;
-  const res = await fetch(url);
-  if (!res.ok) {
-    throw new Error(`Request failed: ${res.status}`);
+  try {
+    const url = `${BASE_URL}&slug=${encodeURIComponent(slug)}`;
+    const res = await fetch(url);
+    if (!res.ok) {
+      return null;
+    }
+    const data = await res.json();
+    return Array.isArray(data) ? data[0] : null;
+  } catch (e) {
+    return null;
   }
-  const data = await res.json();
-  return Array.isArray(data) ? data[0] : null;
 }
 
 export async function fetchAllPostSlugs() {

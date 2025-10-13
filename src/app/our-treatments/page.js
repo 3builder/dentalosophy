@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import ourTreatmentsData from "@utils/static/ourTreatments";
+import Image from "next/image";
 
 const OurTreatments = () => {
   const revealVariants = {
@@ -85,9 +86,12 @@ const OurTreatments = () => {
                   : "order-last font-medium md:mx-4"
               }
             >
-              <img
+              <Image
                 className="w-20 md:w-40 mx-auto md:mx-0 mb-3 md:mb-0"
                 src={item.image}
+                alt={item.title || "Treatment image"}
+                width={160}
+                height={160}
               />
             </div>
             <div className="md:mx-4 md:w-1/2">

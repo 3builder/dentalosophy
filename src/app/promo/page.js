@@ -1,6 +1,7 @@
 "use client";
 import promoData from "@utils/static/promoData";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Promo = () => {
   return (
@@ -25,7 +26,7 @@ const Promo = () => {
                   console.log("klik promo");
                 }}
               >
-                <img src={item.image} />
+                <Image src={item.image} alt={item.title || "Promo image"} width={800} height={450} />
               </motion.div>
               <div className="sm:col-span-2">
                 <h2
