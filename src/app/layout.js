@@ -30,6 +30,9 @@ export default function RootLayout({ children }) {
           {children}
           <ChatUs />
         </main>
+        <footer className="py-2 text-center text-gray mt-20">
+          Dentalosophy &copy; {new Date().getFullYear()}
+        </footer>
       </body>
     </html>
   );

@@ -4,7 +4,7 @@ const navbarMenu = [
   { name: "Doctors", path: "#", isButton: false },
   { name: "Gallery", path: "#", isButton: false },
   { name: "Promo", path: "/promo", isButton: false },
-  { name: "Blog", path: "#", isButton: false },
+  { name: "Blog", path: "/blog", isButton: false },
   { name: "Contact Us", path: "#", isButton: true },
 ];
 
