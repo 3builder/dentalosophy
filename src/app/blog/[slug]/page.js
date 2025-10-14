@@ -2,7 +2,14 @@
 
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { fetchAllPostSlugs, fetchPostBySlug } from "../../../lib/wp";
+import { fetchPostBySlug } from "@lib/wp";
+import { generateMetadataFromPost } from "./metadata";
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const post = await fetchPostBySlug(slug);
+  return generateMetadataFromPost(post, slug);
+}
 
 export default async function BlogDetail({ params }) {
   const { slug } = await params;
@@ -42,12 +49,3 @@ export default async function BlogDetail({ params }) {
     </div>
   );
 }
-
-// export async function generateStaticParams() {
-//   try {
-//     const slugs = await fetchAllPostSlugs();
-//     return slugs.map((slug) => ({ slug }));
-//   } catch (e) {
-//     return [];
-//   }
-// }
