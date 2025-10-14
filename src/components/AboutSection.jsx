@@ -2,7 +2,7 @@ import aboutData from "@utils/static/aboutData";
 
 export const AboutSection = () => {
   return (
-    <div className="px-5 container mx-auto mb-10 max-w-screen-xl">
+    <div className="px-5 container mx-auto mb-10 max-w-screen-xl" id="about">
       <h1 className="text-center text-3xl text-yellow mb-5 leading-normal">
         Why Dentalosophy?
       </h1>

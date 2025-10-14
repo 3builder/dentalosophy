@@ -1,11 +1,60 @@
 const navbarMenu = [
-  { name: "About", path: "#", isButton: false },
-  { name: "Treatment", path: "/our-treatments", isButton: false },
-  { name: "Doctors", path: "/doctors", isButton: false },
-  { name: "Gallery", path: "#", isButton: false },
-  { name: "Promo", path: "/promo", isButton: false },
-  { name: "Blog", path: "/blog", isButton: false },
-  { name: "Contact Us", path: "#", isButton: true },
+  {
+    name: "Home",
+    path: "/",
+    isButton: false,
+    isScroll: false,
+    target: null,
+  },
+  {
+    name: "About",
+    path: "about",
+    isButton: false,
+    isScroll: true,
+    target: "about",
+  },
+  {
+    name: "Treatment",
+    path: "/our-treatments",
+    isButton: false,
+    isScroll: false,
+    target: null,
+  },
+  {
+    name: "Doctors",
+    path: "/doctors",
+    isButton: false,
+    isScroll: false,
+    target: null,
+  },
+  {
+    name: "Gallery",
+    path: "#",
+    isButton: false,
+    isScroll: false,
+    target: null,
+  },
+  {
+    name: "Promo",
+    path: "/promo",
+    isButton: false,
+    isScroll: false,
+    target: null,
+  },
+  {
+    name: "Blog",
+    path: "/blog",
+    isButton: false,
+    isScroll: false,
+    target: null,
+  },
+  {
+    name: "Contact Us",
+    path: "#",
+    isButton: true,
+    isScroll: true,
+    target: "contactUs",
+  },
 ];
 
 export default navbarMenu;

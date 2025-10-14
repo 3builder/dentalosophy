@@ -19,9 +19,23 @@ import {
 } from "@radix-ui/react-navigation-menu";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import navbarMenu from "@utils/static/navbarMenu";
+import { Link as LinkScroll } from "react-scroll";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  const filteredMenu =
+    pathname !== "/"
+      ? navbarMenu.filter(
+          (item) => item.name !== "About" && item.name !== "Contact Us"
+        )
+      : navbarMenu.filter((item) => item.name !== "Home");
+
+  const filteredMobileMenu = navbarMenu.filter(
+    (item) => item.name !== "About" && item.name !== "Contact Us"
+  );
 
   return (
     <header className="flex items-center justify-between py-3 px-3 mb-8 md:px-5 mx-auto container">
@@ -37,16 +51,35 @@ export default function Navbar() {
 
       <NavigationMenu className="hidden md:flex justify-end">
         <NavigationMenuList className="flex space-x-6">
-          {navbarMenu.map((item, index) => (
+          {filteredMenu.map((item, index) => (
             <NavigationMenuItem key={index}>
               <NavigationMenuLink asChild>
-                {item.isButton ? (
-                  <span className="cursor-pointer text-white bg-yellow rounded-md shadow-lg p-1 px-2 text-sm">
+                {item.isScroll ? (
+                  <LinkScroll
+                    to={item.path}
+                    smooth={true}
+                    duration={500}
+                    offset={-80}
+                    className={`${
+                      item.isButton
+                        ? "cursor-pointer text-white bg-yellow rounded-md shadow-lg p-1 px-2 text-sm"
+                        : "dt-link text-sm cursor-pointer"
+                    }`}
+                  >
                     {item.name}
-                  </span>
+                  </LinkScroll>
                 ) : (
-                  <Link className="dt-link text-sm" href={item.path}>
-                    <span>{item.name}</span>
+                  <Link
+                    href={item.path}
+                    className={item.isButton ? "" : "dt-link text-sm"}
+                  >
+                    {item.isButton ? (
+                      <span className="cursor-pointer text-white bg-yellow rounded-md shadow-lg p-1 px-2 text-sm">
+                        {item.name}
+                      </span>
+                    ) : (
+                      <span>{item.name}</span>
+                    )}
                   </Link>
                 )}
               </NavigationMenuLink>
@@ -67,7 +100,7 @@ export default function Navbar() {
             <SheetTitle>menu</SheetTitle>
           </VisuallyHidden>
           <nav className="flex flex-col space-y-4">
-            {navbarMenu.map((item, index) => (
+            {filteredMobileMenu.map((item, index) => (
               <Link
                 key={index}
                 className="dt-link text-sm"
