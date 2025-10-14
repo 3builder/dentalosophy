@@ -3,7 +3,7 @@ import Link from "next/link";
 import { fetchAllPostSlugs, fetchPostBySlug } from "../../../lib/wp";
 
 export default async function BlogDetail({ params }) {
-  const { slug } = params || {};
+  const { slug } = await params;
 
   if (!slug) {
     notFound();
