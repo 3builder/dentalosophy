@@ -29,7 +29,7 @@ const navbarMenu = [
   },
   {
     name: "Gallery",
-    path: "#",
+    path: "/gallery",
     isButton: false,
     isScroll: false,
     target: null,
