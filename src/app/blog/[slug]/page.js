@@ -1,3 +1,5 @@
+// export const dynamic = "force-dynamic";
+
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { fetchAllPostSlugs, fetchPostBySlug } from "../../../lib/wp";
@@ -41,11 +43,11 @@ export default async function BlogDetail({ params }) {
   );
 }
 
-export async function generateStaticParams() {
-  try {
-    const slugs = await fetchAllPostSlugs();
-    return slugs.map((slug) => ({ slug }));
-  } catch (e) {
-    return [];
-  }
-}
+// export async function generateStaticParams() {
+//   try {
+//     const slugs = await fetchAllPostSlugs();
+//     return slugs.map((slug) => ({ slug }));
+//   } catch (e) {
+//     return [];
+//   }
+// }
