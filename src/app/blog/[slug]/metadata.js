@@ -22,7 +22,7 @@ export function generateMetadataFromPost(post, slug) {
     };
   }
 
-  const title = post?.title?.rendered || post?.title || "Dentalosophy Blog";
+  const title = post?.title?.rendered || post?.title || defaultTitle;
   const description =
     post?.yoast_head_json?.description ||
     post?.excerpt?.rendered?.replace(/<[^>]+>/g, "").slice(0, 150) ||

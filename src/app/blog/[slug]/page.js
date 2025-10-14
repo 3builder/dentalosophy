@@ -19,7 +19,6 @@ export default async function BlogDetail({ params }) {
   }
 
   const post = await fetchPostBySlug(slug);
-
   if (!post) {
     notFound();
   }
