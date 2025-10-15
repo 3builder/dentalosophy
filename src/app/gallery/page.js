@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@components/ui/tabs";
 import galleryData from "@utils/static/galleryData";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { ComparisonPicture } from "./compare";
 
 const Gallery = () => {
   const [windowSize, setWindowSize] = useState({
@@ -85,7 +86,9 @@ const Gallery = () => {
           </div>
         </TabsContent>
 
-        <TabsContent value="compare">Change your password here.</TabsContent>
+        <TabsContent value="compare">
+          <ComparisonPicture />
+        </TabsContent>
       </Tabs>
     </>
   );
