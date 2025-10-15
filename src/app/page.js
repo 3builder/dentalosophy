@@ -5,6 +5,7 @@ import { TreatmentSection } from "@components/TreatmentSection";
 import { DoctorsSection } from "@components/DoctorsSection";
 import { PaymentOptions } from "@components/PaymentOptionsSection";
 import { Testimonials } from "@components/TestimonialsSection";
+import { Reviews } from "@components/ReviewSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <DoctorsSection />
       <PaymentOptions />
       <Testimonials />
+      <Reviews />
     </>
   );
 }
