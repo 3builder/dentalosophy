@@ -94,9 +94,8 @@ export const ContactUs = (props) => {
           }
         });
     }
-    console.log("submit", e);
   };
-  console.log("form", formInput);
+
   return (
     <div className="grid grid-cols-1 bg-emerald-light text-gray" {...props}>
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-screen-xl mx-auto">

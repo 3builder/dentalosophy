@@ -1,5 +1,3 @@
-"use client";
-
 import { useRef, useState, useEffect } from "react";
 import {
   GoogleMap,
@@ -8,102 +6,156 @@ import {
   InfoWindow,
 } from "@react-google-maps/api";
 
-export const GoogleMapsContainer = ({ data, pan }) => {
+class LoadScriptOnlyIfNeeded extends LoadScript {
+  componentDidMount() {
+    const cleaningUp = true;
+    const isBrowser = typeof document !== "undefined"; // require('@react-google-maps/api/src/utils/isbrowser')
+    const isAlreadyLoaded =
+      window.google &&
+      window.google.maps &&
+      document.querySelector("body.first-hit-completed"); // AJAX page loading system is adding this class the first time the app is loaded
+    if (!isAlreadyLoaded && isBrowser) {
+      // @ts-ignore
+      if (window.google && !cleaningUp) {
+        console.error("google api is already presented");
+        return;
+      }
+
+      this.isCleaningUp().then(this.injectScript);
+    }
+
+    if (isAlreadyLoaded) {
+      this.setState({ loaded: true });
+    }
+  }
+}
+
+export const GoogleMapsContainer = ({ data }) => {
   const markerCoordinate = [
-    { lat: -6.2388996, lng: 106.8095295 },
-    { lat: -6.28841, lng: 106.65123 },
-    { lat: -6.251272, lng: 106.79422 },
-    { lat: -6.0943738, lng: 106.7396941 },
+    {
+      lat: -6.2388996,
+      lng: 106.8095295,
+    },
+    {
+      lat: -6.28841,
+      lng: 106.65123,
+    },
+    {
+      lat: -6.251272,
+      lng: 106.79422,
+    },
+    {
+      lat: -6.0943738,
+      lng: 106.7396941,
+    },
   ];
+
+  const [loaded, setloaded] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setloaded(true);
+    }, 200);
+    return () => {
+      clearTimeout();
+    };
+  }, []);
 
   const branch = ["Senopati", "BSD", "Gandaria", "Pantai Indah Kapuk"];
 
   const mapRef = useRef(null);
 
-  const [mapProps, setMapProps] = useState({ lat: -6.26604, lng: 106.7332973 });
-  const [markerKey, setMarkerKey] = useState(data?.markerKey ?? -1);
-  const [showInfoWindow, setShowInfoWindow] = useState(markerKey !== -1);
-  const [mapZoom, setMapZoom] = useState(11);
-  const [loaded, setLoaded] = useState(false);
+  const [mapProps, setmapProps] = useState({
+    lat: -6.26604,
+    lng: 106.7332973,
+  });
 
-  // Simulasi load script delay
-  useEffect(() => {
-    const timer = setTimeout(() => setLoaded(true), 200);
-    return () => clearTimeout(timer);
-  }, []);
+  const [markerKey, setmarkerKey] = useState(-1);
+  // const [marker, setmarker] = useState(null);
+  const [showInfoWindow, setshowInfoWindow] = useState(false);
 
-  // Update markerKey jika prop `data` berubah
+  const [mapZoom, setmapZoom] = useState(11);
+
   useEffect(() => {
-    if (data?.markerKey !== undefined) {
-      setMarkerKey(data.markerKey);
-      setShowInfoWindow(data.markerKey !== -1);
-      if (data.markerKey !== -1) {
-        setMapProps(markerCoordinate[data.markerKey]);
-        setMapZoom(18);
-      }
-    }
+    mapRef.current?.panTo(mapProps);
+  }, [mapProps]);
+
+  useEffect(() => {
+    setmapZoom(mapZoom);
+  }, [mapZoom]);
+
+  useEffect(() => {
+    console.log(data);
+    data.markerKey != -1 && setshowInfoWindow(true);
   }, [data]);
-
-  // Update pan jika prop `pan` berubah
-  useEffect(() => {
-    if (mapRef.current && pan !== undefined) {
-      mapRef.current.panTo(mapProps);
-    }
-  }, [mapProps, pan]);
 
   return (
     <div className="grid">
       {loaded && (
-        <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GAPI_KEY}>
+        <LoadScriptOnlyIfNeeded
+          googleMapsApiKey={process.env.NEXT_PUBLIC_GAPI_KEY}
+        >
           <GoogleMap
-            mapContainerStyle={{ width: "100%", height: "300px" }}
+            mapContainerStyle={{
+              width: "100%",
+              height: "300px",
+            }}
+            options={{
+              disableDefaultUI: true,
+              gestureHandling: "greedy",
+            }}
             center={mapProps}
             zoom={mapZoom}
-            options={{ disableDefaultUI: true, gestureHandling: "greedy" }}
-            onLoad={(map) => (mapRef.current = map)}
+            onLoad={(e) => {
+              mapRef.current = e;
+            }}
             onZoomChanged={() => {
-              if (mapRef.current) {
-                setMapZoom(mapRef.current.getZoom());
-              }
+              setmapZoom(11);
             }}
             onMouseOut={() => {
-              setShowInfoWindow(false);
-              setMarkerKey(-1);
+              setshowInfoWindow(false);
+              setmarkerKey(-1);
             }}
           >
-            {markerCoordinate.map((coord, i) => (
-              <Marker
-                key={i}
-                position={coord}
-                icon="/images/pin.png"
-                onMouseOver={() => {
-                  setMarkerKey(i);
-                  setShowInfoWindow(true);
-                }}
-                onClick={(marker) => {
-                  setMapProps({
-                    lat: marker.latLng.lat(),
-                    lng: marker.latLng.lng(),
-                  });
-                  setMapZoom(18);
-                  setShowInfoWindow(true);
-                }}
-              >
-                {showInfoWindow && markerKey === i && (
-                  <InfoWindow
-                    position={coord}
-                    onCloseClick={() => {
-                      setShowInfoWindow(false);
-                      setMarkerKey(-1);
-                    }}
-                  >
-                    <p>{branch[i]}</p>
-                  </InfoWindow>
-                )}
-              </Marker>
-            ))}
+            {markerCoordinate.map((e, i) => {
+              return (
+                <Marker
+                  // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                  key={i}
+                  onMouseOver={() => {
+                    setmarkerKey(i);
+                    setshowInfoWindow(true);
+                  }}
+                  // onLoad={(marker) => {
+                  // }}
+                  onClick={(marker) => {
+                    setmapProps({
+                      lat: marker.latLng.lat(),
+                      lng: marker.latLng.lng(),
+                    });
+                    setmapZoom(18);
+                    setshowInfoWindow(true);
+                  }}
+                  position={e}
+                  icon={"/images/pin.png"}
+                >
+                  {showInfoWindow &&
+                    (markerKey === i || data.markerKey === i) && (
+                      <InfoWindow
+                        position={e}
+                        onCloseClick={() => {
+                          setshowInfoWindow(false);
+                          setmarkerKey(-1);
+                        }}
+                      >
+                        <p>{branch[i]}</p>
+                      </InfoWindow>
+                    )}
+                </Marker>
+              );
+            })}
           </GoogleMap>
-        </LoadScript>
+        </LoadScriptOnlyIfNeeded>
       )}
     </div>
   );
