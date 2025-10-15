@@ -8,6 +8,7 @@ import { Testimonials } from "@components/TestimonialsSection";
 import { Reviews } from "@components/ReviewSection";
 import { Tips } from "@components/TipsSection";
 import { Insurances } from "@components/insurancesSection";
+import { ContactUs } from "@components/ContactUs";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Reviews />
       <Tips />
       <Insurances />
+      <ContactUs />
     </>
   );
 }
