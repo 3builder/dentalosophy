@@ -1,6 +1,11 @@
 import doctorsData from "@utils/static/doctorsData";
 import { DoctorContent } from "./doctorContent";
 
+export const metadata = {
+  title: "Meet Our Dentists",
+  description: "Professional dental care with a personal touch.",
+};
+
 const Doctors = () => {
   return (
     <div className="px-5 container mx-auto grid mb-20">
