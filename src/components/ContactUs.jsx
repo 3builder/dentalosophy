@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   Select,
   SelectContent,
@@ -250,9 +250,9 @@ export const ContactUs = (props) => {
               <Branch
                 key={`${item.location}-${index}`}
                 className="flex items-center gap-8 mb-5 max-w-max cursor-pointer hover:text-yellow pr-2"
-                onMouseEnter={() => setmarkerKey({ markerKey: 0 })}
-                onClick={() => setshowInfo(0)}
-                onMouseLeave={() => setmarkerKey({ markerKey: -1 })}
+                onMouseEnter={() => setmarkerKey(index)}
+                onClick={() => setshowInfo(index)}
+                onMouseLeave={() => setmarkerKey(-1)}
                 name={item.location}
                 alamat={item.address}
                 noHp={item.phone}

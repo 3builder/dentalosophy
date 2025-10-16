@@ -6,62 +6,48 @@ import {
   InfoWindow,
 } from "@react-google-maps/api";
 
-class LoadScriptOnlyIfNeeded extends LoadScript {
-  componentDidMount() {
-    const cleaningUp = true;
-    const isBrowser = typeof document !== "undefined"; // require('@react-google-maps/api/src/utils/isbrowser')
-    const isAlreadyLoaded =
-      window.google &&
-      window.google.maps &&
-      document.querySelector("body.first-hit-completed"); // AJAX page loading system is adding this class the first time the app is loaded
-    if (!isAlreadyLoaded && isBrowser) {
-      // @ts-ignore
-      if (window.google && !cleaningUp) {
-        console.error("google api is already presented");
-        return;
-      }
-
-      this.isCleaningUp().then(this.injectScript);
-    }
-
-    if (isAlreadyLoaded) {
-      this.setState({ loaded: true });
-    }
-  }
-}
-
-export const GoogleMapsContainer = ({ data }) => {
+export const GoogleMapsContainer = ({ data, pan }) => {
   const markerCoordinate = [
     {
-      lat: -6.2388996,
+      lat: -6.2388996, // Senopati
       lng: 106.8095295,
     },
     {
-      lat: -6.28841,
+      lat: -6.28841, // BSD
       lng: 106.65123,
     },
     {
-      lat: -6.251272,
+      lat: -6.251272, // Gandaria
       lng: 106.79422,
     },
     {
-      lat: -6.0943738,
+      lat: -6.0943738, // Pantai Indah Kapuk
       lng: 106.7396941,
+    },
+    {
+      lat: -6.2736171, // Bintaro
+      lng: 106.7380908,
     },
   ];
 
   const [loaded, setloaded] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setloaded(true);
     }, 200);
     return () => {
-      clearTimeout();
+      clearTimeout(timer);
     };
   }, []);
 
-  const branch = ["Senopati", "BSD", "Gandaria", "Pantai Indah Kapuk"];
+  const branch = [
+    "Senopati",
+    "BSD",
+    "Gandaria",
+    "Pantai Indah Kapuk",
+    "Bintaro",
+  ];
 
   const mapRef = useRef(null);
 
@@ -71,30 +57,40 @@ export const GoogleMapsContainer = ({ data }) => {
   });
 
   const [markerKey, setmarkerKey] = useState(-1);
-  // const [marker, setmarker] = useState(null);
   const [showInfoWindow, setshowInfoWindow] = useState(false);
 
   const [mapZoom, setmapZoom] = useState(11);
 
   useEffect(() => {
-    mapRef.current?.panTo(mapProps);
+    if (mapRef.current) {
+      mapRef.current.panTo(mapProps);
+    }
   }, [mapProps]);
 
   useEffect(() => {
-    setmapZoom(mapZoom);
-  }, [mapZoom]);
+    if (pan !== -1) {
+      setmapProps(markerCoordinate[pan]);
+      setmapZoom(18);
+      setmarkerKey(pan);
+      setshowInfoWindow(true);
+    }
+  }, [pan]);
 
   useEffect(() => {
-    console.log(data);
-    data.markerKey != -1 && setshowInfoWindow(true);
-  }, [data]);
+    if (data !== -1) {
+      setmapProps(markerCoordinate[data]);
+      setmapZoom(14);
+      setmarkerKey(data);
+      setshowInfoWindow(true);
+    } else if (pan === -1) {
+      setmapZoom(11);
+    }
+  }, [data, pan]);
 
   return (
     <div className="grid">
       {loaded && (
-        <LoadScriptOnlyIfNeeded
-          googleMapsApiKey={process.env.NEXT_PUBLIC_GAPI_KEY}
-        >
+        <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GAPI_KEY}>
           <GoogleMap
             mapContainerStyle={{
               width: "100%",
@@ -110,52 +106,51 @@ export const GoogleMapsContainer = ({ data }) => {
               mapRef.current = e;
             }}
             onZoomChanged={() => {
-              setmapZoom(11);
+              // FIX: Ensure mapRef.current exists before calling getZoom()
+              if (mapRef.current) {
+                const newZoom = mapRef.current.getZoom();
+                if (newZoom !== mapZoom) {
+                  setmapZoom(newZoom);
+                }
+              }
             }}
             onMouseOut={() => {
-              setshowInfoWindow(false);
-              setmarkerKey(-1);
+              // Removed logic
             }}
           >
             {markerCoordinate.map((e, i) => {
               return (
                 <Marker
-                  // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                   key={i}
                   onMouseOver={() => {
                     setmarkerKey(i);
                     setshowInfoWindow(true);
                   }}
-                  // onLoad={(marker) => {
-                  // }}
-                  onClick={(marker) => {
-                    setmapProps({
-                      lat: marker.latLng.lat(),
-                      lng: marker.latLng.lng(),
-                    });
+                  onClick={() => {
+                    setmapProps(e);
                     setmapZoom(18);
+                    setmarkerKey(i);
                     setshowInfoWindow(true);
                   }}
                   position={e}
                   icon={"/images/pin.png"}
                 >
-                  {showInfoWindow &&
-                    (markerKey === i || data.markerKey === i) && (
-                      <InfoWindow
-                        position={e}
-                        onCloseClick={() => {
-                          setshowInfoWindow(false);
-                          setmarkerKey(-1);
-                        }}
-                      >
-                        <p>{branch[i]}</p>
-                      </InfoWindow>
-                    )}
+                  {showInfoWindow && markerKey === i && (
+                    <InfoWindow
+                      position={e}
+                      onCloseClick={() => {
+                        setshowInfoWindow(false);
+                        setmarkerKey(-1);
+                      }}
+                    >
+                      <p>{branch[i]}</p>
+                    </InfoWindow>
+                  )}
                 </Marker>
               );
             })}
           </GoogleMap>
-        </LoadScriptOnlyIfNeeded>
+        </LoadScript>
       )}
     </div>
   );
