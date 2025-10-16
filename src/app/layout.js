@@ -30,6 +30,18 @@ export default function RootLayout({ children }) {
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID || "GTM-XXXXXXX"}');`}
         </Script>
+
+        <Script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXX"}`}
+        ></Script>
+        <Script id="ga-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', '${process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXX"}');`}
+        </Script>        
       </head>
       <body
         className={`${chivo.variable} ${rufina.variable} font-serif font-sans antialiased`}
