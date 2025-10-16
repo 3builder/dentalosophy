@@ -41,11 +41,11 @@ export default function Navbar() {
     <header className="flex items-center justify-between py-3 px-3 mb-8 md:px-5 mx-auto container">
       <Link href="/" className="font-bold text-lg">
         <Image
-          className="mx-auto"
-          width="200"
-          height="60"
           src="/images/logo.png"
-          alt="dentalosophy logo"
+          alt="Dentalosophy logo"
+          height={50}
+          width={180}
+          className="mx-auto w-auto"
         />
       </Link>
 
