@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@components/Navbar";
 import { ChatUs } from "@components/ChatUs";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 
 const chivo = Chivo({
   variable: "--font-chivo",
@@ -28,12 +29,16 @@ export default function RootLayout({ children }) {
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID || "GTM-XXXXXXX"}');`}
+          })(window,document,'script','dataLayer','${
+            process.env.NEXT_PUBLIC_GTM_ID || "GTM-XXXXXXX"
+          }');`}
         </Script>
 
         <Script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXX"}`}
+          src={`https://www.googletagmanager.com/gtag/js?id=${
+            process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXX"
+          }`}
         ></Script>
         <Script id="ga-init" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];
@@ -41,14 +46,16 @@ export default function RootLayout({ children }) {
           gtag('js', new Date());
 
           gtag('config', '${process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXX"}');`}
-        </Script>        
+        </Script>
       </head>
       <body
         className={`${chivo.variable} ${rufina.variable} font-serif font-sans antialiased`}
       >
         <noscript>
           <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID || "GTM-XXXXXXX"}`}
+            src={`https://www.googletagmanager.com/ns.html?id=${
+              process.env.NEXT_PUBLIC_GTM_ID || "GTM-XXXXXXX"
+            }`}
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
@@ -58,6 +65,7 @@ export default function RootLayout({ children }) {
         <main style={{ minHeight: "calc(100vh - 168px)" }}>
           {children}
           <ChatUs />
+          <Analytics />
         </main>
         <footer className="py-2 text-center text-gray mt-20">
           Dentalosophy &copy; {new Date().getFullYear()}
