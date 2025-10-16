@@ -68,17 +68,6 @@ export const DetailPromoModal = ({ title, description, image }) => {
               {description}
             </DialogDescription>
           </div>
-
-          <DialogFooter className="flex justify-end gap-3 p-4 border-t bg-gray-50">
-            <DialogClose asChild>
-              <Button
-                variant="outline"
-                className="cursor-pointer border-yellow border-2 text-yellow hover:text-white hover:border-white hover:bg-yellow chivo font-bold"
-              >
-                Tutup
-              </Button>
-            </DialogClose>
-          </DialogFooter>
         </motion.div>
       </DialogContent>
     </Dialog>
