@@ -17,7 +17,9 @@ const Blog = () => {
       const { posts: newPosts, totalPages } = await fetchPostsApi({
         page: targetPage,
       });
-      setPosts((prev) => (targetPage === 1 ? newPosts : [...prev, ...newPosts]));
+      setPosts((prev) =>
+        targetPage === 1 ? newPosts : [...prev, ...newPosts]
+      );
       setPage(targetPage);
       setHasMore(targetPage < totalPages);
     } catch (e) {
@@ -85,7 +87,9 @@ const Blog = () => {
 
                   <div
                     className="font-light"
-                    dangerouslySetInnerHTML={{ __html: item?.excerpt?.rendered || "" }}
+                    dangerouslySetInnerHTML={{
+                      __html: item?.excerpt?.rendered || "",
+                    }}
                   />
                   <Link href={`/blog/${item.slug}/`} passHref>
                     <button className="text-yellow hover:text-emerald transition duration-300 ease-in-out">
@@ -123,4 +127,3 @@ const Blog = () => {
 };
 
 export default Blog;
-

@@ -21,6 +21,8 @@ const rufina = Rufina({
 
 export const metadata = {
   metadataBase: new URL("https://dentalosophy.id"),
+  title: "Dentalosophy",
+  description: "Get the beautiful and healthy smile you've always wanted",
 };
 
 export default function RootLayout({ children }) {
@@ -60,7 +62,9 @@ export default function RootLayout({ children }) {
           t.src=v;s=b.getElementsByTagName(e)[0];
           s.parentNode.insertBefore(t,s)}(window, document,'script',
           'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '${process.env.NEXT_PUBLIC_FB_PIXEL_ID || "0000000000000000"}');`}
+          fbq('init', '${
+            process.env.NEXT_PUBLIC_FB_PIXEL_ID || "0000000000000000"
+          }');`}
         </Script>
       </head>
       <body
@@ -77,7 +81,9 @@ export default function RootLayout({ children }) {
           />
         </noscript>
         <Image
-          src={`https://www.facebook.com/tr?id=${process.env.NEXT_PUBLIC_FB_PIXEL_ID || "0000000000000000"}&ev=PageView`}
+          src={`https://www.facebook.com/tr?id=${
+            process.env.NEXT_PUBLIC_FB_PIXEL_ID || "0000000000000000"
+          }&ev=PageView`}
           alt=""
           width={1}
           height={1}
