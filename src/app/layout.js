@@ -6,6 +6,7 @@ import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import Image from "next/image";
 import FacebookPixelTracker from "@components/FacebookPixelTracker";
+import { Suspense } from "react";
 
 const chivo = Chivo({
   variable: "--font-chivo",
@@ -85,7 +86,9 @@ export default function RootLayout({ children }) {
           priority
         />
         <Navbar />
-        <FacebookPixelTracker />
+        <Suspense fallback={null}>
+          <FacebookPixelTracker />
+        </Suspense>
         <main style={{ minHeight: "calc(100vh - 168px)" }}>
           {children}
           <ChatUs />
