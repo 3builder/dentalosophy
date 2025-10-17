@@ -4,6 +4,8 @@ import Navbar from "@components/Navbar";
 import { ChatUs } from "@components/ChatUs";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
+import Image from "next/image";
+import FacebookPixelTracker from "@components/FacebookPixelTracker";
 
 const chivo = Chivo({
   variable: "--font-chivo",
@@ -47,6 +49,18 @@ export default function RootLayout({ children }) {
 
           gtag('config', '${process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXX"}');`}
         </Script>
+
+        <Script id="fb-pixel" strategy="afterInteractive">
+          {`!function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '${process.env.NEXT_PUBLIC_FB_PIXEL_ID || "0000000000000000"}');`}
+        </Script>
       </head>
       <body
         className={`${chivo.variable} ${rufina.variable} font-serif font-sans antialiased`}
@@ -61,7 +75,17 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
+        <Image
+          src={`https://www.facebook.com/tr?id=${process.env.NEXT_PUBLIC_FB_PIXEL_ID || "0000000000000000"}&ev=PageView`}
+          alt=""
+          width={1}
+          height={1}
+          unoptimized
+          style={{ display: "none" }}
+          priority
+        />
         <Navbar />
+        <FacebookPixelTracker />
         <main style={{ minHeight: "calc(100vh - 168px)" }}>
           {children}
           <ChatUs />
