@@ -26,9 +26,9 @@ export default async function BlogDetail({ params }) {
 
   return (
     <div className="px-5 container mx-auto max-w-screen-lg grid">
-      <h1 className="text-3xl md:text-5xl chivo font-bold text-gray mb-3">
+      <p className="text-3xl md:text-5xl chivo font-bold text-gray mb-3">
         {post?.title?.rendered || post?.title}
-      </h1>
+      </p>
       <div className="border-t border-1 border-yellow mt-8 mb-4" />
       <p className=" text-emerald font-bold">By {post?.name || "Admin"}</p>
       <p className=" text-emerald font-bold mb-6">

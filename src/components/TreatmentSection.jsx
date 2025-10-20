@@ -18,14 +18,14 @@ export const TreatmentSection = () => {
       </div>
       <div className="mt-10 p-4">
         <div>
-          <h1 className="text-yellow xs:text-center">OUR TREATMENTS</h1>
-          <h2 className="text-4xl text-gray md:w-4/5 lg:w-4/5">
+          <p className="text-yellow xs:text-center">OUR TREATMENTS</p>
+          <p className="text-4xl text-gray md:w-4/5 lg:w-4/5">
             What is your concern today?
-          </h2>
-          <h3 className="text-gray font-light md:w-4/5">
+          </p>
+          <p className="text-gray font-light md:w-4/5">
             Lebih dari 5 tahun membantu pasien untuk mendapatkan hasil yang
             optimal dalam menjaga kesehatan gigi.
-          </h3>
+          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 sm:justify-items-stretch gap-6 text-gray lg:-ml-32 p-2 mt-10">
@@ -36,16 +36,16 @@ export const TreatmentSection = () => {
                 whileTap={{ scale: 0.9 }}
                 className="bg-white p-4 rounded-lg cursor-pointer mb-3 shadow-xl"
               >
-                <h4 className="font-bold chivo mb-2 text-center">
+                <p className="font-bold chivo mb-2 text-center">
                   {item.title}
-                </h4>
+                </p>
                 {item.treatments.map((treatment, i) => (
                   <div className="font-light flex items-center" key={i}>
                     <CircleCheck
                       strokeWidth={2}
                       className="text-white fill-gray-500 mr-2 h-5 w-5 flex-shrink-0"
                     />
-                    <h5 className="">{treatment}</h5>
+                    <p className="">{treatment}</p>
                   </div>
                 ))}
               </motion.div>
@@ -60,16 +60,16 @@ export const TreatmentSection = () => {
                 whileTap={{ scale: 0.9 }}
                 className="bg-white p-4 rounded-lg cursor-pointer mb-3 shadow-xl"
               >
-                <h4 className="font-bold chivo mb-2 text-center">
+                <p className="font-bold chivo mb-2 text-center">
                   {item.title}
-                </h4>
+                </p>
                 {item.treatments.map((treatment, i) => (
                   <div className="font-light flex items-center" key={i}>
                     <CircleCheck
                       strokeWidth={2}
                       className="text-white fill-gray-500 mr-2 h-5 w-5 flex-shrink-0"
                     />
-                    <h5 className="">{treatment}</h5>
+                    <p className="">{treatment}</p>
                   </div>
                 ))}
               </motion.div>

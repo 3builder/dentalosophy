@@ -31,7 +31,7 @@ const Gallery = () => {
 
   return (
     <>
-      <h1 className="text-4xl text-gray mb-6 text-center">Gallery</h1>
+      <p className="text-4xl text-gray mb-6 text-center">Gallery</p>
 
       <Tabs defaultValue="gallery" className="w-full">
         <TabsList className="mx-auto mb-4 flex justify-center mb-6 bg-transparent">

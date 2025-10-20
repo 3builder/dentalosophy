@@ -18,9 +18,9 @@ import { GoogleMapsContainer } from "./GoogleMapsContainer";
 const Branch = ({ name, noHp, alamat, ...props }) => {
   return (
     <div {...props}>
-      <h1 className="hover:text-yellow">
+      <p className="hover:text-yellow">
         <MapPin strokeWidth={3} className="w-8 h-8" />
-      </h1>
+      </p>
       <div>
         <p className="font-bold chivo">{name}</p>
         <p className="font-light">{alamat}</p>
@@ -100,12 +100,12 @@ export const ContactUs = (props) => {
     <div className="grid grid-cols-1 bg-emerald-light text-gray" {...props}>
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-screen-xl mx-auto">
         <div className="p-4 md:pr-8">
-          <h1 className="text-xl text-yellow mb-5 leading-normal">
+          <p className="text-xl text-yellow mb-5 leading-normal">
             CONTACT US
-          </h1>
-          <h1 className="text-4xl sm:text-5xl mb-5">
+          </p>
+          <p className="text-4xl sm:text-5xl mb-5">
             Get Your Free Consultation
-          </h1>
+          </p>
           <p className="font-light mb-6">
             Konsultasikan keluhan gigi kamu dan kami akan menghubungi kamu untuk
             memberikan rekomendasi perawatan yang paling cocok untukmu.

@@ -106,7 +106,7 @@ export const DetailDoctorModal = ({ data }) => {
                   <div className="mb-4">
                     {data?.educations?.length > 0 && (
                       <>
-                        <h5 className="mb-1 font-bold chivo">PENDIDIKAN</h5>
+                        <p className="mb-1 font-bold chivo">PENDIDIKAN</p>
                         <ul className="space-y-2">
                           {data?.educations?.map((edu, i) => (
                             <li
@@ -124,7 +124,7 @@ export const DetailDoctorModal = ({ data }) => {
                   <div className="mb-4">
                     {data?.certificate?.length > 0 && (
                       <>
-                        <h5 className="mb-1 font-bold chivo">SERTIFIKASI</h5>
+                        <p className="mb-1 font-bold chivo">SERTIFIKASI</p>
                         <ul className="space-y-2">
                           {data?.certificate?.map((edu, i) => (
                             <li
@@ -142,7 +142,7 @@ export const DetailDoctorModal = ({ data }) => {
                   <div className="mb-4">
                     {data?.achievements?.length > 0 && (
                       <>
-                        <h5 className="mb-1 font-bold chivo">PRESTASI</h5>
+                        <p className="mb-1 font-bold chivo">PRESTASI</p>
                         <ul className="space-y-2">
                           {data?.achievements?.map((edu, i) => (
                             <li
@@ -159,7 +159,7 @@ export const DetailDoctorModal = ({ data }) => {
                   <div className="mb-4">
                     {data?.seminar?.length > 0 && (
                       <>
-                        <h5 className="mb-1 font-bold chivo">SEMINAR</h5>
+                        <p className="mb-1 font-bold chivo">SEMINAR</p>
                         <ul className="space-y-2">
                           {data?.seminar?.map((edu, i) => (
                             <li
@@ -176,7 +176,7 @@ export const DetailDoctorModal = ({ data }) => {
                   <div className="mb-4">
                     {data?.specialists?.length > 0 && (
                       <>
-                        <h5 className="mb-1 font-bold chivo">KEAHLIAN</h5>
+                        <p className="mb-1 font-bold chivo">KEAHLIAN</p>
                         <ul className="space-y-2">
                           {data?.specialists?.map((edu, i) => (
                             <li

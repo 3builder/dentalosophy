@@ -24,7 +24,7 @@ export const Reviews = () => {
 
   return (
     <div className="grid grid-cols-1 bg-white p-4 pb-20 text-gray">
-      <h2 className="text-center text-4xl mb-8">What they love about us</h2>
+      <p className="text-center text-4xl mb-8">What they love about us</p>
 
       <div
         className="grid grid-cols-1 md:grid-cols-4 mx-auto gap-10 max-w-screen-lg transition duration-250 ease-in-out"

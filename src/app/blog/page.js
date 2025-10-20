@@ -41,10 +41,10 @@ const Blog = () => {
   return (
     <>
       <div className="px-5 container mx-auto max-w-screen-lg grid">
-        <h1 className="text-xl text-yellow mb-5 leading-normal">Blog</h1>
-        <h2 className="text-4xl text-gray">
+        <p className="text-xl text-yellow mb-5 leading-normal">Blog</p>
+        <p className="text-4xl text-gray">
           Find tips and articles about dental health
-        </h2>
+        </p>
         <div className="mt-5 text-gray">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {posts?.map((item, index) => {

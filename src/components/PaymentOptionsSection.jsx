@@ -4,7 +4,7 @@ import paymentsData from "@utils/static/paymentsData";
 export const PaymentOptions = () => {
   return (
     <div className="bg-white py-8">
-      <h1 className="text-3xl mb-1 text-center text-gray">Payment Options</h1>
+      <p className="text-3xl mb-1 text-center text-gray">Payment Options</p>
       <div className="relative flex overflow-x-hidden">
         <div className="flex gap-8 w-max animate-marquee px-4">
           {paymentsData.map((item, index) => (

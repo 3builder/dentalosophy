@@ -8,19 +8,19 @@ export const Tips = () => {
     <div className="grid grid-cols-1 bg-yellow-light text-gray">
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-screen-lg mx-auto">
         <div className="grid p-5 md:p-12">
-          <h1 className="text-xl text-yellow mb-5 leading-normal">TIPS</h1>
-          <h1 className="text-4xl sm:text-5xl mb-5">Ask Dentalosophy</h1>
+          <p className="text-xl text-yellow mb-5 leading-normal">TIPS</p>
+          <p className="text-4xl sm:text-5xl mb-5">Ask Dentalosophy</p>
           <p className="font-light mb-6">
             Temukan tips seputar kesehatan gigi dan mulut yang akurat dan dapat
             dipercaya langsung dari dokter gigi kami.
           </p>
-          <h1 className="underline mb-3">MOST POPULAR TIPS THIS MONTH</h1>
+          <p className="underline mb-3">MOST POPULAR TIPS THIS MONTH</p>
           {tipsData.map((item, index) => (
             <div className="flex items-center gap-4 mb-5" key={index}>
               <div className="text-4xl">{index + 1}</div>
               <div>
-                <h3>{item.title}</h3>
-                <h4 className="font-light">{item.subTitle}</h4>
+                <p>{item.title}</p>
+                <p className="font-light">{item.subTitle}</p>
               </div>
             </div>
           ))}
