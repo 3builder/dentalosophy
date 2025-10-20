@@ -80,9 +80,9 @@ const Blog = () => {
                   </p>
 
                   <Link href={`/blog/${item.slug}/`} passHref>
-                    <h2 className="text-xl font-bold hover:cursor-pointer hover:text-emerald transition duration-300 ease-in-out">
+                    <p className="text-xl font-bold hover:cursor-pointer hover:text-emerald transition duration-300 ease-in-out">
                       {item?.title?.rendered || item.title}
-                    </h2>
+                    </p>
                   </Link>
 
                   <div

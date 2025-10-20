@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Gallery",
+  title: "Gallery - Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
   description:
-    "Show your best smile with real result from professional treatments at our clinic.",
+    "Dentalosophy klinik gigi terbaik dan terpercaya untuk mengatasi seluruh permasalahan gigi dan mulut anda dengan harga yang terjangkau.",
 };
 
 const GalleryLayout = ({ children }) => {

@@ -95,7 +95,7 @@ const OurTreatments = () => {
               />
             </div>
             <div className="md:mx-4 md:w-1/2">
-              <h2 className="text-2xl font-bold">{item.title}</h2>
+              <p className="text-2xl font-bold">{item.title}</p>
               <p className="font-light">{item.description}</p>
             </div>
           </motion.div>

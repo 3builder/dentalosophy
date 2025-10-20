@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Our Treatment",
+  title: "Our Treatments - Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
   description:
-    "More than 5 years of helping patients achieve optimal results in maintaining their dental health.",
+    "Temukan perawatan terbaik untuk setiap keluhan gigi dan mulut kamu di Dentalosophy — solusi profesional untuk senyum sehat dan percaya diri.",
 };
 
 const OurTreatmentsLayout = ({ children }) => {

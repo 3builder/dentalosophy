@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Blog",
-  description: "Find tips and articles about dental health",
+  title: "Blog - Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
+  description: "Dentalosophy klinik gigi terbaik dan terpercaya untuk mengatasi seluruh permasalahan gigi dan mulut anda dengan harga yang terjangkau.",
 };
 
 const BlogLayout = ({ children }) => {

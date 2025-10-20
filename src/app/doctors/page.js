@@ -2,8 +2,8 @@ import doctorsData from "@utils/static/doctorsData";
 import { DoctorContent } from "./doctorContent";
 
 export const metadata = {
-  title: "Meet Our Dentists",
-  description: "Professional dental care with a personal touch.",
+  title: "Our Doctors - Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
+  description: "Dapatkan perawatan gigi terbaik di Dentalosophy bersama dokter gigi berpengalaman dan terpercaya untuk senyum sehat dan percaya diri.",
 };
 
 const Doctors = () => {

@@ -2,8 +2,8 @@ import promoData from "@utils/static/promoData";
 import { PromoContent } from "./promoContent";
 
 export const metadata = {
-  title: "Promo",
-  description: "Get the best dental care with our special promotions",
+  title: "Promo - Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
+  description: "Dentalosophy klinik gigi terbaik dan terpercaya untuk mengatasi seluruh permasalahan gigi dan mulut anda dengan harga yang terjangkau.",
 };
 
 const Promo = () => {

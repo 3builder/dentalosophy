@@ -50,9 +50,9 @@ export const DetailDoctorModal = ({ data }) => {
             </div>
           </div>
 
-          <h3 className="mb-1 font-semibold">{data.name}</h3>
-          <h3 className="mb-1 text-gray font-light">{data.title}</h3>
-          <h3 className="mb-1 text-gray font-light">{data.location}</h3>
+          <p className="mb-1 font-semibold">{data.name}</p>
+          <p className="mb-1 text-gray font-light">{data.title}</p>
+          <p className="mb-1 text-gray font-light">{data.location}</p>
         </motion.div>
       </DialogTrigger>
       <DialogContent
