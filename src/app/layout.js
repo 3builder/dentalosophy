@@ -22,6 +22,10 @@ const rufina = Rufina({
 export const metadata = {
   metadataBase: new URL("https://dentalosophy.id"),
   title: "Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://dentalosophy.id/",
+  },
   description: "Dentalosophy klinik gigi terbaik dan terpercaya untuk mengatasi seluruh permasalahan gigi dan mulut anda dengan harga yang terjangkau.",
   openGraph: {
     title: "Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",

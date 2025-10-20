@@ -3,6 +3,10 @@ import { DoctorContent } from "./doctorContent";
 
 export const metadata = {
   title: "Our Doctors - Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://dentalosophy.id/doctors",
+  },
   description: "Dapatkan perawatan gigi terbaik di Dentalosophy bersama dokter gigi berpengalaman dan terpercaya untuk senyum sehat dan percaya diri.",
 };
 
