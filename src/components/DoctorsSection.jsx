@@ -6,15 +6,15 @@ import Link from "next/link";
 export const DoctorsSection = () => {
   return (
     <div className="grid place-items-center bg-white p-4 py-10 text-center text-gray">
-      <p className="text-yellow text-center">DOCTORS</p>
-      <p className="text-4xl text-gray text-center mb-3">
+      <h2 className="text-yellow text-center">DOCTORS</h2>
+      <h3 className="text-4xl text-gray text-center mb-3">
         Our dedicated team you can always count on!
-      </p>
-      <p className="text-gray font-light max-w-3xl">
+      </h3>
+      <h4 className="text-gray font-light max-w-3xl">
         Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi
         spesialis berpengalaman yang profesional dari lulusan universitas
         terbaik di Indonesia.
-      </p>
+      </h4>
       <div className="mb-5 lg:mb-0 mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center gap-10">
         {doctorsData.slice(0, 4).map((item, index) => (
           <div key={index} className="text-center ">
@@ -26,13 +26,13 @@ export const DoctorsSection = () => {
                 alt="dentalosophy dentist"
               />
             </div>
-            <p className="mb-1">{item.name}</p>
-            <p className="mb-1 text-gray font-light text-center">
+            <h3 className="mb-1">{item.name}</h3>
+            <h4 className="mb-1 text-gray font-light text-center">
               {item.title}
-            </p>
-            <p className="mb-1 text-gray font-light text-center">
+            </h4>
+            <h4 className="mb-1 text-gray font-light text-center">
               {item.location}
-            </p>
+            </h4>
           </div>
         ))}
       </div>

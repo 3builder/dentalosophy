@@ -58,12 +58,12 @@ const OurTreatments = () => {
         viewport={{ once: true, amount: 0.6 }}
       >
         <motion.div variants={revealVariants} className="text-center">
-          <p className="text-yellow xs:text-center">OUR TREATMENTS</p>
-          <p className="text-4xl text-gray">What is your concern today?</p>
-          <p className="text-gray font-light">
+          <h2 className="text-yellow xs:text-center">OUR TREATMENTS</h2>
+          <h3 className="text-4xl text-gray">What is your concern today?</h3>
+          <h4 className="text-gray font-light">
             Lebih dari 5 tahun membantu pasien untuk mendapatkan hasil yang
             optimal dalam menjaga kesehatan gigi.
-          </p>
+          </h4>
         </motion.div>
       </motion.div>
 

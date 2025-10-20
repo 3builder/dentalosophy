@@ -3,9 +3,9 @@ import aboutData from "@utils/static/aboutData";
 export const AboutSection = () => {
   return (
     <div className="px-5 container mx-auto mb-10 max-w-screen-xl" id="about">
-      <p className="text-center text-3xl text-yellow mb-5 leading-normal">
+      <h2 className="text-center text-3xl text-yellow mb-5 leading-normal">
         Why Dentalosophy?
-      </p>
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray">
         {aboutData.map((item, index) => {
           return (

@@ -15,10 +15,10 @@ export const PromoContent = ({ image, title, description }) => {
         />
       </div>
       <div className="sm:col-span-2">
-        <p className="text-lg hover:cursor-pointer hover:text-emerald font-bold transition duration-200 ease-in-out">
+        <h2 className="text-lg hover:cursor-pointer hover:text-emerald font-bold transition duration-200 ease-in-out">
           {title}
-        </p>
-        <p className="font-light my-2">{description}</p>
+        </h2>
+        <h3 className="font-light my-2">{description}</h3>
 
         <DetailPromoModal
           image={image}

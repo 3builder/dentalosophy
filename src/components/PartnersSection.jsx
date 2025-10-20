@@ -4,9 +4,9 @@ import partnersData from "@utils/static/partnersData";
 export const Partners = () => {
   return (
     <div className="bg-white py-8">
-      <p className="text-3xl mb-1 text-center text-gray">
+      <h2 className="text-3xl mb-1 text-center text-gray">
         Supportive Partners
-      </p>
+      </h2>
       <div className="relative flex overflow-x-hidden">
         <div className="flex gap-8 w-max animate-marquee px-4">
           {partnersData.map((item, index) => (

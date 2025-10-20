@@ -31,7 +31,7 @@ const Gallery = () => {
 
   return (
     <>
-      <p className="text-4xl text-gray mb-6 text-center">Gallery</p>
+      <h1 className="text-4xl text-gray mb-6 text-center">Gallery</h1>
 
       <Tabs defaultValue="gallery" className="w-full">
         <TabsList className="mx-auto mb-4 flex justify-center mb-6 bg-transparent">
@@ -43,7 +43,7 @@ const Gallery = () => {
                  transition-all"
             value="gallery"
           >
-            Gallery
+            <h2>Gallery</h2>
           </TabsTrigger>
           <TabsTrigger
             className="px-4 py-4 text-gray-600 chivo text-lg font-medium hover:text-yellow cursor-pointer
@@ -53,7 +53,7 @@ const Gallery = () => {
                  transition-all"
             value="compare"
           >
-            Before/After
+            <h2>Before/After</h2>
           </TabsTrigger>
         </TabsList>
 

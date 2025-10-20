@@ -28,17 +28,17 @@ export const HeroSection = () => {
       <motion.div variants={revealVariants}>
         <div className="px-5 container mx-auto grid md:space-x-16 mb-20">
           <div className="grid auto-rows-max my-auto">
-            <p className="text-5xl text-emerald font-rufina leading-snug mb-3">
+            <h1 className="text-5xl text-emerald font-rufina leading-snug mb-3">
               Get the beautiful and healthy smile you've always wanted.
-            </p>
-            <p className="text-3xl text-yellow mb-10">
+            </h1>
+            <h2 className="text-3xl text-yellow mb-10">
               with affordable price!
-            </p>
-            <p className="text-gray font-light mb-6">
+            </h2>
+            <h3 className="text-gray font-light mb-6">
               Lebih dari 5 tahun membantu pasien untuk mendapatkan hasil yang
               optimal dalam menjaga kesehatan gigi dan membentuk senyum yang
               sempurna.
-            </p>
+            </h3>
             <LinkScroll
               className="justify-self-center md:justify-self-start"
               activeClass="active"

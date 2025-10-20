@@ -27,10 +27,10 @@ export const Testimonials = () => {
 
   return (
     <div className="grid grid-cols-1 bg-white p-4 px-16 sm:px-20 pb-20 text-gray">
-      <p className="text-yellow text-center">TESTIMONIALS</p>
-      <p className="text-4xl text-gray  text-center">
+      <h2 className="text-yellow text-center">TESTIMONIALS</h2>
+      <h3 className="text-4xl text-gray  text-center">
         The smiles from our happy patients
-      </p>
+      </h3>
       <motion.div
         variants={container}
         initial="hidden"

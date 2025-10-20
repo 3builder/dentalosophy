@@ -14,10 +14,10 @@ const Promo = () => {
   return (
     <>
       <div className="px-5 container mx-auto max-w-screen-lg">
-        <p className="text-yellow xs:text-center">PROMO</p>
-        <p className="text-4xl text-gray mb-6">
+        <h1 className="text-yellow xs:text-center">PROMO</h1>
+        <h2 className="text-4xl text-gray mb-6">
           Get the best dental care with our special promotions
-        </p>
+        </h2>
 
         {promoData.map((item, index) => {
           return (

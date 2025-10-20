@@ -41,10 +41,10 @@ const Blog = () => {
   return (
     <>
       <div className="px-5 container mx-auto max-w-screen-lg grid">
-        <p className="text-xl text-yellow mb-5 leading-normal">Blog</p>
-        <p className="text-4xl text-gray">
+        <h1 className="text-xl text-yellow mb-5 leading-normal">Blog</h1>
+        <h2 className="text-4xl text-gray">
           Find tips and articles about dental health
-        </p>
+        </h2>
         <div className="mt-5 text-gray">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {posts?.map((item, index) => {
@@ -67,22 +67,22 @@ const Blog = () => {
                             )} */}
                   <div className="flex gap-2 mt-2 mb-2 ">
                     {item.tags?.map((tag, tagIndex) => (
-                      <p
+                      <h3
                         className="p-1 bg-emerald rounded text-white text-sm"
                         key={tagIndex}
                       >
                         {tag}
-                      </p>
+                      </h3>
                     ))}
                   </div>
-                  <p className="text-xs text-yellow">
+                  <h3 className="text-xs text-yellow">
                     {new Date(item.date).toDateString()}
-                  </p>
+                  </h3>
 
                   <Link href={`/blog/${item.slug}/`} passHref>
-                    <p className="text-xl font-bold hover:cursor-pointer hover:text-emerald transition duration-300 ease-in-out">
+                    <h2 className="text-xl font-bold hover:cursor-pointer hover:text-emerald transition duration-300 ease-in-out">
                       {item?.title?.rendered || item.title}
-                    </p>
+                    </h2>
                   </Link>
 
                   <div
