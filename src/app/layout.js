@@ -36,7 +36,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://wp.dentalosophy.id/wp-content/uploads/2021/12/cropped-tooth.png",
+        url: "https://wp.dentalosophy.id/wp-content/uploads/2025/10/Dentolosophy-Logo-Hires1.png",
         width: 512,
         height: 512,
         type: "image/png",
@@ -47,7 +47,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
     description: "Dentalosophy klinik gigi terbaik dan terpercaya untuk mengatasi seluruh permasalahan gigi dan mulut anda dengan harga yang terjangkau.",
-    images: ["https://wp.dentalosophy.id/wp-content/uploads/2021/12/cropped-tooth.png"],
+    images: ["https://wp.dentalosophy.id/wp-content/uploads/2025/10/Dentolosophy-Logo-Hires1.png"],
   },
   other: {
     "article:modified_time": "2025-10-20T11:41:23+00:00",
