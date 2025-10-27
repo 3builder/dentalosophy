@@ -42,6 +42,13 @@ const navbarMenu = [
     target: null,
   },
   {
+    name: "Branch",
+    path: "/branch",
+    isButton: false,
+    isScroll: false,
+    target: null,
+  },
+  {
     name: "Blog",
     path: "/blog",
     isButton: false,
