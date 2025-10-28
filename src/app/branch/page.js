@@ -1,10 +1,19 @@
 "use client";
 import Image from "next/image";
-import { Button } from "@components/ui/button";
-import { Badge } from "@components/ui/badge";
 import branchData from "@utils/static/branchData";
+import { BranchCard } from "./branchCard";
+import { useEffect, useState } from "react";
 
 const Branch = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    if (isLoading) {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 2000);
+    }
+  }, [isLoading, setIsLoading]);
   return (
     <>
       <div className="relative w-full min-h-[80vh] flex items-center overflow-hidden">
@@ -59,50 +68,7 @@ const Branch = () => {
                 key={index}
                 className="w-full sm:w-[280px] cursor-pointer rounded-2xl shadow-md overflow-hidden flex flex-col bg-white transition hover:shadow-lg h-full"
               >
-                <div className="relative w-full h-48 overflow-hidden group">
-                  <Image
-                    src={branch.cover || "/images/about1.jpeg"}
-                    alt={branch.location}
-                    fill
-                    className="object-cover object-center transition-all duration-700 ease-out group-hover:scale-100 group-hover:object-[50%_40%] scale-110"
-                  />
-                  <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-black/40 to-transparent pointer-events-none" />
-                  {branch.city && (
-                    <Badge className="absolute top-2 right-2 font-bold bg-emerald text-black chivo shadow-md">
-                      {branch.city}
-                    </Badge>
-                  )}
-                </div>
-                <div className="p-5 text-center flex flex-col justify-between flex-1">
-                  <div className="text-start flex-1">
-                    <h3 className="text-[20px] mb-4 chivo font-semibold text-gray">
-                      {branch.location}
-                    </h3>
-
-                    <div className="mb-3">
-                      <p className="text-gray chivo font-semibold">Alamat</p>
-                      <p className="text-gray-400 chivo text-sm leading-snug">
-                        {branch.address}
-                      </p>
-                    </div>
-
-                    <div>
-                      <p className="text-gray chivo font-semibold">Telepon</p>
-                      <p className="text-gray-400 chivo text-sm leading-snug">
-                        {branch.phone}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="mt-auto pt-4">
-                    <Button
-                      variant="outline"
-                      className="w-full border-emerald text-emerald hover:bg-emerald hover:text-white font-bold cursor-pointer chivo"
-                    >
-                      Lihat Detail
-                    </Button>
-                  </div>
-                </div>
+                <BranchCard data={branch} isLoading={isLoading} />
               </div>
             ))}
           </div>
