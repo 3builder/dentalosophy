@@ -1,58 +1,10 @@
 "use client";
-import { motion } from "framer-motion";
-import ourTreatmentsData from "@utils/static/ourTreatments";
 import Image from "next/image";
 import { Button } from "@components/ui/button";
 import { Badge } from "@components/ui/badge";
 import branchData from "@utils/static/branchData";
 
 const Branch = () => {
-  const revealVariants = {
-    offscreen: {
-      y: 100,
-      opacity: 0,
-    },
-    onscreen: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 0.8,
-      },
-    },
-  };
-
-  const listItem = {
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 0.5,
-      },
-    },
-    hidden: {
-      y: 100,
-      opacity: 0,
-    },
-  };
-
-  const listVariants = {
-    visible: {
-      transition: {
-        when: "beforeChildren",
-        staggerChildren: 0.2,
-      },
-    },
-    hidden: {
-      transition: {
-        when: "afterChildren",
-      },
-    },
-  };
-
   return (
     <>
       <div className="relative w-full min-h-[80vh] flex items-center overflow-hidden">
