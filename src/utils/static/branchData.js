@@ -5,7 +5,7 @@ const branchData = [
     address:
       "Gedung B, Gedung Graha Bintara Jl. Wolter Monginsidi No.43 lantai 2, RT.1/RW.1, Rw. Bar., Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12180, Indonesia",
     phone: "081908663338",
-    cover: "/images/senopati/senopati4.jpg",
+    cover: "/images/senopati/senopati4.JPG",
   },
   {
     location: "BSD",
