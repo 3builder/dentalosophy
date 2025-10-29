@@ -2,16 +2,19 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { fetchPosts as fetchPostsApi } from "../../lib/wp";
+import { Spinner } from "@components/ui/spinner";
+import { Button } from "@components/ui/button";
 
 const Blog = () => {
-  const [isFetching, setIsFetching] = useState(false);
+  const [isFetching, setIsFetching] = useState(true);
   const [error, setError] = useState(null);
   const [posts, setPosts] = useState([]);
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
+  const [isLoadMore, setIsLoadMore] = useState(false);
 
   const fetchPosts = async (targetPage = 1) => {
-    setIsFetching(true);
+    setIsLoadMore(true);
     setError(null);
     try {
       const { posts: newPosts, totalPages } = await fetchPostsApi({
@@ -26,6 +29,7 @@ const Blog = () => {
       setError("Failed to load articles");
     } finally {
       setIsFetching(false);
+      setIsLoadMore(false);
     }
   };
 
@@ -37,6 +41,15 @@ const Blog = () => {
     if (isFetching || !hasMore) return;
     fetchPosts(page + 1);
   };
+
+  if (isFetching) {
+    return (
+      <div className="w-full min-h-[80vh] flex flex-col items-center justify-center">
+        <Spinner className="size-10 text-emerald" />
+        <p className="mt-3 text-gray">Loading...</p>
+      </div>
+    );
+  }
 
   return (
     <>
@@ -103,16 +116,17 @@ const Blog = () => {
 
           {hasMore ? (
             <div className="text-center mt-16">
-              {isFetching ? (
-                <div className="">Loading...</div>
-              ) : (
-                <button
-                  className="px-4 py-2 text-center border border-emerald text-emerald hover:cursor-pointer hover:bg-emerald hover:text-white transition duration-200 ease-in-out"
-                  onClick={loadMoreItems}
-                >
-                  Load more
-                </button>
-              )}
+              <Button
+                className="px-4 py-2 text-center border bg-white font-bold border-emerald text-emerald hover:cursor-pointer hover:bg-emerald hover:text-white transition duration-200 ease-in-out"
+                onClick={loadMoreItems}
+                disabled={isLoadMore}
+              >
+                {isLoadMore && (
+                  <Spinner className="size-5 text-emerald font-bold" />
+                )}
+                Load more
+              </Button>
+              {/* )} */}
             </div>
           ) : null}
           {error && (

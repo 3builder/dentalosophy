@@ -2,8 +2,10 @@ import Image from "next/image";
 import { Skeleton } from "@components/ui/skeleton";
 import { Badge } from "@components/ui/badge";
 import { Button } from "@components/ui/button";
+import { useRouter } from "next/navigation";
 
 export const BranchCard = ({ data = {}, isLoading = false }) => {
+  const router = useRouter();
   return (
     <>
       <div className="relative w-full h-48 overflow-hidden group">
@@ -64,6 +66,7 @@ export const BranchCard = ({ data = {}, isLoading = false }) => {
             <Button
               variant="outline"
               className="w-full border-emerald text-emerald hover:bg-emerald hover:text-white font-bold cursor-pointer chivo"
+              onClick={() => router.push(`/branch/${data.slug}`)}
             >
               Lihat Detail
             </Button>
