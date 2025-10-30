@@ -1,4 +1,4 @@
-import { Chivo, Rufina } from "next/font/google";
+import { Chivo, Rufina, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@components/Navbar";
 import { ChatUs } from "@components/ChatUs";
@@ -19,6 +19,12 @@ const rufina = Rufina({
   weight: ["400", "700"],
 });
 
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "900"],
+});
+
 export const metadata = {
   metadataBase: new URL("https://dentalosophy.id"),
   title: "Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
@@ -26,10 +32,12 @@ export const metadata = {
   alternates: {
     canonical: "https://dentalosophy.id/",
   },
-  description: "Dentalosophy klinik gigi terbaik dan terpercaya untuk mengatasi seluruh permasalahan gigi dan mulut anda dengan harga yang terjangkau.",
+  description:
+    "Dentalosophy klinik gigi terbaik dan terpercaya untuk mengatasi seluruh permasalahan gigi dan mulut anda dengan harga yang terjangkau.",
   openGraph: {
     title: "Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
-    description: "Dentalosophy klinik gigi terbaik dan terpercaya untuk mengatasi seluruh permasalahan gigi dan mulut anda dengan harga yang terjangkau.",
+    description:
+      "Dentalosophy klinik gigi terbaik dan terpercaya untuk mengatasi seluruh permasalahan gigi dan mulut anda dengan harga yang terjangkau.",
     url: "https://dentalosophy.id",
     siteName: "Dentalosophy",
     locale: "en_US",
@@ -46,8 +54,11 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
-    description: "Dentalosophy klinik gigi terbaik dan terpercaya untuk mengatasi seluruh permasalahan gigi dan mulut anda dengan harga yang terjangkau.",
-    images: ["https://wp.dentalosophy.id/wp-content/uploads/2025/10/Dentolosophy-Logo-Hires1.png"],
+    description:
+      "Dentalosophy klinik gigi terbaik dan terpercaya untuk mengatasi seluruh permasalahan gigi dan mulut anda dengan harga yang terjangkau.",
+    images: [
+      "https://wp.dentalosophy.id/wp-content/uploads/2025/10/Dentolosophy-Logo-Hires1.png",
+    ],
   },
   other: {
     "article:modified_time": "2025-10-20T11:41:23+00:00",
@@ -75,7 +86,9 @@ export default function RootLayout({ children }) {
           ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
 
 
-            ttq.load('${process.env.NEXT_PUBLIC_TIKTOK_PIXEL_ID || "D3RF0EJC77UACP401QS0"}');
+            ttq.load('${
+              process.env.NEXT_PUBLIC_TIKTOK_PIXEL_ID || "D3RF0EJC77UACP401QS0"
+            }');
             ttq.page();
           }(window, document, 'ttq');`}
         </Script>
@@ -109,7 +122,7 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body
-        className={`${chivo.variable} ${rufina.variable} font-serif font-sans antialiased`}
+        className={`${chivo.variable} ${rufina.variable} ${playfair.variable} font-serif font-sans antialiased`}
       >
         <noscript>
           <iframe

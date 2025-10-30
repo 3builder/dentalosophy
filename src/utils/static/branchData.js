@@ -18,17 +18,6 @@ const branchData = [
       "braces/behel",
       "cabut gigi bungsu",
     ],
-    operationals: [
-      {
-        senin: "09:00 - 19:00",
-        selasa: "09:00 - 19:00",
-        rabu: "09:00 - 19:00",
-        kamis: "09:00 - 19:00",
-        jumat: "09:00 - 19:00",
-        sabtu: "09:00 - 14:00",
-        minggu: "09:00 - 14:00",
-      },
-    ],
   },
   {
     id: "2",
@@ -48,17 +37,6 @@ const branchData = [
       "teeth whitening",
       "braces/behel",
       "cabut gigi bungsu",
-    ],
-    operationals: [
-      {
-        senin: "09:00 - 19:00",
-        selasa: "09:00 - 19:00",
-        rabu: "09:00 - 19:00",
-        kamis: "09:00 - 19:00",
-        jumat: "09:00 - 19:00",
-        sabtu: "09:00 - 14:00",
-        minggu: "09:00 - 14:00",
-      },
     ],
   },
   {
@@ -80,17 +58,6 @@ const branchData = [
       "braces/behel",
       "cabut gigi bungsu",
     ],
-    operationals: [
-      {
-        senin: "09:00 - 19:00",
-        selasa: "09:00 - 19:00",
-        rabu: "09:00 - 19:00",
-        kamis: "09:00 - 19:00",
-        jumat: "09:00 - 19:00",
-        sabtu: "09:00 - 14:00",
-        minggu: "09:00 - 14:00",
-      },
-    ],
   },
   {
     id: "4",
@@ -111,17 +78,6 @@ const branchData = [
       "braces/behel",
       "cabut gigi bungsu",
     ],
-    operationals: [
-      {
-        senin: "09:00 - 19:00",
-        selasa: "09:00 - 19:00",
-        rabu: "09:00 - 19:00",
-        kamis: "09:00 - 19:00",
-        jumat: "09:00 - 19:00",
-        sabtu: "09:00 - 14:00",
-        minggu: "09:00 - 14:00",
-      },
-    ],
   },
   {
     id: "5",
@@ -141,17 +97,6 @@ const branchData = [
       "teeth whitening",
       "braces/behel",
       "cabut gigi bungsu",
-    ],
-    operationals: [
-      {
-        senin: "09:00 - 19:00",
-        selasa: "09:00 - 19:00",
-        rabu: "09:00 - 19:00",
-        kamis: "09:00 - 19:00",
-        jumat: "09:00 - 19:00",
-        sabtu: "09:00 - 14:00",
-        minggu: "09:00 - 14:00",
-      },
     ],
   },
 ];

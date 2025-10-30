@@ -197,6 +197,10 @@ body {
     font-family: var(--font-chivo);
   }
 
+  .playfair {
+    font-family: var(--font-playfair);
+  }
+
   @keyframes marquee {
     0% {
       transform: translateX(0%);

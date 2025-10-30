@@ -8,7 +8,7 @@ export const ContactCard = ({
 }) => {
   return (
     <div className="bg-[#FFFDF4] px-8 py-6 w-full rounded-xl shadow-sm border border-[#F3EED9]">
-      <div className="grid grid-cols-1 md:grid-cols-[auto_auto_1fr] items-start  gap-x-32 gap-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-[auto_auto_1fr] items-start gap-x-32 gap-y-6">
         <div className="flex items-start md:col-span-1">
           <div className="mr-10">
             <h5 className="text-black font-bold">Alamat Lengkap</h5>
