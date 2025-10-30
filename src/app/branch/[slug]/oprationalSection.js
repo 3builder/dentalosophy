@@ -12,7 +12,7 @@ export const OprationalSection = ({
   setAccordionOpen,
 }) => {
   return (
-    <div className="mt-10">
+    <div className="mt-14">
       <h2 className="text-4xl text-[#5A5A5A] playfair">Jam Operasional</h2>
       <hr className="mt-3 border-1 border-gray opacity-40" />
       <div className="grid grid-cols-1 md:grid-cols-[minmax(0,_6fr)_minmax(0,_2fr)] items-start gap-x-20 md:pr-8">

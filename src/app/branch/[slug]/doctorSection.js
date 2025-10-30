@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const DoctorsSection = ({ data = null }) => {
   return (
-    <div className="mt-10">
+    <div className="mt-14">
       <h2 className="text-4xl text-[#5A5A5A] playfair">
         Tim Dokter Profesional
       </h2>
