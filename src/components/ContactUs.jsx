@@ -97,12 +97,14 @@ export const ContactUs = (props) => {
   };
 
   return (
-    <div className="grid grid-cols-1 bg-emerald-light text-gray" {...props}>
+    <div
+      id="contact-us"
+      className="grid grid-cols-1 bg-emerald-light text-gray"
+      {...props}
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-screen-xl mx-auto">
         <div className="p-4 md:pr-8">
-          <p className="text-xl text-yellow mb-5 leading-normal">
-            CONTACT US
-          </p>
+          <p className="text-xl text-yellow mb-5 leading-normal">CONTACT US</p>
           <p className="text-4xl sm:text-5xl mb-5">
             Get Your Free Consultation
           </p>

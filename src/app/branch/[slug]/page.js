@@ -12,9 +12,12 @@ import { Testimonials } from "./testimoni";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import { Button } from "@components/ui/button";
+import { useRouter } from "next/navigation";
 
 const BranchDetail = ({ params }) => {
   const { slug } = use(params);
+  const router = useRouter();
   const branch = branchData.find(
     (item) => item.slug.toLowerCase().replace(/\s+/g, "-") === slug
   );
@@ -85,6 +88,32 @@ const BranchDetail = ({ params }) => {
       <Features />
       <Specialist data={branch.specialist} />
       <Testimonials />
+      <div className="mt-14">
+        <div className="rounded-xl bg-white py-8 flex justify-center items-center">
+          <div className="text-center space-y-8">
+            <h3 className="text-4xl text-black chivo">
+              Siap Untuk Perawatan Gigi Terbaik?
+            </h3>
+            <p className="mt-0 text-gray text-lg">
+              Jangan tunda lagi, konsultasikan keluhan gigi Anda dengan dokter
+              profesional kami hari ini.
+            </p>
+            <div>
+              <Button
+                onClick={() => {
+                  router.push("/#contact-us");
+                }}
+                size="lg"
+                className="cursor-pointer bg-yellow hover:bg-white border-2 border-yellow hover:border-yellow hover:text-yellow chivo font-bold"
+              >
+                <Link href="/#contact-us" scroll={true}>
+                  Jadwalkan Konsultasi
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
