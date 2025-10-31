@@ -8,6 +8,7 @@ import { DoctorsSection } from "./doctorSection";
 import { OprationalSection } from "./oprationalSection";
 import { Features } from "./features";
 import { Specialist } from "./specialist";
+import { Testimonials } from "./testimoni";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
@@ -83,6 +84,7 @@ const BranchDetail = ({ params }) => {
       <DoctorsSection data={doctorsData} />
       <Features />
       <Specialist data={branch.specialist} />
+      <Testimonials />
     </div>
   );
 };
