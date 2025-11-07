@@ -7,11 +7,9 @@ import { ContactCard } from "./contactCard";
 import { DoctorsSection } from "./doctorSection";
 import { TreatmentSection } from "./treatmentSection";
 import { Features } from "./features";
-import { Specialist } from "./specialist";
 import { Testimonials } from "./testimoni";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
 import { Button } from "@components/ui/button";
 import { useRouter } from "next/navigation";
 
@@ -83,17 +81,18 @@ const BranchDetail = ({ params }) => {
         accordionOpen={accordionOpen}
         setAccordionOpen={setAccordionOpen}
       />
-      {/* <Specialist data={branch.specialist} /> */}
       <Testimonials />
       <div className="mt-14">
-        <div className="rounded-xl bg-white py-8 flex justify-center items-center">
+        <div className="rounded-xl bg-emerald py-8 flex justify-center items-center">
           <div className="text-center space-y-8">
-            <h3 className="text-4xl text-black chivo">
+            <h3 className="text-4xl text-white font-bold chivo">
               Siap Untuk Perawatan Gigi Terbaik?
             </h3>
-            <p className="mt-0 text-gray text-lg">
-              Jangan tunda lagi, konsultasikan keluhan gigi Anda dengan dokter
-              profesional kami hari ini.
+            <p className="mt-0 text-white chivo text-lg md:mx-32">
+               Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit, sed quia non numquam eius modi
+              tempora incidunt ut labore et dolore magnam aliquam quaerat
+              voluptatem. 
             </p>
             <div>
               <Button
@@ -101,12 +100,26 @@ const BranchDetail = ({ params }) => {
                   router.push("/#contact-us");
                 }}
                 size="lg"
-                className="cursor-pointer bg-yellow hover:bg-white border-2 border-yellow hover:border-yellow hover:text-yellow chivo font-bold"
+                className="px-10 py-5 cursor-pointer bg-yellow hover:bg-white border-2 border-yellow hover:border-yellow hover:text-yellow chivo font-bold"
               >
                 <Link href="/#contact-us" scroll={true}>
-                  Jadwalkan Konsultasi
+                  Jadwalkan Konsultasi Hari Ini
                 </Link>
               </Button>
+            </div>
+            <div>
+              <p className="text-white chivo">
+                Hubungi via WhatsApp:{" "}
+                <Link
+                  className="font-bold"
+                  href="https://wa.me/628123456789"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  0812-345-6789
+                </Link>{" "}
+                | Telepon: <span className="font-bold">021-9876-5432</span>
+              </p>
             </div>
           </div>
         </div>
