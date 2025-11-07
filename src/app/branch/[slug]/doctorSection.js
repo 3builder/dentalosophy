@@ -1,12 +1,18 @@
 import Image from "next/image";
+import { Button } from "@components/ui/button";
 
 export const DoctorsSection = ({ data = null }) => {
   return (
     <div className="mt-14">
-      <h2 className="text-4xl text-[#5A5A5A] playfair">
-        Tim Dokter Profesional
+      <h2 className="text-3xl text-yellow playfair">
+        Tim Dokter Profesional yang Berpengalaman
       </h2>
-      <hr className="mt-3 border-1 border-gray opacity-40" />
+      <p className="text-gray md:max-w-[80%] mt-2">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+        explicabo.
+      </p>
       <div className="mb-5 lg:mb-0 mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center gap-10">
         {data.slice(0, 4).map((item, index) => (
           <div key={index} className="text-center ">
@@ -28,6 +34,11 @@ export const DoctorsSection = ({ data = null }) => {
             <h4 className="mb-1 text-gray font-light text-center">
               {item.location}
             </h4>
+            <div className="mt-4">
+              <Button className="bg-[#64CCCE]/15 text-[#64CCCE] hover:bg-[#64CCCE] hover:text-white rounded-lg chivo px-6 cursor-pointer">
+                LIHAT JADWAL
+              </Button>
+            </div>
           </div>
         ))}
       </div>

@@ -5,7 +5,7 @@ import { useState, useEffect, use } from "react";
 import branchData from "@utils/static/branchData";
 import { ContactCard } from "./contactCard";
 import { DoctorsSection } from "./doctorSection";
-import { OprationalSection } from "./oprationalSection";
+import { TreatmentSection } from "./treatmentSection";
 import { Features } from "./features";
 import { Specialist } from "./specialist";
 import { Testimonials } from "./testimoni";
@@ -76,22 +76,14 @@ const BranchDetail = ({ params }) => {
             className="object-cover object-center rounded-xl"
           />
         </div>
-        <Link
-          href={"/branch"}
-          className="text-base text-emerald flex mt-5 chivon font-bold hover:underline"
-        >
-          <ArrowLeft className="mr-1" />
-          Kembali ke semua cabang
-        </Link>
       </div>
-      {/* <OprationalSection
-        accordionOpen={accordionOpen}
-        setAccordionOpen={setAccordionOpen}
-      /> */}
       <Features branch={branch.location} />
       <DoctorsSection data={doctorsData} />
-
-      <Specialist data={branch.specialist} />
+      <TreatmentSection
+        accordionOpen={accordionOpen}
+        setAccordionOpen={setAccordionOpen}
+      />
+      {/* <Specialist data={branch.specialist} /> */}
       <Testimonials />
       <div className="mt-14">
         <div className="rounded-xl bg-white py-8 flex justify-center items-center">
