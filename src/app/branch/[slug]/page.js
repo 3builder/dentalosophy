@@ -53,17 +53,18 @@ const BranchDetail = ({ params }) => {
   return (
     <div className="px-5 container mx-auto grid mb-20">
       <div className="text-center mb-10">
-        <h1 className="text-5xl text-emerald mb-4">
+        <h1 className="text-2xl text-yellow mb-4">
           Dentalosophy {branch.location}
         </h1>
-        {/* <div className="w-full"> */}
+        <h2 className="text-5xl text-emerald mb-4">
+          Lorem ipsum dolor sit amet?
+        </h2>
         <p className="text-gray md:max-w-[75%] justify-self-center">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore veritatis et quasi architecto beatae vitae dicta
           sunt explicabo.
         </p>
-        {/* </div> */}
       </div>
       <ContactCard address={branch.address} phone={branch.phone} />
       <div>
@@ -83,12 +84,13 @@ const BranchDetail = ({ params }) => {
           Kembali ke semua cabang
         </Link>
       </div>
-      <OprationalSection
+      {/* <OprationalSection
         accordionOpen={accordionOpen}
         setAccordionOpen={setAccordionOpen}
-      />
+      /> */}
+      <Features branch={branch.location} />
       <DoctorsSection data={doctorsData} />
-      <Features />
+
       <Specialist data={branch.specialist} />
       <Testimonials />
       <div className="mt-14">

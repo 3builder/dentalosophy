@@ -41,7 +41,7 @@ export const ContactCard = ({
             <p className="chivo text-gray">By appointment</p>
           </div>
         </div>
-        <div className="flex flex-col items-end md:col-span-1 space-y-3">
+        <div className="flex flex-col self-center md:col-span-1 space-y-3">
           <Button className="bg-emerald text-white w-full hover:bg-white hover:text-emerald border-2 border-white hover:border-emerald rounded-full text-sm px-6">
             Hubungi Sekarang
           </Button>
