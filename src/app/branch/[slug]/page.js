@@ -56,11 +56,14 @@ const BranchDetail = ({ params }) => {
         <h1 className="text-5xl text-emerald mb-4">
           Dentalosophy {branch.location}
         </h1>
-        <p className="text-gray">
-          Perawatan gigi berkualitas dengan{" "}
-          <span className="italic">personalized approach</span> di jantung{" "}
-          {branch.city}
+        {/* <div className="w-full"> */}
+        <p className="text-gray md:max-w-[75%] justify-self-center">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo.
         </p>
+        {/* </div> */}
       </div>
       <ContactCard address={branch.address} phone={branch.phone} />
       <div>
