@@ -1,10 +1,11 @@
 import { Button } from "@components/ui/button";
 import { MapPin, Phone } from "lucide-react";
+import Link from "next/link";
 
 export const ContactCard = ({
   address = "",
   phone = "",
-  maps = "",
+  maps = null,
   call = "",
 }) => {
   return (
@@ -43,10 +44,22 @@ export const ContactCard = ({
         </div>
         <div className="flex flex-col self-center md:col-span-1 space-y-3">
           <Button className="bg-emerald text-white w-full hover:bg-white hover:text-emerald border-2 border-white hover:border-emerald rounded-full text-sm px-6">
-            Hubungi Sekarang
+            <Link
+              href="https://linktr.ee/DentalosophyContact"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Hubungi Sekarang
+            </Link>
           </Button>
           <Button className="bg-white text-emerald w-full hover:bg-emerald hover:text-white border-2 border-emerald hover:border-white rounded-full text-sm px-6">
-            Lihat di Maps
+            <Link
+              href={`https://www.google.com/maps?q=${maps.lat},${maps.lng}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Lihat di Maps
+            </Link>
           </Button>
         </div>
       </div>

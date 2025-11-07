@@ -18,6 +18,10 @@ const branchData = [
       "braces/behel",
       "cabut gigi bungsu",
     ],
+    maps: {
+      lat: "-6.2388996",
+      lng: "106.8095295",
+    },
   },
   {
     id: "2",
@@ -38,6 +42,10 @@ const branchData = [
       "braces/behel",
       "cabut gigi bungsu",
     ],
+    maps: {
+      lat: "-6.28841",
+      lng: "106.65123",
+    },
   },
   {
     id: "3",
@@ -58,6 +66,10 @@ const branchData = [
       "braces/behel",
       "cabut gigi bungsu",
     ],
+    maps: {
+      lat: "-6.251272",
+      lng: "106.79422",
+    },
   },
   {
     id: "4",
@@ -78,6 +90,10 @@ const branchData = [
       "braces/behel",
       "cabut gigi bungsu",
     ],
+    maps: {
+      lat: "-6.0943738",
+      lng: "106.7396941",
+    },
   },
   {
     id: "5",
@@ -98,6 +114,10 @@ const branchData = [
       "braces/behel",
       "cabut gigi bungsu",
     ],
+    maps: {
+      lat: "-6.2736171",
+      lng: "106.7380908",
+    },
   },
 ];
 

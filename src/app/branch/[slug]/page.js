@@ -64,7 +64,11 @@ const BranchDetail = ({ params }) => {
           sunt explicabo.
         </p>
       </div>
-      <ContactCard address={branch.address} phone={branch.phone} />
+      <ContactCard
+        address={branch.address}
+        phone={branch.phone}
+        maps={branch.maps}
+      />
       <div>
         <div className="relative mt-5 w-full h-[300] md:h-[480px]">
           <Image
