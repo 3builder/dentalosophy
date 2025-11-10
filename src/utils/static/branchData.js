@@ -18,10 +18,43 @@ const branchData = [
       "braces/behel",
       "cabut gigi bungsu",
     ],
+
     maps: {
       lat: "-6.2388996",
       lng: "106.8095295",
     },
+    headers: {
+      title: "Where Aesthetics Meet Confidence",
+      description: "Nikmati pengalaman perawatan gigi yang hangat dan personal di Senopati, Jakarta Selatan. Kami percaya setiap senyum punya cerita dan kami di sini untuk membantu Anda menampilkan versi terbaiknya, dengan pendekatan yang nyaman dan hasil yang terlihat natural.",
+    },
+    openHours: [
+      {
+        day: "Senin - Jumat",
+        time: "10.00 - 20.00",
+      },
+      {
+        day: "Sabtu",
+        time: "10.00 - 18.00",
+      },
+      {
+        day: "Minggu",
+        time: "By appointment",
+      },
+    ],  
+    treatment: {
+      title: "Perawatan Gigi dari Masalah ke Solusi",
+      descriptions: [
+        "•⁠  Perawatan gigi secara holistik - Perawatan gigi dan mulut secara menyeluruh oleh tim dokter gigi umum dan dokter gigi spesialis berpengalaman yang disesuaikan dengan kondisi masing-masing pasien",
+        "•⁠  Ruang tunggu kids friendly - dentalosophy selalu mengupayakan untuk menciptakan suasana yang menyenangkan di setiap kunjungan anak ke dokter gigi",
+        "•⁠  Cashless Payment - Dentalosophy telah bekerjasama dengan berbagai provider asuransi agar dapat mempermudah pembayaran perawatan gigi anda.",
+        "•⁠  Lokasi strategis di area senopati - cocok untuk anda yang memiliki mobilisasi tinggi",
+      ],
+    },
+    doctorsSection:{
+      title:"Tim Dokter Profesional yang Berpengalaman",
+      description:"Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi spesialis berpengalaman yang profesional dari lulusan universitas terbaik di Indonesia."
+    },
+    contactLink : "https://wa.link/0yyxvl"
   },
   {
     id: "2",
@@ -46,6 +79,37 @@ const branchData = [
       lat: "-6.28841",
       lng: "106.65123",
     },
+    headers: {
+      title: "Where Aesthetics Meet Confidence",
+      description: "Nikmati pengalaman perawatan gigi yang hangat dan personal di BSD, Tangerang Selatan. Kami percaya setiap senyum punya cerita dan kami di sini untuk membantu Anda menampilkan versi terbaiknya, dengan pendekatan yang nyaman dan hasil yang terlihat natural."
+    },
+    openHours: [
+      {
+        day: "Senin - Jumat",
+        time: "10.00 - 20.00",
+      },
+      {
+        day: "Sabtu",
+        time: "10.00 - 18.00",
+      },
+      {
+        day: "Minggu",
+        time: "By appointment",
+      },
+    ],  
+    treatment: {
+      title: "Perawatan Gigi dari Masalah ke Solusi",
+      descriptions: [
+        "•⁠  Perawatan gigi secara holistik - Perawatan gigi dan mulut secara menyeluruh oleh tim dokter gigi berpengalaman yang disesuaikan dengan kondisi masing-masing pasien ",
+        "•⁠  Ruang tunggu kids friendly - dentalosophy selalu mengupayakan untuk menciptakan suasana yang menyenangkan di setiap kunjungan anak ke dokter gigi",
+        "•⁠  Cashless Payment - Dentalosophy telah bekerjasama dengan berbagai provider asuransi agar dapat mempermudah pembayaran perawatan gigi anda.",
+      ],
+    },
+    doctorsSection:{
+      title:"Tim Dokter Profesional yang Berpengalaman",
+      description:"Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi spesialis berpengalaman yang profesional dari lulusan universitas terbaik di Indonesia."
+    },
+    contactLink : "https://wa.link/dxkr6h"
   },
   {
     id: "3",
@@ -53,7 +117,7 @@ const branchData = [
     slug: "gandaria",
     city: "Jakarta Selatan",
     address:
-      "Gedung Apotek Roxy Gandaria lt.2 Jl. Gandaria 1 no.11 Kramat Pela, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130",
+      "Nikmati pengalaman perawatan gigi yang hangat dan personal di Gandaria, Jakarta Selatan. Kami percaya setiap senyum punya cerita dan kami di sini untuk membantu Anda menampilkan versi terbaiknya, dengan pendekatan yang nyaman dan hasil yang terlihat natural.",
     phone: "087885561639",
     cover: "/images/gandaria/gandaria1.jpg",
     maps: "",
@@ -70,6 +134,33 @@ const branchData = [
       lat: "-6.251272",
       lng: "106.79422",
     },
+    headers: {
+      title: "Where Aesthetics Meet Confidence",
+      description: "Nikmati pengalaman perawatan gigi yang hangat dan personal di BSD, Tangerang Selatan. Kami percaya setiap senyum punya cerita dan kami di sini untuk membantu Anda menampilkan versi terbaiknya, dengan pendekatan yang nyaman dan hasil yang terlihat natural."
+    },
+    openHours: [
+      {
+        day: "Senin - Jumat",
+        time: "10.00 - 20.00",
+      },
+      {
+        day: "Sabtu - Minggu",
+        time: "10.00 - 18.00",
+      }
+    ],  
+    treatment: {
+      title: "Perawatan Gigi dari Masalah ke Solusi",
+      descriptions: [
+        "•⁠  Buka setiap hari untuk senyum keluargamu! Kami hadir setiap hari untuk memastikan perawatan gigimu tidak tertunda. Kami paham jadwal setiap hari merupakan rutinitas yang padat. Oleh karena itu dentalosophy gandaria buka setiap hari untuk anda",
+        "•⁠  Kenyamanan dan Estetika dalam satu Klinik Kami memadukan teknologi terkini, dokter berpengalaman dan layanan yang ramah agar Anda mendapatkan perawatan gigi yang nyaman dan estetis",
+        "•⁠  Lokasi yang strategis dan berada di tengah kota Selain berada di tengan kota, dentalosohy gandaria juga mempunyai lahan parkir yang besar, dan akses yang memudahkan.",
+      ],
+    },
+    doctorsSection:{
+      title:"Tim Dokter Profesional yang Berpengalaman",
+      description:"Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi spesialis berpengalaman yang profesional dari lulusan universitas terbaik di Indonesia."
+    },
+    contactLink : "https://wa.link/2ein1s"    
   },
   {
     id: "4",
@@ -94,6 +185,34 @@ const branchData = [
       lat: "-6.0943738",
       lng: "106.7396941",
     },
+    headers: {
+      title: "Where Aesthetics Meet Confidence",
+      description: "Nikmati pengalaman perawatan gigi yang hangat dan personal di PIK, Jakarta Utara. Kami percaya setiap senyum punya cerita dan kami di sini untuk membantu Anda menampilkan versi terbaiknya, dengan pendekatan yang nyaman dan hasil yang terlihat natural."
+    },
+    openHours: [
+      {
+        day: "Senin - Sabtu",
+        time: "10.00 - 20.00",
+      },
+      {
+        day: "Minggu",
+        time: "10.00 - 18.00",
+      }
+    ],  
+    treatment: {
+      title: "Perawatan Gigi dari Masalah ke Solusi",
+      descriptions: [
+        "•⁠  Fasilitas Lengkap dan Nyaman untuk Keluarga Dentalosophy PIK memiliki 2 Ruangan dental untuk memberikan kenyamanan serta meminimalkan waktu tunggu.",
+        "•⁠  Ruang Tunggu yang Luas Dilengkapi dengan area tunggu yang bersih, nyaman, dan aestetik sehingga membuat pasien merasa relax.",
+        "•⁠  Area Bermain Anak Menyediakan area bermain khusus anak agar mereka merasa aman dan senang selama menunggu.",
+        "•⁠  Lokasi Strategis dan Lifestyle Area Terletak dikawasan Pantai Indah Kapuk yang mudah diakses dan dikelilingi banyak tempat kuliner, kafe, dan spot populer sehingga tetap bisa perawatan gigi sambil quality time bareng keluarga.",
+      ],
+    },
+    doctorsSection:{
+      title:"Tim Dokter Profesional yang Berpengalaman",
+      description:"Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi spesialis berpengalaman yang profesional dari lulusan universitas terbaik di Indonesia."
+    },
+    contactLink : "https://wa.link/wkuu81"
   },
   {
     id: "5",
@@ -118,7 +237,38 @@ const branchData = [
       lat: "-6.2736171",
       lng: "106.7380908",
     },
-  },
+
+    headers: {
+      title: "Where Aesthetics Meet Confidence",
+      description: "Nikmati pengalaman perawatan gigi yang hangat dan personal di Bintaro, Tangerang Selatan. Kami percaya setiap senyum punya cerita dan kami di sini untuk membantu Anda menampilkan versi terbaiknya, dengan pendekatan yang nyaman dan hasil yang terlihat natural."
+    },
+    openHours: [
+      {
+        day: "Senin - Jumat",
+        time: "10.00 - 20.00",
+      },
+      {
+        day: "Sabtu",
+        time: "10.00 - 18.00",
+      },
+      {
+        day: "Minggu",
+        time: "By appointment",
+      }
+    ],  
+    treatment: {
+      title: "Perawatan Gigi dari Masalah ke Solusi",
+      descriptions: [
+        "•⁠  Layanan Personal dari Dokter & Staff : Dokter dan staf di Dentalosophy Bintaro dinilai ramah, baik, dan sangat komunikatif, memastikan rencana perawatan disesuaikan dengan kebutuhan unik setiap pasien.",
+        "•⁠  Kualitas Hasil Estetika yang Rapi dan Detail : banyak ulasan dari pasien di google review hasilnya sangat rapi, teliti, dan detail. Menunjukkan komitmen kami terhadap hasil akhir yang sempurna.",
+        "•⁠  ⁠Lokasi yang strategis : selain dekat dengan lingkungan akomodasi/kerja, bisa sambil kulineran yang viral di Fresh Market Bintaro",
+      ],
+    },
+    doctorsSection:{
+      title:"Tim Dokter Profesional yang Berpengalaman",
+      description:"Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi spesialis berpengalaman yang profesional dari lulusan universitas terbaik di Indonesia."
+    },
+    contactLink : "https://wa.link/wkuu81"  },
 ];
 
 export default branchData;

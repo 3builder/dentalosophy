@@ -6,7 +6,8 @@ export const ContactCard = ({
   address = "",
   phone = "",
   maps = null,
-  call = "",
+  openHours = [],
+  contactLink= ""
 }) => {
   return (
     <div className="bg-[#FFFDF4] px-8 py-6 w-full rounded-xl shadow-sm border border-[#F3EED9]">
@@ -29,23 +30,17 @@ export const ContactCard = ({
         </div>
         <div className="flex flex-col md:col-span-1 w-full">
           <h5 className="text-black font-bold mb-2">Jam Operasional</h5>
-          <div className="flex justify-between">
-            <h6>SENIN - JUMAT</h6>
-            <p className="chivo text-gray">10:00 - 20:00</p>
-          </div>
-          <div className="flex justify-between">
-            <h6>SABTU</h6>
-            <p className="chivo text-gray">10:00 - 18:00</p>
-          </div>
-          <div className="flex justify-between">
-            <h6>MINGGU</h6>
-            <p className="chivo text-gray">By appointment</p>
-          </div>
+          {openHours.map((hour, index) => (
+            <div className="flex justify-between" key={index}>
+              <h6>{hour.day}</h6>
+              <p className="chivo text-gray">{hour.time}</p>
+            </div>
+          ))}
         </div>
         <div className="flex flex-col self-center md:col-span-1 space-y-3">
           <Button className="bg-emerald text-white w-full hover:bg-white hover:text-emerald border-2 border-white hover:border-emerald rounded-full text-sm px-6">
             <Link
-              href="https://linktr.ee/DentalosophyContact"
+              href={contactLink}
               target="_blank"
               rel="noopener noreferrer"
             >

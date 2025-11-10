@@ -22,7 +22,7 @@ const doctorsData = [
     ],
     image: "/images/drg.-Benindra.png",
     certificate: [],
-    seminar: [],
+    seminar: []
   },
   {
     name: "drg. K Dian Paramita",

@@ -55,19 +55,18 @@ const BranchDetail = ({ params }) => {
           Dentalosophy {branch.location}
         </h1>
         <h2 className="text-5xl text-emerald mb-4">
-          Lorem ipsum dolor sit amet?
+          {branch.headers.title}
         </h2>
         <p className="text-gray md:max-w-[75%] justify-self-center">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo.
+         {branch.headers.description}
         </p>
       </div>
       <ContactCard
         address={branch.address}
         phone={branch.phone}
         maps={branch.maps}
+        openHours={branch.openHours}
+        contactLink={branch.contactLink}
       />
       <div>
         <div className="relative mt-5 w-full h-[300] md:h-[480px]">
@@ -80,8 +79,9 @@ const BranchDetail = ({ params }) => {
         </div>
       </div>
       <Features branch={branch.location} />
-      <DoctorsSection data={doctorsData} />
+      <DoctorsSection data={doctorsData} doctorsSection={branch.doctorsSection}/>
       <TreatmentSection
+        data={branch.treatment}
         accordionOpen={accordionOpen}
         setAccordionOpen={setAccordionOpen}
       />

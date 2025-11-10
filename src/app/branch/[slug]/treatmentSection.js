@@ -14,14 +14,13 @@ export const TreatmentSection = ({
   return (
     <div className="mt-14">
       <h2 className="text-3xl text-yellow playfair">
-        Perawatan Gigi dari Masalah ke Solusi
+        {data.title}
       </h2>
-      <p className="text-gray md:max-w-[80%] mt-2">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo.
-      </p>
+      {data.descriptions.map((description, index) => (
+        <p key={index} className="text-gray md:max-w-[80%] mt-2">
+          {description}
+        </p>
+      ))}
       <div className="grid grid-cols-1 md:grid-cols-[minmax(0,_6fr)_minmax(0,_2fr)] items-start gap-x-20 md:pr-8">
         <div className="mt-5">
           <Accordion
