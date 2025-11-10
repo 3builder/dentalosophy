@@ -31,6 +31,10 @@ const BranchDetail = ({ params }) => {
     }
   }, [isFetching, setIsFetching]);
 
+  const selectedDoctors = doctorsData.filter((doctor) =>
+    doctor.branch.some((b) => b.loc === branch?.location)
+  );
+
   useEffect(() => {
     const prevBg = document.body.style.background;
     document.body.style.background = "#F3FFFB";
@@ -54,11 +58,9 @@ const BranchDetail = ({ params }) => {
         <h1 className="text-2xl text-yellow mb-4">
           Dentalosophy {branch.location}
         </h1>
-        <h2 className="text-5xl text-emerald mb-4">
-          {branch.headers.title}
-        </h2>
+        <h2 className="text-5xl text-emerald mb-4">{branch.headers.title}</h2>
         <p className="text-gray md:max-w-[75%] justify-self-center">
-         {branch.headers.description}
+          {branch.headers.description}
         </p>
       </div>
       <ContactCard
@@ -79,7 +81,11 @@ const BranchDetail = ({ params }) => {
         </div>
       </div>
       <Features branch={branch.location} />
-      <DoctorsSection data={doctorsData} doctorsSection={branch.doctorsSection}/>
+      <DoctorsSection
+        data={selectedDoctors}
+        location={branch?.location}
+        doctorsSection={branch.doctorsSection}
+      />
       <TreatmentSection
         data={branch.treatment}
         accordionOpen={accordionOpen}
@@ -93,10 +99,10 @@ const BranchDetail = ({ params }) => {
               Siap Untuk Perawatan Gigi Terbaik?
             </h3>
             <p className="mt-0 text-white chivo text-lg md:mx-32">
-               Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
               consectetur, adipisci velit, sed quia non numquam eius modi
               tempora incidunt ut labore et dolore magnam aliquam quaerat
-              voluptatem. 
+              voluptatem.
             </p>
             <div>
               <Button

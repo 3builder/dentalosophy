@@ -22,7 +22,43 @@ const doctorsData = [
     ],
     image: "/images/drg.-Benindra.png",
     certificate: [],
-    seminar: []
+    seminar: [],
+    branch: [
+      {
+        loc: "BSD",
+        schedules: [
+          {
+            day: "Senin",
+            time: ["10.00 - 20.00"],
+          },
+          {
+            day: "Rabu",
+            time: ["10.00 - 20.00"],
+          },
+          {
+            day: "Jumat",
+            time: ["10.00 - 20.00"],
+          },
+          {
+            day: "Sabtu",
+            time: ["10.00 - 18.00"],
+          },
+        ],
+      },
+      {
+        loc: "Senopati",
+        schedules: [
+          {
+            day: "Selasa",
+            time: ["10.00 - 20.00"],
+          },
+          {
+            day: "Kamis",
+            time: ["10.00 - 20.00"],
+          },
+        ],
+      },
+    ],
   },
   {
     name: "drg. K Dian Paramita",
@@ -45,11 +81,43 @@ const doctorsData = [
     image: "/images/drg.-Dian.png",
     certificate: [],
     seminar: [],
+    branch: [
+      {
+        loc: "Pantai Indah Kapuk",
+        schedules: [
+          {
+            day: "Senin",
+            time: ["10.00 - 15.00"],
+          },
+          {
+            day: "Selasa",
+            time: ["14.00 - 20.00"],
+          },
+          {
+            day: "Kamis",
+            time: ["10.00 - 20.00"],
+          },
+          {
+            day: "Jumat",
+            time: ["10.00 - 20.00"],
+          },
+        ],
+      },
+      {
+        loc: "Senopati",
+        schedules: [
+          {
+            day: "Sabtu",
+            time: ["10.00 - 20.00"],
+          },
+        ],
+      },
+    ],
   },
   {
     name: "drg. Achana Descania",
     title: "Dokter Gigi Umum",
-    location: "Cabang Senopati, BSD",
+    location: "Cabang Senopati",
     educations: [
       "Program Sarjana Universitas Trisakti Fakultas Kedokteran Gigi tahun 2008",
       "Program Profesi Universitas Trisakti Fakultas Kedokteran Gigi tahun 2012",
@@ -67,11 +135,22 @@ const doctorsData = [
     image: "/images/drg.-Chana-1.png",
     certificate: [],
     seminar: [],
+    branch: [
+      {
+        loc: "Senopati",
+        schedules: [
+          {
+            day: "Sabtu",
+            time: ["10.00 - 20.00"],
+          },
+        ],
+      },
+    ],
   },
   {
     name: "drg. Vania Mariska Putri, M.A.R.S., M.M",
     title: "Dokter Gigi Umum",
-    location: "Cabang Senopati, BSD",
+    location: "Cabang Senopati",
     educations: [
       "Program Sarjana Universitas Indonesia Fakultas Kedokteran Gigi tahun 2013",
       "Program Profesi Universitas Indonesia Fakultas Kedokteran Gigi tahun 2017",
@@ -95,6 +174,21 @@ const doctorsData = [
       "Hands On Direct Restoration PDGI Jakarta Pusat",
     ],
     seminar: [],
+    branch: [
+      {
+        loc: "Senopati",
+        schedules: [
+          {
+            day: "Senin",
+            time: ["10.00 - 15.00"],
+          },
+          {
+            day: "Jumat",
+            time: ["10.00 - 15.00"],
+          },
+        ],
+      },
+    ],
   },
   {
     name: "drg. Fitrah Ismail",
@@ -106,6 +200,7 @@ const doctorsData = [
     image: "/images/drg.-Fifi.png",
     certificate: [],
     seminar: [],
+    branch: [],
   },
   {
     name: "drg. Dhabitannisa",
@@ -117,6 +212,7 @@ const doctorsData = [
     image: "/images/drg.-Icha.png",
     certificate: [],
     seminar: [],
+    branch: [],
   },
   {
     name: "drg. Alma Dillany",
@@ -128,6 +224,17 @@ const doctorsData = [
     image: "/images/drg.-Alma.png",
     certificate: [],
     seminar: [],
+    branch: [
+      {
+        loc: "Gandaria",
+        schedules: [
+          {
+            day: "Kamis",
+            time: ["10.00 - 15.00"],
+          },
+        ],
+      },
+    ],
   },
   {
     name: "drg. Tara Amanda",
@@ -139,6 +246,21 @@ const doctorsData = [
     image: "/images/drg.-Tara.png",
     certificate: [],
     seminar: [],
+    branch: [
+      {
+        loc: "Gandaria",
+        schedules: [
+          {
+            day: "Rabu",
+            time: ["15.00 - 20.00"],
+          },
+          {
+            day: "Jumat",
+            time: ["10.00 - 15.00"],
+          },
+        ],
+      },
+    ],
   },
   {
     name: "drg. Annisa Widi",
@@ -150,6 +272,7 @@ const doctorsData = [
     image: "/images/drg.-Nisa.png",
     certificate: [],
     seminar: [],
+    branch: [],
   },
   {
     name: "drg. Chika Astasari Hadi",
@@ -175,6 +298,7 @@ const doctorsData = [
     image: "/images/drg.-Chika.png",
     certificate: [],
     seminar: [],
+    branch: [],
   },
   {
     name: "drg. Aqmarina Prallia",
@@ -208,6 +332,7 @@ const doctorsData = [
       "Clinical Management of Dentine Hypersensitivity in Clinical Practice - PB PDGI & PDEC",
       "Manajemen Komplikasi Bedah Dentoalveolar - Safari Ilmu Bedah Mulut & Maksilofasial",
     ],
+    branch: [],
   },
   {
     name: "drg. David Maxwell Sp.Pros",
@@ -223,6 +348,7 @@ const doctorsData = [
     image: "/images/drg.-David-1.png",
     certificate: [],
     seminar: [],
+    branch: [],
   },
   {
     name: "drg. Aditya Wisnu Putranto, Sp.KG(K)",
@@ -244,6 +370,7 @@ const doctorsData = [
     image: "/images/drg.-Wisnu.png",
     certificate: [],
     seminar: [],
+    branch: [],
   },
   {
     name: "drg. Sarah Farahyati",
@@ -262,6 +389,7 @@ const doctorsData = [
     image: "/images/drg.-Sarah.png",
     certificate: [],
     seminar: [],
+    branch: [],
   },
   {
     name: "drg. Desy Natalia",
@@ -283,6 +411,21 @@ const doctorsData = [
     image: "/images/drg-desy.png",
     certificate: [],
     seminar: [],
+    branch: [
+      {
+        loc: "BSD",
+        schedules: [
+          {
+            day: "Selasa",
+            time: ["10.00 - 20.00"],
+          },
+          {
+            day: "Kamis",
+            time: ["10.00 - 20.00"],
+          },
+        ],
+      },
+    ],
   },
 ];
 
