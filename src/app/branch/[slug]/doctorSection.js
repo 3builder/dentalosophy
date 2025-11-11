@@ -50,19 +50,19 @@ export const DoctorsSection = ({
               <div className="mt-4">
                 <Accordion type="single" collapsible className="mt-4 w-full">
                   <AccordionItem value={`item-${index}`}>
-                    <div className="flex justify-center">
-                      <AccordionTrigger
-                        hasChevron={false}
-                        className="w-[200px] bg-[#64CCCE]/15 text-[#64CCCE] 
+                    {/* <div className="flex justify-center"> */}
+                    <AccordionTrigger
+                      hasChevron={false}
+                      className="w-[200px] bg-[#64CCCE]/15 text-[#64CCCE] 
                       hover:bg-[#64CCCE] hover:text-white 
-                      rounded-lg chivo px-6 py-2 cursor-pointer 
+                      rounded-none chivo px-6 py-2 cursor-pointer 
                       justify-center"
-                      >
-                        LIHAT JADWAL
-                      </AccordionTrigger>
-                    </div>
+                    >
+                      LIHAT JADWAL
+                    </AccordionTrigger>
+                    {/* </div> */}
                     <AccordionContent>
-                      <div className="shadow-md py-4 px-8 flex justify-between text-left text-gray-700 bg-gray-50 rounded-lg mt-2">
+                      <div className="shadow-md border-l-4 border-emerald py-4 px-4 md:px-6 grid grid-cols-2 text-left text-gray-700 bg-gray-50">
                         {schedules.length > 0 ? (
                           schedules.map((schedule, i) => (
                             <div key={i} className="mb-2">
