@@ -1,11 +1,11 @@
 export const metadata = {
-  title: "Branch - Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
+  title: "Cabang Dentalosophy – Lokasi Klinik Gigi Terdekat",
   robots: "index, follow",
   alternates: {
     canonical: "https://dentalosophy.id/branch",
   },
   description:
-    "Daftar cabang klinik gigi Dentalosophy di berbagai kota. Klinik modern dan nyaman untuk semua kebutuhan gigi Anda. Cari lokasi terdekat sekarang!",
+    "Temukan cabang Dentalosophy Terdekat. Klinik gigi profesional dengan fasilitas lengkap - mudah diakses dari lokasi Anda Hanya disini.",
 };
 
 const BranchLayout = ({ children }) => {

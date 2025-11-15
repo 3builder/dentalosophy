@@ -54,7 +54,11 @@ const branchData = [
       title:"Tim Dokter Profesional yang Berpengalaman",
       description:"Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi spesialis berpengalaman yang profesional dari lulusan universitas terbaik di Indonesia."
     },
-    contactLink : "https://wa.link/0yyxvl"
+    contactLink : "https://wa.link/0yyxvl",
+    seo:{
+        title: "Dentalosophy Senopati – Klinik Gigi Profesional di Jakarta Selatan",
+        description: "Dentalosophy Senopati, klinik gigi terdekat dan profesional di Jakarta Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
+    }
   },
   {
     id: "2",
@@ -109,7 +113,11 @@ const branchData = [
       title:"Tim Dokter Profesional yang Berpengalaman",
       description:"Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi spesialis berpengalaman yang profesional dari lulusan universitas terbaik di Indonesia."
     },
-    contactLink : "https://wa.link/dxkr6h"
+    contactLink : "https://wa.link/dxkr6h",
+    seo:{
+        title: "Dentalosophy BSD – Klinik Gigi Profesional di Tangerang Selatan",
+        description: "Dentalosophy BSD, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
+    }
   },
   {
     id: "3",
@@ -160,7 +168,11 @@ const branchData = [
       title:"Tim Dokter Profesional yang Berpengalaman",
       description:"Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi spesialis berpengalaman yang profesional dari lulusan universitas terbaik di Indonesia."
     },
-    contactLink : "https://wa.link/2ein1s"    
+    contactLink : "https://wa.link/2ein1s",
+    seo:{
+        title: "Dentalosophy Gandaria – Klinik Gigi Profesional di Jakarta Selatan",
+        description: "Dentalosophy Gandaria, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
+    }       
   },
   {
     id: "4",
@@ -212,7 +224,11 @@ const branchData = [
       title:"Tim Dokter Profesional yang Berpengalaman",
       description:"Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi spesialis berpengalaman yang profesional dari lulusan universitas terbaik di Indonesia."
     },
-    contactLink : "https://wa.link/wkuu81"
+    contactLink : "https://wa.link/wkuu81",
+    seo:{
+        title: "Dentalosophy PIK – Klinik Gigi Profesional di Jakarta Utara",
+        description: "Dentalosophy PIK, klinik gigi terdekat dan profesional di Jakarta Utara. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
+    }
   },
   {
     id: "5",
@@ -268,7 +284,12 @@ const branchData = [
       title:"Tim Dokter Profesional yang Berpengalaman",
       description:"Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi spesialis berpengalaman yang profesional dari lulusan universitas terbaik di Indonesia."
     },
-    contactLink : "https://wa.link/wkuu81"  },
+    contactLink : "https://wa.link/wkuu81",
+    seo:{
+        title: "Dentalosophy Bintaro – Klinik Gigi Profesional di Tangerang Selatan",
+        description: "Dentalosophy Bintaro, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
+    }    
+  },
 ];
 
 export default branchData;

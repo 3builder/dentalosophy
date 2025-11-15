@@ -1,7 +1,7 @@
 "use client";
 import { Spinner } from "@components/ui/spinner";
 import doctorsData from "@utils/static/doctorsData";
-import { useState, useEffect, use } from "react";
+import { useState, useEffect } from "react";
 import branchData from "@utils/static/branchData";
 import { ContactCard } from "./contactCard";
 import { DoctorsSection } from "./doctorSection";
@@ -11,10 +11,10 @@ import { Testimonials } from "./testimoni";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@components/ui/button";
-import { useRouter } from "next/navigation";
+import { useRouter, useParams } from "next/navigation";
 
-const BranchDetail = ({ params }) => {
-  const { slug } = use(params);
+const BranchDetail = () => {
+  const { slug } = useParams();
   const router = useRouter();
   const branch = branchData.find(
     (item) => item.slug.toLowerCase().replace(/\s+/g, "-") === slug
