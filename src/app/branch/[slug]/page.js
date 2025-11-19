@@ -66,9 +66,9 @@ const BranchDetail = () => {
       <ContactCard
         address={branch.address}
         phone={branch.phone}
-        maps={branch.maps}
         openHours={branch.openHours}
-        contactLink={branch.contactLink}
+        whatsappLink={branch.whatsappLink}
+        googlemapLink={branch.googlemapLink}
       />
       <div>
         <div className="relative mt-5 w-full h-[300] md:h-[480px]">
@@ -80,7 +80,16 @@ const BranchDetail = () => {
           />
         </div>
       </div>
-      <Features branch={branch.location} />
+      <Features branch={branch.location} usp={branch.usp}/>
+      <Button className="bg-emerald text-white w-[300px] mx-auto mb-4 hover:bg-white hover:text-emerald border-2 border-white hover:border-emerald text-sm px-6">
+            <Link
+              href={branch.whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              KONSULTASI GRATIS VIA WHATSAPP
+            </Link>
+      </Button>      
       <DoctorsSection
         data={selectedDoctors}
         location={branch?.location}
@@ -122,7 +131,7 @@ const BranchDetail = () => {
                 Hubungi via WhatsApp:{" "}
                 <Link
                   className="font-bold"
-                  href="https://wa.me/628123456789"
+                  href={branch.whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

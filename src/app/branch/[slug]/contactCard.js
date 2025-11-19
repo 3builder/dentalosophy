@@ -5,9 +5,9 @@ import Link from "next/link";
 export const ContactCard = ({
   address = "",
   phone = "",
-  maps = null,
+  whatsappLink = "",
+  googlemapLink = "",
   openHours = [],
-  contactLink= ""
 }) => {
   return (
     <div className="bg-[#FFFDF4] px-8 py-6 w-full rounded-xl shadow-sm border border-[#F3EED9]">
@@ -40,7 +40,7 @@ export const ContactCard = ({
         <div className="flex flex-col self-center md:col-span-1 space-y-3">
           <Button className="bg-emerald text-white w-full hover:bg-white hover:text-emerald border-2 border-white hover:border-emerald rounded-full text-sm px-6">
             <Link
-              href={contactLink}
+              href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -49,7 +49,7 @@ export const ContactCard = ({
           </Button>
           <Button className="bg-white text-emerald w-full hover:bg-emerald hover:text-white border-2 border-emerald hover:border-white rounded-full text-sm px-6">
             <Link
-              href={`https://www.google.com/maps?q=${maps.lat},${maps.lng}`}
+              href={googlemapLink}
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -50,11 +50,31 @@ const branchData = [
         "•⁠  Lokasi strategis di area senopati - cocok untuk anda yang memiliki mobilisasi tinggi",
       ],
     },
+    usp:[
+      {
+        title:"Perawatan gigi secara holistik",
+        description:"Perawatan gigi dan mulut secara menyeluruh oleh tim dokter gigi umum dan dokter gigi spesialis berpengalaman yang disesuaikan dengan kondisi masing-masing pasien"
+      },
+      {
+        title:"Ruang tunggu kids friendly",
+        description:"dentalosophy selalu mengupayakan untuk menciptakan suasana yang menyenangkan di setiap kunjungan anak ke dokter gigi"
+      },
+      {
+        title:"Cashless Payment",
+        description:"Dentalosophy telah bekerjasama dengan berbagai provider asuransi agar dapat mempermudah pembayaran perawatan gigi anda."
+      },
+      {
+        title:"Lokasi strategis di area senopati",
+        description:"cocok untuk anda yang memiliki mobilisasi tinggi"
+      }
+    ],
     doctorsSection:{
       title:"Tim Dokter Profesional yang Berpengalaman",
       description:"Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi spesialis berpengalaman yang profesional dari lulusan universitas terbaik di Indonesia."
     },
     contactLink : "https://wa.link/0yyxvl",
+    whatsappLink: "http://wa.link/27k8ky?utm_medium=social&utm_source=linktree&utm_campaign=admin+senopati",
+    googlemapLink: "https://maps.app.goo.gl/bbCX79DvP56ftqDT6",
     seo:{
         title: "Dentalosophy Senopati – Klinik Gigi Profesional di Jakarta Selatan",
         description: "Dentalosophy Senopati, klinik gigi terdekat dan profesional di Jakarta Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
@@ -109,11 +129,27 @@ const branchData = [
         "•⁠  Cashless Payment - Dentalosophy telah bekerjasama dengan berbagai provider asuransi agar dapat mempermudah pembayaran perawatan gigi anda.",
       ],
     },
+    usp:[
+      {
+        title:"Perawatan gigi secara holistik",
+        description:"Perawatan gigi dan mulut secara menyeluruh oleh tim dokter gigi berpengalaman yang disesuaikan dengan kondisi masing-masing pasien"
+      },
+      {
+        title:"Ruang tunggu kids friendly",
+        description:"dentalosophy selalu mengupayakan untuk menciptakan suasana yang menyenangkan di setiap kunjungan anak ke dokter gigi"
+      },
+      {
+        title:"Cashless Payment",
+        description:"Dentalosophy telah bekerjasama dengan berbagai provider asuransi agar dapat mempermudah pembayaran perawatan gigi anda."
+      }
+    ],
     doctorsSection:{
       title:"Tim Dokter Profesional yang Berpengalaman",
       description:"Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi spesialis berpengalaman yang profesional dari lulusan universitas terbaik di Indonesia."
     },
     contactLink : "https://wa.link/dxkr6h",
+    whatsappLink: "https://wa.link/xcttfn?utm_medium=social&utm_source=linktree&utm_campaign=admin+bsd",
+    googlemapLink: "https://maps.app.goo.gl/hBRY2sU7EHPuW7TTA",
     seo:{
         title: "Dentalosophy BSD – Klinik Gigi Profesional di Tangerang Selatan",
         description: "Dentalosophy BSD, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
@@ -164,11 +200,27 @@ const branchData = [
         "•⁠  Lokasi yang strategis dan berada di tengah kota Selain berada di tengan kota, dentalosohy gandaria juga mempunyai lahan parkir yang besar, dan akses yang memudahkan.",
       ],
     },
+    usp:[
+      {
+        title:"Buka setiap hari untuk senyum keluargamu",
+        description:"Kami hadir setiap hari untuk memastikan perawatan gigimu tidak tertunda. Kami paham jadwal setiap hari merupakan rutinitas yang padat. Oleh karena itu dentalosophy gandaria buka setiap hari untuk anda"
+      },
+      {
+        title:"Kenyamanan dan Estetika dalam satu Klinik",
+        description:"Kami memadukan teknologi terkini, dokter berpengalaman dan layanan yang ramah agar Anda mendapatkan perawatan gigi yang nyaman dan estetis"
+      },
+      {
+        title:"Lokasi yang strategis dan berada di tengah kota",
+        description:"Selain berada di tengan kota, dentalosohy gandaria juga mempunyai lahan parkir yang besar, dan akses yang memudahkan."
+      }
+    ],
     doctorsSection:{
       title:"Tim Dokter Profesional yang Berpengalaman",
       description:"Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi spesialis berpengalaman yang profesional dari lulusan universitas terbaik di Indonesia."
     },
     contactLink : "https://wa.link/2ein1s",
+    whatsappLink: "https://wa.link/jgmx3y?utm_medium=social&utm_source=linktree&utm_campaign=admin+gandaria",
+    googlemapLink: "https://maps.app.goo.gl/h6S82DHSTiahf3MU6",
     seo:{
         title: "Dentalosophy Gandaria – Klinik Gigi Profesional di Jakarta Selatan",
         description: "Dentalosophy Gandaria, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
@@ -220,11 +272,31 @@ const branchData = [
         "•⁠  Lokasi Strategis dan Lifestyle Area Terletak dikawasan Pantai Indah Kapuk yang mudah diakses dan dikelilingi banyak tempat kuliner, kafe, dan spot populer sehingga tetap bisa perawatan gigi sambil quality time bareng keluarga.",
       ],
     },
+    usp:[
+      {
+        title:"Fasilitas Lengkap dan Nyaman untuk Keluarga",
+        description:"Dentalosophy PIK memiliki 2 Ruangan dental untuk memberikan kenyamanan serta meminimalkan waktu tunggu."
+      },
+      {
+        title:"Ruang Tunggu yang Luas",
+        description:"Dentalosophy PIK memiliki 2 Ruangan dental untuk memberikan kenyamanan serta meminimalkan waktu tunggu."
+      },
+      {
+        title:"Area Bermain Anak",
+        description:"Dentalosophy PIK memiliki area bermain khusus anak agar mereka merasa aman dan senang selama menunggu."
+      },
+      {
+        title:"Lokasi Strategis dan Lifestyle Area",
+        description:"Terletak dikawasan Pantai Indah Kapuk yang mudah diakses dan dikelilingi banyak tempat kuliner, kafe, dan spot populer sehingga tetap bisa perawatan gigi sambil quality time bareng keluarga."
+      }
+    ],
     doctorsSection:{
       title:"Tim Dokter Profesional yang Berpengalaman",
       description:"Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi spesialis berpengalaman yang profesional dari lulusan universitas terbaik di Indonesia."
     },
     contactLink : "https://wa.link/wkuu81",
+    whatsappLink: "https://api.whatsapp.com/send?phone=6287736908707&text=Halo%20Dentalosophy%20PIK%2C%20saya%20mau%20reservasi!",
+    googlemapLink: "https://maps.app.goo.gl/J1rajkyc1MN5Ld7r7",
     seo:{
         title: "Dentalosophy PIK – Klinik Gigi Profesional di Jakarta Utara",
         description: "Dentalosophy PIK, klinik gigi terdekat dan profesional di Jakarta Utara. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
@@ -280,11 +352,27 @@ const branchData = [
         "•⁠  ⁠Lokasi yang strategis : selain dekat dengan lingkungan akomodasi/kerja, bisa sambil kulineran yang viral di Fresh Market Bintaro",
       ],
     },
+    usp:[
+      {
+        title:"Layanan Personal dari Dokter & Staff",
+        description:"Dokter dan staf di Dentalosophy Bintaro dinilai ramah, baik, dan sangat komunikatif, memastikan rencana perawatan disesuaikan dengan kebutuhan unik setiap pasien."
+      },
+      {
+        title:"Kualitas Hasil Estetika yang Rapi dan Detail",
+        description:"Banyak ulasan dari pasien di google review hasilnya sangat rapi, teliti, dan detail. Menunjukkan komitmen kami terhadap hasil akhir yang sempurna."
+      },
+      {
+        title:"Lokasi yang strategis",
+        description:"Selain dekat dengan lingkungan akomodasi/kerja, bisa sambil kulineran yang viral di Fresh Market Bintaro"
+      }
+    ],
     doctorsSection:{
       title:"Tim Dokter Profesional yang Berpengalaman",
       description:"Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi spesialis berpengalaman yang profesional dari lulusan universitas terbaik di Indonesia."
     },
     contactLink : "https://wa.link/wkuu81",
+    whatsappLink: "https://wa.link/3zsx6e?utm_medium=social&utm_source=linktree&utm_campaign=admin+bintaro",
+    googlemapLink: "https://maps.app.goo.gl/RTFqHQSZ4vw3Cp6J9",    
     seo:{
         title: "Dentalosophy Bintaro – Klinik Gigi Profesional di Tangerang Selatan",
         description: "Dentalosophy Bintaro, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
