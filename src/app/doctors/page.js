@@ -2,12 +2,13 @@ import doctorsData from "@utils/static/doctorsData";
 import { DoctorContent } from "./doctorContent";
 
 export const metadata = {
-  title: "Our Doctors - Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
+  title: "Dokter Gigi Terbaik Dan Profesional | Dentalosophy",
   robots: "index, follow",
   alternates: {
     canonical: "https://dentalosophy.id/doctors",
   },
-  description: "Dapatkan perawatan gigi terbaik di Dentalosophy bersama dokter gigi berpengalaman dan terpercaya untuk senyum sehat dan percaya diri.",
+  description: "Dokter gigi berpengalaman dan terpercaya di Dentalosophy. Perawatan gigi terbaik untuk hasil maksimal dan senyum yang lebih sehat serta percaya diri.",
+  keywords: "Dokter Gigi",
 };
 
 const Doctors = () => {

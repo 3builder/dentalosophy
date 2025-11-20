@@ -1,11 +1,12 @@
 export const metadata = {
-  title: "Our Treatments - Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
+  title: "Perawatan Gigi Lengkap Dentalosophy - Veneer, Scaling, Implan",
   robots: "index, follow",
   alternates: {
     canonical: "https://dentalosophy.id/our-treatments",
   },
+  keywords: "Perawatan Gigi Lengkap",
   description:
-    "Temukan perawatan terbaik untuk setiap keluhan gigi dan mulut kamu di Dentalosophy — solusi profesional untuk senyum sehat dan percaya diri.",
+    "Perawatan gigi lengkap di Dentalosophy: Veneer, Scaling, Implan, Whitening, Behel, dan lainnya. Klinik terpercaya untuk hasil optimal.",
 };
 
 const OurTreatmentsLayout = ({ children }) => {

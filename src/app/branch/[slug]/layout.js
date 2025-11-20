@@ -24,6 +24,7 @@ export async function generateMetadata({ params }) {
     branch.seo?.description ||
     branch.headers?.description ||
     `Klinik gigi Dentalosophy di ${branch.location}.`;
+    const keywords = branch.seo?.keywords || branch.headers?.keywords;
 
   return {
     title,
@@ -32,6 +33,7 @@ export async function generateMetadata({ params }) {
       canonical: `https://dentalosophy.id/branch/${branch.slug}`,
     },
     description,
+    keywords,
   };
 }
 

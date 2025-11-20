@@ -1,5 +1,6 @@
 export const metadata = {
   title: "Cabang Dentalosophy – Lokasi Klinik Gigi Terdekat",
+  keywords: "Cabang Klinik Gigi Dentalosophy",
   robots: "index, follow",
   alternates: {
     canonical: "https://dentalosophy.id/branch",

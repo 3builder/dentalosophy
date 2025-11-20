@@ -2,12 +2,13 @@ import promoData from "@utils/static/promoData";
 import { PromoContent } from "./promoContent";
 
 export const metadata = {
-  title: "Promo - Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
+  title: "Promo Dentalosophy – Diskon Perawatan Gigi Terbaik",
   robots: "index, follow",
+  keywords: "Promo Perawatan Gigi",
   alternates: {
     canonical: "https://dentalosophy.id/promo",
   },
-  description: "Dentalosophy klinik gigi terbaik dan terpercaya untuk mengatasi seluruh permasalahan gigi dan mulut anda dengan harga yang terjangkau.",
+  description: "Dapatkan promo menarik untuk perawatan gigi di Dentalosophy. Diskon Veneer, Whitening, Scaling, Implan, dan layanan lainnya hanya disini.",
 };
 
 const Promo = () => {

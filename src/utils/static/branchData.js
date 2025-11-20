@@ -77,6 +77,7 @@ const branchData = [
     googlemapLink: "https://maps.app.goo.gl/bbCX79DvP56ftqDT6",
     seo:{
         title: "Dentalosophy Senopati – Klinik Gigi Profesional di Jakarta Selatan",
+        keywords: "Klinik Gigi Dentalosophy Senopati",
         description: "Dentalosophy Senopati, klinik gigi terdekat dan profesional di Jakarta Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
     }
   },
@@ -152,6 +153,7 @@ const branchData = [
     googlemapLink: "https://maps.app.goo.gl/hBRY2sU7EHPuW7TTA",
     seo:{
         title: "Dentalosophy BSD – Klinik Gigi Profesional di Tangerang Selatan",
+        keywords: "Klinik Gigi Dentalosophy BSD",
         description: "Dentalosophy BSD, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
     }
   },
@@ -223,6 +225,7 @@ const branchData = [
     googlemapLink: "https://maps.app.goo.gl/h6S82DHSTiahf3MU6",
     seo:{
         title: "Dentalosophy Gandaria – Klinik Gigi Profesional di Jakarta Selatan",
+        keywords: "Klinik Gigi Dentalosophy Gandaria",
         description: "Dentalosophy Gandaria, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
     }       
   },
@@ -299,6 +302,7 @@ const branchData = [
     googlemapLink: "https://maps.app.goo.gl/J1rajkyc1MN5Ld7r7",
     seo:{
         title: "Dentalosophy PIK – Klinik Gigi Profesional di Jakarta Utara",
+        keywords: "Klinik Gigi Dentalosophy PIK",
         description: "Dentalosophy PIK, klinik gigi terdekat dan profesional di Jakarta Utara. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
     }
   },
@@ -375,6 +379,7 @@ const branchData = [
     googlemapLink: "https://maps.app.goo.gl/RTFqHQSZ4vw3Cp6J9",    
     seo:{
         title: "Dentalosophy Bintaro – Klinik Gigi Profesional di Tangerang Selatan",
+        keywords: "Klinik Gigi Dentalosophy Bintaro",
         description: "Dentalosophy Bintaro, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
     }    
   },

@@ -27,13 +27,14 @@ const playfair = Playfair_Display({
 
 export const metadata = {
   metadataBase: new URL("https://dentalosophy.id"),
-  title: "Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
+  title: "Klinik Gigi Terbaik Dan Terdekat -  Harga Terjangkau | Dentalosophy",
   robots: "index, follow",
   alternates: {
     canonical: "https://dentalosophy.id/",
   },
+  keywords: "Klinik Gigi Terdekat Dengan Harga Terjangkau",
   description:
-    "Dentalosophy klinik gigi terbaik dan terpercaya untuk mengatasi seluruh permasalahan gigi dan mulut anda dengan harga yang terjangkau.",
+    "Veneer, Scaling, Implant, dan perawatan gigi lainnya tersedia di Dentalosophy — klinik gigi terpercaya di Jakarta & Tangerang dengan layanan profesional dan harga terjangkau.",
   openGraph: {
     title: "Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
     description:

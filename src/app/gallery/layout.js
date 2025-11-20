@@ -1,11 +1,12 @@
 export const metadata = {
-  title: "Gallery - Dentalosophy Klinik Gigi Terbaik Dan Terpercaya",
+  title: "Dentalosophy – Hasil Perawatan Gigi Dan Transformasi Senyum",
   robots: "index, follow",
   alternates: {
     canonical: "https://dentalosophy.id/gallery",
   },
+  keywords: "Transformasi Senyum",
   description:
-    "Dentalosophy klinik gigi terbaik dan terpercaya untuk mengatasi seluruh permasalahan gigi dan mulut anda dengan harga yang terjangkau.",
+    "Perawatan gigi di Dentalosophy. Transformasi Veneer, Whitening, Behel, hingga Implan untuk senyum yang lebih sehat dan percaya diri.",
 };
 
 const GalleryLayout = ({ children }) => {
