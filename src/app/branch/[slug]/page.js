@@ -81,7 +81,7 @@ const BranchDetail = () => {
         </div>
       </div>
       <Features branch={branch.location} usp={branch.usp}/>
-      <Button className="bg-emerald text-white w-[300px] mx-auto mb-4 hover:bg-white hover:text-emerald border-2 border-white hover:border-emerald text-sm px-6">
+      <Button className="bg-emerald text-white w-[300px] mx-auto mb-4 mt-4 hover:bg-white hover:text-emerald border-2 border-white hover:border-emerald text-sm px-6 py-3">
             <Link
               href={branch.whatsappLink}
               target="_blank"
@@ -100,18 +100,15 @@ const BranchDetail = () => {
         accordionOpen={accordionOpen}
         setAccordionOpen={setAccordionOpen}
       />
-      <Testimonials />
+      <Testimonials data={branch.testimonialsData}/>
       <div className="mt-14">
         <div className="rounded-xl bg-emerald py-8 flex justify-center items-center">
           <div className="text-center space-y-8">
             <h3 className="text-4xl text-white font-bold chivo">
-              Siap Untuk Perawatan Gigi Terbaik?
+             {branch.footer.title}
             </h3>
             <p className="mt-0 text-white chivo text-lg md:mx-32">
-              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit, sed quia non numquam eius modi
-              tempora incidunt ut labore et dolore magnam aliquam quaerat
-              voluptatem.
+              {branch.footer.description}
             </p>
             <div>
               <Button
@@ -135,7 +132,7 @@ const BranchDetail = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  0812-345-6789
+                  {branch.phone}
                 </Link>{" "}
                 | Telepon: <span className="font-bold">021-9876-5432</span>
               </p>

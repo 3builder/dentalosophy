@@ -79,6 +79,57 @@ const branchData = [
         title: "Dentalosophy Senopati – Klinik Gigi Profesional di Jakarta Selatan",
         keywords: "Klinik Gigi Dentalosophy Senopati",
         description: "Dentalosophy Senopati, klinik gigi terdekat dan profesional di Jakarta Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
+    },
+    testimonialsData:[
+      {
+        name:"Muhammad Nuzul",
+        comment:"The staff and the doctor are always friendly and helpful, making every visit comfortable. I also really love the clinic’s interior. It is modern, clean, and welcoming. Highly recommended.",
+        rate: 5,
+      },
+      {
+        name:"Axel P",
+        comment:"Located on the 2nd floor of the building, with the entrance on the right. The service was quite fast and Dr. Dian was very helpful and informative during the consultation.",
+        rate: 5,
+      },
+      {
+        name:"Aldila Sekar",
+        comment:"Went here to Drg. Dian for root canal treatment and regular scaling. Drg. Dian is meticulous and very thorough in treating my teeth. Fast response from the admin on WhatsApp when scheduling appointments, and very helpful too. This is by far the cleanest and most comfortable dental clinic in South Jakarta.",
+        rate: 5,
+      },
+      {
+        name:"Yasmine K",
+        comment:"Comfortable place, strategic location in Senopati, and super friendly staff and doctors. Treated by Drg. Aqmarina Prallia, who is very friendly and efficient. I also received a thorough explanation on how to maintain my teeth post treatment. Thanks.",
+        rate: 5,
+      },
+      {
+        name:"Sandhya Nugra",
+        comment:"Went here for scaling and had a very good experience. Reasonable price, very friendly dentist (treated by drg. Vania 👍🏼) and staff, clean equipment, delicate treatment, and a strategic location. Very recommended 👌",
+        rate: 5,
+      },
+      {
+        name:"Akhil Vatvani",
+        comment:"Clean place. Caring doctor and friendly staff. Fast and on time. Drg. Vania is caring, professional, and I recommend her for dental work. Thank you Dentalosophy.",
+        rate: 5,
+      },
+      {
+        name:"Nabila C. Kusworo",
+        comment:"Recommended. Reasonable prices, very friendly staff and drg. Please come here if you need any dental services.",
+        rate: 5,
+      },
+      {
+        name:"Fabian Suprijatna",
+        comment:"My daughter (6 years old) loves coming here. When she pulled out her first baby tooth, Dentalosophy gave her a little tooth box, and she showed it to everyone she met. Thanks Dentalosophy, you are the best.",
+        rate: 5,
+      },
+      {
+        name:"Iqbal Assidiq",
+        comment:"Clean and cozy place, super friendly staff, and thanks to drg. Chana who was very helpful and informative. I would definitely come back again.",
+        rate: 5,
+      }
+    ],
+    footer:{
+      title:"Siap Untuk Perawatan Gigi Terbaik?",
+      description: "Jadwalkan kunjungan Anda dan temukan mengapa pasien mempercayai Dentalosophy Senopati sebagai klinik gigi yang nyaman, ramah, dan profesional di Jakarta Selatan."
     }
   },
   {
@@ -155,6 +206,57 @@ const branchData = [
         title: "Dentalosophy BSD – Klinik Gigi Profesional di Tangerang Selatan",
         keywords: "Klinik Gigi Dentalosophy BSD",
         description: "Dentalosophy BSD, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
+    },
+    testimonialsData:[
+      {
+        name:"Putri Adilla",
+        comment:"Great experience! Cozy clinic in a fun spot with many other places nearby. The doctor is skilled and very friendly.",
+        rate: 5,
+      },
+      {
+        name:"Adrian Immanuel",
+        comment:"Really like the new place. Great ambience, great doctor, and great service.",
+        rate: 5,
+      },
+      {
+      name:"Alicia Putri",
+      comment:"So happy after my treatment at Dentalosophy. The doctor fixed my dental issue and the service was excellent. Thank you!",
+      rate: 5,
+      },
+      {
+        name:"Maharani for Work",
+        comment:"Just had a routine dental checkup at Dentalosophy BSD! Happy banget, tempat barunya sekarang bagus banget, makin nyaman! Selalu happy kalau ke sini karena stafnya super helpful dan baik banget. Dokternya pun informatif dan hasil treatment-nya bagus! Riil testimoni pasien reguler sejak 2023.",
+        rate: 5,
+      },
+      {
+        name:"Adinda Rizkita",
+        comment:"Klinik barunya lebih nyaman. Thank you dr. Benindra! Selalu suka perawatan gigi di sini, tidak sakit sama sekali.",
+        rate: 5,
+      },
+      {
+        name:"Hany Romadhoni",
+        comment:"Perawatan ditangani dokter yang berpengalaman, hasilnya memuaskan.",
+        rate: 5,
+      },
+      {
+        name:"Felicia Vanya",
+        comment:"Enak banget di sini, tempatnya comfy. Mbak-mbaknya sangat ramah. Aku sempat menunggu tapi diajak ngobrol, dan dokternya juga super sabar. Setelah treatment ada reminder dari Dentalosophy untuk perawatan lanjutan. Puas banget! Thank you Dentalosophy.",
+        rate: 5,
+      },
+      {
+        name:"Nidya Hana",
+        comment:"Tempatnya bersih, penanganannya proper. Bisa pakai asuransi corporate yang bekerja sama. Tambal gigi harga normal 750rb per gigi, scaling 750rb. Kalau bisa cari promo biar lebih murah. Adminnya juga ramah.",
+        rate: 5,
+      },
+      {
+        name:"Vive Delrey",
+        comment:"Terima kasih untuk pelayanan admin yang ramah dan sabar. Veneer dan reveneer cuma di sini yang aku percaya… tidak bisa pindah ke lain hati. Tempatnya bersih, waktu Covid juga sangat steril. Thank you!",
+        rate: 5,
+      }
+    ],
+    footer:{
+      title:"Siap Untuk Perawatan Gigi Terbaik?",
+      description: "Jadwalkan kunjungan Anda dan temukan mengapa pasien mempercayai Dentalosophy BSD sebagai klinik gigi yang nyaman, ramah, dan profesional di Tangerang Selatan."
     }
   },
   {
@@ -227,7 +329,58 @@ const branchData = [
         title: "Dentalosophy Gandaria – Klinik Gigi Profesional di Jakarta Selatan",
         keywords: "Klinik Gigi Dentalosophy Gandaria",
         description: "Dentalosophy Gandaria, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
-    }       
+    },
+    testimonialsData:[
+        {
+          name: "I had a pleasant experience with Dentalosophy Gandaria. The dentists are very knowledgeable. During consultation, they quickly identified my concerns and resolved them in a timely manner.",
+          comment: "Aldi",
+          rate:5,
+        },
+        {
+          name: "Best dental clinic in town. Went to the Gandaria branch and had a lovely experience. The doctors were nice and thorough, and the nurses were informative as well. All around a great experience.",
+          comment: "Munaya Sakina",
+          rate:5,
+        },
+        {
+          name: "Selalu ke sini untuk scaling, penambalan gigi, dan kontrol rutin. Nyaman banget, tempatnya bagus. Dokter dan staff super ramah. Biasanya ke dokter gigi selalu takut, tapi tidak kalau ke sini. Hehe.",
+          comment: "Naomi Teella",
+          rate:5,
+        },
+        {
+          name: "Scaling dan fluoride di sini dengan drg. Tara. Beliau sangat ramah dan informatif. Admin juga ramah. Pelayanannya oke semua. Thank you Dentalosophy Gandaria.",
+          comment: "Aisyah Indriani",
+          rate:5,
+        },
+        {
+          name: "Scaling di sini super oke. Dr. Tara komunikatif, dan semua staff sangat welcoming. Kurang dari 15 menit karena memang tidak banyak masalah. Sangat puas so far.",
+          comment: "Agatha Odilia",
+          rate:5,
+        },
+        {
+          name: "Dokter dan pelayanannya bagus banget. drg. Panji terbaik, sangat ramah dan selalu menjelaskan dengan detail 😊 sukses terus dok.",
+          comment: "Trisha Alya Rahmi",
+          rate:5,
+        },
+        {
+          name: "Pelayanannya cepat, fast response saat booking dan juga saat sampai. Saya ditangani oleh drg. Layli yang sangat baik dan profesional dalam menangani keluhan saya. Terbaik.",
+          comment: "Fadilah Nugroho",
+          rate:5,
+        },
+        {
+          name: "Thanks Dentalosophy Gandaria atas pelayanannya. Dokternya ramah, profesional, dan tempatnya bersih serta nyaman. Sangat puas.",
+          comment: "Siti Faoja",
+          rate:5,
+        },
+        {
+          name: "Dari tahap reservasi sampai prosedur sangat teratur, teliti, dan efisien dengan hasil berkualitas. Semua staff sangat friendly. Rekomen banget.",
+          comment: "Gibran Yusuf",
+          rate:5,
+        }
+    ],
+    footer:{
+      title:"Siap Untuk Perawatan Gigi Terbaik?",
+      description: "Jadwalkan kunjungan Anda dan temukan mengapa pasien mempercayai Dentalosophy Gandaria sebagai klinik gigi yang nyaman, ramah, dan profesional di Tangerang Selatan."
+    }    
   },
   {
     id: "4",
@@ -304,7 +457,43 @@ const branchData = [
         title: "Dentalosophy PIK – Klinik Gigi Profesional di Jakarta Utara",
         keywords: "Klinik Gigi Dentalosophy PIK",
         description: "Dentalosophy PIK, klinik gigi terdekat dan profesional di Jakarta Utara. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
-    }
+    },
+    testimonialsData:[
+      {
+       name:"Saya sangat puas dengan pelayanan di dokter gigi Jeffrey. Dokter dan stafnya ramah, profesional, dan sangat informatif. Proses perawatan berjalan lancar tanpa rasa sakit berlebih. Kliniknya bersih dan nyaman. Pasti akan kembali lagi ke sini.",
+       comment:"Riyandi",
+       rate:5,
+      },
+      {
+        name:"Treatment nyaman sampai ngantuk, haha. Staffnya baik, dokternya ramah dan sabar banget.",
+        comment:"Hilary Gondawijaya",
+        rate:5,
+      },
+      {
+        name:"Pelayanannya super ramah. Dokter Jeffrey sabar dan teliti banget. Selalu diingatkan kalau sudah appointment, tertib jadi tidak antri lama. Thank you Dentalosophy ❤️",
+        comment:"Yune",
+        rate:5,
+      },
+      {
+        name:"Wow banget, tidak terasa sakit waktu cabut gigi bungsu. Penanganannya cepat, tidak perlu menunggu lama, tiba-tiba sudah selesai dicabut. Lokasinya juga banyak di wilayah Tangerang sampai Jakarta.",
+        comment:"Yus Rizal",
+        rate:5,
+      },
+      {
+        name:"Dokternya ramah banget, staffnya very helpful, dan hasilnya memuaskan. Terima kasih 🥰",
+        comment:"Kyanite Chan",
+        rate:5,
+      },
+      {
+        name:"drg. Jeffrey sangat membantu dalam perawatan gigi saya dan keluarga saya. Terima kasih atas service yang diberikan. Thanks.",
+        comment:"Hendradi Hendra",
+        rate:5,
+      },
+    ],
+    footer:{
+      title:"Siap Untuk Perawatan Gigi Terbaik?",
+      description: "Jadwalkan kunjungan Anda dan temukan mengapa pasien mempercayai Dentalosophy PIK sebagai klinik gigi yang nyaman, ramah, dan profesional di Jakarta Utara."
+    }     
   },
   {
     id: "5",
@@ -381,6 +570,57 @@ const branchData = [
         title: "Dentalosophy Bintaro – Klinik Gigi Profesional di Tangerang Selatan",
         keywords: "Klinik Gigi Dentalosophy Bintaro",
         description: "Dentalosophy Bintaro, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
+    },
+    testimonialsData:[
+      {
+        name:"Friendly staff, affordable prices, and a professional dentist. Recommended.",
+        comment:"Risca Charisma",
+        rate:5,
+      },
+      {
+        name:"Very satisfied with the service. The doctor was incredibly detailed and thorough 💖💖",
+        comment:"Qilla",
+        rate:5,
+      },
+      {
+        name:"I bleached my teeth at Dentalosophy Bintaro with drg. Sheila and the result was perfection. Now I have a perfect smile. I’ll be back for more treatments.",
+        comment:"Andyona Badri",
+        rate:5,
+      },
+      {
+        name:"Great service with drg. Claudia 👍🏽 Definitely will come back again.",
+        comment:"Aulia Nanda",
+        rate:5,
+      },
+      {
+        name:"Great experience, friendly, gentle, and professional. Highly recommend!",
+        comment:"Rizaqah Nurul",
+        rate:5,
+      },
+      {
+        name:"Very professional, welcoming staff, and a cozy, clean place. Definitely will come back again.",
+        comment:"Azka",
+        rate:5,
+      },
+      {
+        name:"Aku suka banget perawatan gigi di sini. Tempatnya bagus, nyaman banget, dokternya ramah dan detail waktu ngejelasin. Stafnya juga baik. Aku tadi perawatan bleaching dan scaling, ga sakit dan hasilnya langsung keliatan. Thank you, Dentalosophy. Definitely will be back 🙏☺️",
+        comment:"Rara Anindita Swargastha",
+        rate:5, 
+      },
+      {
+        name:"Pertama kali coba scaling dan bleaching di Dentalosophy. Suka banget sama hasilnya, beneran painless padahal aku termasuk yang sensitif. Hasil bleaching\"nya real dan natural, warna gigiku bahkan naik 9 tingkat. Amazing. Jadi ga takut lagi treatment gigi. Kliniknya nyaman dan bersih, lokasinya strategis di dalam Fresh Market, jadi bisa sekalian belanja atau makan. Dokternya baik dan sangat detail, perawatnya juga super attentive. Happy to give them 10/10. I'll definitely be back for my next treatment. Thank you so much, Dentalosophy 🤗",
+        comment:"Nisrina Permana",
+        rate:5,
+      },  
+      {
+        name:"Puas banget pengalaman pertama ke Dentalosophy. Hari ini coba scaling dan bleaching. Dari awal masuk sudah disambut hangat, ruangannya bersih dan nyaman. Dokternya ramah, teliti, dan cekatan. Selama perawatan benar\"benar painless padahal gigiku sensitif, sampai ga berasa sudah selesai 🫶🏻",
+        comment:"Gladys Stefanny",
+        rate:5,
+      }
+    ],
+    footer:{
+      title:"Siap Untuk Perawatan Gigi Terbaik?",
+      description: "Jadwalkan kunjungan Anda dan temukan mengapa pasien mempercayai Dentalosophy Bintaro sebagai klinik gigi yang nyaman, ramah, dan profesional di Tangerang Selatan."
     }    
   },
 ];

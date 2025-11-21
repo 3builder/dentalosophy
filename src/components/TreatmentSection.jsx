@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import treatmentsDataHome from "@utils/static/treatmentsDataHome";
+import treatmentsData from "@utils/static/treatmentsData";
 import { CircleCheck } from "lucide-react";
 
 export const TreatmentSection = () => {
@@ -29,32 +29,8 @@ export const TreatmentSection = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 sm:justify-items-stretch gap-6 text-gray lg:-ml-32 p-2 mt-10">
-          {treatmentsDataHome.slice(0, 3).map((item, index) => (
+          {treatmentsData.treatmentsDataHome.slice(0, 3).map((item, index) => (
             <Link href="/our-treatments" key={index} className="" passHref>
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="bg-white p-4 rounded-lg cursor-pointer mb-3 shadow-xl"
-              >
-                <h3 className="font-bold chivo mb-2 text-center">
-                  {item.title}
-                </h3>
-                {item.treatments.map((treatment, i) => (
-                  <div className="font-light flex items-center" key={i}>
-                    <CircleCheck
-                      strokeWidth={2}
-                      className="text-white fill-gray-500 mr-2 h-5 w-5 flex-shrink-0"
-                    />
-                    <h4 className="">{treatment}</h4>
-                  </div>
-                ))}
-              </motion.div>
-            </Link>
-          ))}
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 sm:justify-items-stretch gap-6 lg:-ml-32 text-gray p-2">
-          {treatmentsDataHome.slice(3, 5).map((item, index) => (
-            <Link href="/our-treatments" key={index} passHref>
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
