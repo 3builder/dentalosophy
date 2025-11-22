@@ -42,7 +42,8 @@ export const DetailDoctorModal = ({ data }) => {
             <div className="relative w-full">
               <Image
                 src={data.image}
-                alt={data.title || "Promo image"}
+                alt={data.seo.alt}
+                title={data.seo.title}
                 width={224}
                 height={287}
                 className="mx-auto max-w-[224.99px] max-h-[287.23px]"
@@ -82,7 +83,8 @@ export const DetailDoctorModal = ({ data }) => {
               <div className="w-full flex justify-center">
                 <Image
                   src={data.image}
-                  alt={data.title || "Promo image"}
+                  alt={data.seo.alt}
+                  title={data.seo.title}
                   width={450}
                   height={200}
                   className="rounded-t-2xl object-contain w-[190px] h-auto"

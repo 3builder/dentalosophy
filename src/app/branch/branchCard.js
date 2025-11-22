@@ -15,6 +15,7 @@ export const BranchCard = ({ data = {}, isLoading = false }) => {
             <Image
               src={data.cover || "/images/about1.jpeg"}
               alt={data.location}
+              title={data.location}
               fill
               className="object-cover object-center transition-all duration-700 ease-out group-hover:scale-100 group-hover:object-[50%_40%] scale-110"
             />

@@ -73,8 +73,9 @@ const BranchDetail = () => {
       <div>
         <div className="relative mt-5 w-full h-[300] md:h-[480px]">
           <Image
-            src={"/images/bsd/bsd2.jpg"}
-            alt={"cabang"}
+            src={branch.seo.image.url}
+            alt={branch.seo.image.alt}
+            title={branch.seo.image.title}
             fill
             className="object-cover object-center rounded-xl"
           />
@@ -134,7 +135,7 @@ const BranchDetail = () => {
                 >
                   {branch.phone}
                 </Link>{" "}
-                | Telepon: <span className="font-bold">021-9876-5432</span>
+                {/* | Telepon: <span className="font-bold">021-9876-5432</span> */}
               </p>
             </div>
           </div>

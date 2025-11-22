@@ -15,7 +15,7 @@ import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import Image from "next/image";
 import { CircleX } from "lucide-react";
 
-export const DetailPromoModal = ({ title, description, image }) => {
+export const DetailPromoModal = ({ title, alt, description, image }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -53,7 +53,8 @@ export const DetailPromoModal = ({ title, description, image }) => {
           <DialogHeader className="p-0">
             <Image
               src={image}
-              alt={title || "Promo image"}
+              alt={alt}
+              title={title}
               width={800}
               height={450}
               className="rounded-t-2xl object-cover w-full h-auto"

@@ -21,6 +21,11 @@ const doctorsData = [
       "Perawatan Saraf Gigi",
     ],
     image: "/images/drg.-Benindra.png",
+    seo:{
+      alt: "drg-benindra",
+      title: "drg. Benindra Nehemia, M.Si",
+      image: "/images/drg.-Benindra.png",
+    },
     certificate: [],
     seminar: [],
     branch: [
@@ -79,6 +84,11 @@ const doctorsData = [
       "Perawatan Orthodontik",
     ],
     image: "/images/drg.-Dian.png",
+    seo:{
+      alt: "drg-dian",
+      title: "drg. K Dian Paramita",
+      image: "/images/drg.-Dian.png",
+    },
     certificate: [],
     seminar: [],
     branch: [
@@ -133,6 +143,11 @@ const doctorsData = [
       "Odontektomi (Operasi Gigi Bungsu)",
     ],
     image: "/images/drg.-Chana-1.png",
+    seo:{
+      alt: "drg-chana",
+      title: "drg. Achana Descania",
+      image: "/images/drg.-Chana-1.png",
+    },
     certificate: [],
     seminar: [],
     branch: [
@@ -169,6 +184,11 @@ const doctorsData = [
       "Pembuatan Gigi Palsu",
     ],
     image: "/images/drg.-Vania.png",
+    seo:{
+      alt: "drg-vania",
+      title: "drg. Vania Mariska Putri, M.A.R.S., M.M",
+      image: "/images/drg.-Vania.png",
+    },    
     certificate: [
       "Hands On Direct Veneer Jakarta Great Dentistry",
       "Hands On Direct Restoration PDGI Jakarta Pusat",
@@ -198,6 +218,11 @@ const doctorsData = [
     achievements: [],
     specialists: [],
     image: "/images/drg.-Fifi.png",
+    seo:{
+      alt: "drg-fifi",
+      title: "drg. Fitrah Ismail",
+      image: "/images/drg.-Fifi.png",
+    },    
     certificate: [],
     seminar: [],
     branch: [],
@@ -210,6 +235,11 @@ const doctorsData = [
     achievements: [],
     specialists: [],
     image: "/images/drg.-Icha.png",
+    seo:{
+      alt: "drg-icha",
+      title: "drg. Dhabitannisa",
+      image: "/images/drg.-Icha.png",
+    },    
     certificate: [],
     seminar: [],
     branch: [],
@@ -222,6 +252,11 @@ const doctorsData = [
     achievements: [],
     specialists: [],
     image: "/images/drg.-Alma.png",
+    seo:{
+      alt: "drg-alma",
+      title: "drg. Alma Dillany",
+      image: "/images/drg.-Alma.png",
+    },    
     certificate: [],
     seminar: [],
     branch: [
@@ -244,6 +279,11 @@ const doctorsData = [
     achievements: [],
     specialists: [],
     image: "/images/drg.-Tara.png",
+    seo:{
+      alt: "drg-tara",
+      title: "drg. Tara Amanda",
+      image: "/images/drg.-Tara.png",
+    },    
     certificate: [],
     seminar: [],
     branch: [
@@ -270,6 +310,11 @@ const doctorsData = [
     achievements: [],
     specialists: [],
     image: "/images/drg.-Nisa.png",
+    seo:{
+      alt: "drg-nisa",
+      title: "drg. Annisa Widi",
+      image: "/images/drg.-Nisa.png",
+    },    
     certificate: [],
     seminar: [],
     branch: [],
@@ -296,6 +341,11 @@ const doctorsData = [
       "Pencabutan Gigi",
     ],
     image: "/images/drg.-Chika.png",
+    seo:{
+      alt: "drg-chika",
+      title: "drg. Chika Astasari Hadi",
+      image: "/images/drg.-Chika.png",
+    },    
     certificate: [],
     seminar: [],
     branch: [],
@@ -322,6 +372,11 @@ const doctorsData = [
       "Pencabutan Gigi",
     ],
     image: "/images/drg.-Allia.png",
+    seo:{
+      alt: "drg-allia",
+      title: "drg. Aqmarina Prallia",
+      image: "/images/drg.-Allia.png",
+    },    
     certificate: [],
     seminar: [
       "Virtual Skill Training: Class IV Direct Composite Restoration - PB PDGI & PDEC",
@@ -346,6 +401,11 @@ const doctorsData = [
     achievements: [],
     specialists: ["Implant Gigi", "Pembuatan Gigi Palsu"],
     image: "/images/drg.-David-1.png",
+    seo:{
+      alt: "drg-david",
+      title: "drg. David Maxwell Sp.Pros",
+      image: "/images/drg.-David-1.png",
+    },    
     certificate: [],
     seminar: [],
     branch: [],
@@ -368,6 +428,11 @@ const doctorsData = [
       "Perawatan Saraf Gigi (Perawatan Endodontik)",
     ],
     image: "/images/drg.-Wisnu.png",
+    seo:{
+      alt: "drg-wisnu",
+      title: "drg. Aditya Wisnu Putranto, Sp.KG(K)",
+      image: "/images/drg.-Wisnu.png",
+    },    
     certificate: [],
     seminar: [],
     branch: [],
@@ -387,6 +452,11 @@ const doctorsData = [
       "Perawatan estetik gigi",
     ],
     image: "/images/drg.-Sarah.png",
+    seo:{
+      alt: "drg-sarah",
+      title: "drg. Sarah Farahyati",
+      image: "/images/drg.-Sarah.png",
+    },    
     certificate: [],
     seminar: [],
     branch: [],
@@ -409,6 +479,11 @@ const doctorsData = [
       "Perawatan Saraf Gigi",
     ],
     image: "/images/drg-desy.png",
+    seo:{
+      alt: "drg-desy",
+      title: "drg. Desy Natalia",
+      image: "/images/drg-desy.png",
+    },    
     certificate: [],
     seminar: [],
     branch: [

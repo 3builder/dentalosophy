@@ -19,6 +19,7 @@ export const ChatUs = () => {
             width="50"
             height="50"
             alt="WhatsApp Dentalosophy"
+            title="WhatsApp Dentalosophy"
           />
         </motion.div>
       </a>

@@ -48,7 +48,7 @@ export const Testimonials = () => {
             className="text-center justify-self-center hover:cursor-pointer"
           >
             <div className="text-center p-3 bg-gray-lightest shadow-md -rotate-3">
-              <img src={item.image} alt={item.name} />
+              <img src={item.image} alt={item.alt} title={item.title}/>
               <div className="my-3">@{item.name}</div>
             </div>
           </motion.div>

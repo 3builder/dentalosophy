@@ -3,13 +3,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { DetailPromoModal } from "./detailPromo";
 
-export const PromoContent = ({ image, title, description }) => {
+export const PromoContent = ({ image, title, alt, description }) => {
   return (
     <>
       <div className="sm:mr-6 cursor-pointer mb-3 sm:mb-0">
         <Image
           src={image}
-          alt={title || "Promo image"}
+          alt={alt}
+          title={title}
           width={800}
           height={450}
         />
@@ -22,6 +23,7 @@ export const PromoContent = ({ image, title, description }) => {
 
         <DetailPromoModal
           image={image}
+          alt={alt}
           title={title}
           description={description}
         />

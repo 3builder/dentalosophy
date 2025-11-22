@@ -134,6 +134,7 @@ export const GoogleMapsContainer = ({ data, pan }) => {
                   }}
                   position={e}
                   icon={"/images/pin.png"}
+                  title={`Dentalosophy ${branch[i]} clinic`}
                 >
                   {showInfoWindow && markerKey === i && (
                     <InfoWindow

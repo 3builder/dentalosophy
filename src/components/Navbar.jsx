@@ -42,7 +42,8 @@ export default function Navbar() {
       <Link href="/" className="font-bold text-lg">
         <Image
           src="/images/logo.png"
-          alt="Dentalosophy logo"
+          alt="banner-homepage"
+          title="Banner Homepage"
           height={50}
           width={180}
           className="mx-auto w-auto"

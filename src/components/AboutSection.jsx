@@ -14,6 +14,8 @@ export const AboutSection = () => {
                 <img
                   className="h-full w-full object-cover object-center rounded-full ring ring-emerald ring-offset-4 ring-offset-yellow-light"
                   src={item.image}
+                  title={item.seo.title}
+                  alt={item.seo.alt}
                 />
               </div>
 

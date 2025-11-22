@@ -79,7 +79,12 @@ const branchData = [
         title: "Dentalosophy Senopati – Klinik Gigi Profesional di Jakarta Selatan",
         keywords: "Klinik Gigi Dentalosophy Senopati",
         description: "Dentalosophy Senopati, klinik gigi terdekat dan profesional di Jakarta Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
-    },
+        image:{
+          url:"/images/bsd/bsd2.jpg",
+          alt:"cabang senopati",
+          title:"cabang senopati"
+        }
+      },
     testimonialsData:[
       {
         name:"Muhammad Nuzul",
@@ -206,7 +211,12 @@ const branchData = [
         title: "Dentalosophy BSD – Klinik Gigi Profesional di Tangerang Selatan",
         keywords: "Klinik Gigi Dentalosophy BSD",
         description: "Dentalosophy BSD, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
-    },
+        image:{
+          url:"/images/bsd/bsd2.jpg",
+          alt:"cabang bsd",
+          title:"cabang bsd"
+        }
+      },
     testimonialsData:[
       {
         name:"Putri Adilla",
@@ -329,6 +339,11 @@ const branchData = [
         title: "Dentalosophy Gandaria – Klinik Gigi Profesional di Jakarta Selatan",
         keywords: "Klinik Gigi Dentalosophy Gandaria",
         description: "Dentalosophy Gandaria, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
+        image:{
+          url:"/images/bsd/bsd2.jpg",
+          alt:"cabang gandaria",
+          title:"cabang gandaria"
+        }    
     },
     testimonialsData:[
         {
@@ -457,6 +472,11 @@ const branchData = [
         title: "Dentalosophy PIK – Klinik Gigi Profesional di Jakarta Utara",
         keywords: "Klinik Gigi Dentalosophy PIK",
         description: "Dentalosophy PIK, klinik gigi terdekat dan profesional di Jakarta Utara. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
+        image:{
+          url:"/images/bsd/bsd2.jpg",
+          alt:"cabang pik",
+          title:"cabang pik"
+        }    
     },
     testimonialsData:[
       {
@@ -570,6 +590,11 @@ const branchData = [
         title: "Dentalosophy Bintaro – Klinik Gigi Profesional di Tangerang Selatan",
         keywords: "Klinik Gigi Dentalosophy Bintaro",
         description: "Dentalosophy Bintaro, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
+        image:{
+          url:"/images/bsd/bsd2.jpg",
+          alt:"cabang bintaro",
+          title:"cabang bintaro"
+        }    
     },
     testimonialsData:[
       {

@@ -23,7 +23,8 @@ export const DoctorsSection = () => {
                 className="mx-auto"
                 src={item.image}
                 width="225"
-                alt="dentalosophy dentist"
+                alt={item.seo.alt}
+                title={item.seo.title}
               />
             </div>
             <h3 className="mb-1">{item.name}</h3>
