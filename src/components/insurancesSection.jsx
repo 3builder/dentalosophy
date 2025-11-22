@@ -12,7 +12,8 @@ export const Insurances = () => {
               <Image
                 className="object-contain"
                 src={item.logo}
-                alt={item.name}
+                alt={item.alt}
+                title={item.title}
                 fill
                 sizes="(max-width: 768px) 128px, 256px"
               />
@@ -23,7 +24,8 @@ export const Insurances = () => {
               <Image
                 className="object-contain"
                 src={item.logo}
-                alt={item.name}
+                alt={item.alt}
+                title={item.title}
                 fill
                 sizes="(max-width: 768px) 128px, 256px"
               />

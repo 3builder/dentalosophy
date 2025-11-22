@@ -13,7 +13,8 @@ export const TreatmentSection = () => {
         <img
           className="rounded-t-full rounded-br-full w-full"
           src="/images/treatments.jpeg"
-          alt="dentalosophy treatments"
+          alt="our-treatments"
+          title="Our Treatments"
         />
       </div>
       <div className="mt-10 p-4">

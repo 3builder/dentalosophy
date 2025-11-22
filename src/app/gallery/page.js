@@ -77,7 +77,8 @@ const Gallery = () => {
                 <Image
                   onClick={() => console.log("clicked")}
                   src={item.image}
-                  alt={item.title ?? "gallery"}
+                  alt={item.alt}
+                  title={item.title}
                   fill
                   className="cursor-pointer object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
                 />

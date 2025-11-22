@@ -28,6 +28,7 @@ const Promo = () => {
             >
               <PromoContent
                 title={item.title}
+                alt={item.alt}
                 description={item.description}
                 image={item.image}
               />

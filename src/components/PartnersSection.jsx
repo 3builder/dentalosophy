@@ -14,7 +14,8 @@ export const Partners = () => {
               <Image
                 className="object-contain"
                 src={item.logo}
-                alt={item.name}
+                alt={item.seo.alt}
+                title={item.seo.title}
                 fill
                 sizes="(max-width: 768px) 128px, 256px"
               />
@@ -25,7 +26,8 @@ export const Partners = () => {
               <Image
                 className="object-contain"
                 src={item.logo}
-                alt={item.name}
+                alt={item.seo.alt}
+                title={item.seo.title}
                 fill
                 sizes="(max-width: 768px) 128px, 256px"
               />

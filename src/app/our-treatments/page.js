@@ -89,7 +89,8 @@ const OurTreatments = () => {
               <Image
                 className="w-20 md:w-40 mx-auto md:mx-0 mb-3 md:mb-0"
                 src={item.image}
-                alt={item.title || "Treatment image"}
+                alt={item.seo.alt}
+                title={item.seo.title}
                 width={160}
                 height={160}
               />

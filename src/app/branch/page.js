@@ -21,6 +21,7 @@ const Branch = () => {
           <Image
             src="/images/bsd/bsd2.jpg"
             alt="Background Dentalosophy"
+            title="Background Dentalosophy"
             fill
             priority
             className="object-cover object-center"
@@ -42,6 +43,7 @@ const Branch = () => {
             <Image
               src="/images/senopati/senopati6-2.jpg"
               alt="Dokter gigi Dentalosophy"
+              title="Dokter gigi Dentalosophy"
               fill
               className="rounded-2xl shadow-lg object-cover object-center"
             />

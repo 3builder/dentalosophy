@@ -1,66 +1,82 @@
 const insurancesData = [
   {
-    name: "Admedika",
+    alt: "admedika",
+    title: "Admedika",
     logo: "/images/insurances/admedika.webp",
   },
   {
-    name: "Across Asia Assist",
+    alt: "asiaassist",
+    title: "Across Asia Assist",
     logo: "/images/insurances/asiaassist.webp",
   },
   {
-    name: "BCA Life",
+    alt: "bcalife",
+    title: "BCA Life",
     logo: "/images/insurances/bcalife.webp",
   },
   {
-    name: "BNI Life",
+    alt: "bnilife",
+    title: "BNI Life",
     logo: "/images/insurances/bnilife.webp",
   },
   {
-    name: "BRI Life",
+    alt: "brilife",
+    title: "BRI Life",
     logo: "/images/insurances/brilife.webp",
   },
   {
-    name: "Chubb",
+    alt: "chubb",
+    title: "Chubb",
     logo: "/images/insurances/chubb.webp",
   },
   {
-    name: "Fullerton Health",
+    alt: "fullerton",
+    title: "Fullerton Health",
     logo: "/images/insurances/fullerton.webp",
   },
   {
-    name: "FWD",
+    alt: "fwd",
+    title: "FWD",
     logo: "/images/insurances/fwd.webp",
   },
   {
-    name: "Halodoc",
+    alt: "halodoc",
+    title: "Halodoc",
     logo: "/images/insurances/halodoc.webp",
   },
   {
-    name: "Jak Lingko",
+    alt: "jak",
+    title: "Jak Lingko",
     logo: "/images/insurances/jak.webp",
   },
   {
-    name: "Lintasarta",
+    alt: "lintasarta",
+    title: "Lintasarta",
     logo: "/images/insurances/lintasarta.webp",
   },
   {
-    name: "MAP",
+    alt: "map",
+    title: "MAP",
     logo: "/images/insurances/map.webp",
   },
   {
-    name: "Owlexa",
+    alt: "owlexa",
+    title: "Owlexa",
     logo: "/images/insurances/owlexa.webp",
   },
   {
-    name: "Panin Dai-ichi Life",
+    alt: "panin",
+    title: "Panin Dai-ichi Life",
     logo: "/images/insurances/panin.webp",
   },
   {
-    name: "Prudential",
+    alt: "prudential",
+    title: "Prudential",
     logo: "/images/insurances/prudential.webp",
   },
   {
-    name: "Tirta",
+    alt: "tirta",
+    title: "Tirta",
     logo: "/images/insurances/tirta.webp",
   },
 ];

@@ -4,47 +4,79 @@ const ourTreatmentsData = [
     description:
       "Teeth Whitening / Dental Bleaching, Veneers, and Gum Bleaching (Memutihkan gigi), Veneer, Gum Bleaching (Mencerahkan warna gusi)",
     image: "/images/estetik.png",
+    seo:{
+      alt: "perawatan-estetik",
+      title: "Perawatan Estetik",
+    },
   },
   {
     title: "Implan gigi",
     description:
       "Implan gigi adalah gigi tiruan yang ditanamkan didalam rahang pasien sehingga tampak seperti gigi asli. Jika dibandingkan dengan gigi tiruan lepasan, implan jauh lebih nyaman karena terasa sama seperti gigi asli dan tidak dapat dilepas pasang",
     image: "/images/implan.png",
+    seo:{
+      alt: "implan-gigi",
+      title: "Implan gigi",
+    },
   },
   {
     title: "Perawatan Gigi Tiruan",
     description:
       "Removable Prosthesis (Valplast, Acrylic, and Metal) and Fixed Prosthesis (Crown and Bridge) Pemasangan gigi tiruan cekat (crown, bridge) dan lepasan (valplast atau fleksi, akrilik, metal)",
     image: "/images/perawatan_gigi.png",
+    seo:{
+      alt: "perawatan-gigi-tiruan",
+      title: "Perawatan Gigi Tiruan",
+    },
   },
   {
     title: "Behel Gigi",
     description:
       "Pemasangan behel lepasan, behel metal, behel ceramic, behel damon, Invisalign, Clear aligner (by Klar)",
     image: "/images/behel_gigi.png",
+    seo:{
+      alt: "behel-gigi",
+      title: "Behel Gigi",
+    },
   },
   {
     title: "Perawatan Gigi Anak",
     description:
       "Perawatan gigi anak meliputi penambalan gigi susu, cabut gigi susu, perawatan saluran akar gigi susu, pemeriksaan rutin gigi susu",
     image: "/images/perawatan_gigi_anak.png",
+    seo:{
+      alt: "perawatan-gigi-anak",
+      title: "Perawatan Gigi Anak",
+    },
   },
   {
     title: "Bedah Mulut",
     description: "Cabut Gigi, Operasi Gigi Bungsu, Operasi minor",
     image: "/images/bedah.png",
+    seo:{
+      alt: "bedah-mulut",
+      title: "Bedah Mulut",
+    },
   },
   {
     title: "Penambalan Gigi dan Perawatan Saluran Akar",
     description:
       "Penambalan sewarna gigi dilakukan untuk memperbaiki bentuk dan warna gigi yang rusak akibat lubang gigi. Perawatan saluran akar dilakukan jika lubang gigi sangat besar dan dalam sehingga dibutuhkan pembersihan pada saluran akar",
     image: "/images/penambalan_gigi.png",
+    seo:{
+      alt: "penambalan-gigi",
+      title: "Penambalan Gigi dan Perawatan Saluran Akar",
+    },
   },
   {
     title: "Scaling",
     description:
       "Scaling adalah perawatan yang dilakukan untuk membersihan karang gigi. Scaling dianjurkan untuk dilakukan setiap 6 bulan sekali untuk mencegah penyakit gigi dan mulut seperti radang gusi, periodontitis (radang jaringan penyangga gigi), kegoyangan gigi, dan mengurangi bau mulut.",
     image: "/images/scaling.png",
+    seo:{
+      alt: "scaling",
+      title: "Scaling",
+    },
   },
 ];
 

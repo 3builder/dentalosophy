@@ -33,7 +33,8 @@ export const DoctorsSection = ({
                 <div className="relative w-full">
                   <Image
                     src={item.image}
-                    alt={item.title || "doctor image"}
+                    alt={item.seo.alt}
+                    title={item.seo.title}
                     width={224}
                     height={287}
                     className="mx-auto max-w-[224.99px] max-h-[287.23px]"

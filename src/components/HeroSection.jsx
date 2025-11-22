@@ -70,7 +70,8 @@ export const HeroSection = () => {
               <img
                 className="rounded-tr-full rounded-br-full rounded-bl-full"
                 src="/images/pict_1.jpeg"
-                alt="dentalosophy hero"
+                alt="banner-homepage"
+                title="Banner Homepage"
               />
             </motion.div>
           </div>

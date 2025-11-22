@@ -37,6 +37,7 @@ export const Tips = () => {
         <img
           className="hidden md:block"
           src="/images/tips-pict.jpg"
+          title="dentalosophy tips"
           alt="dentalosophy tips"
         />
       </div>

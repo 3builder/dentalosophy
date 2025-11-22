@@ -23,15 +23,15 @@ export const ComparisonPicture = () => {
               itemOne={
                 <ReactCompareSliderImage
                   src={item.before}
-                  // srcSet='...'
                   alt={"before-" + index}
+                  title={"before-" + index}
                 />
               }
               itemTwo={
                 <ReactCompareSliderImage
                   src={item.after}
-                  // srcSet='...'
                   alt={"after-" + index}
+                  title={"after-" + index}
                 />
               }
             />
