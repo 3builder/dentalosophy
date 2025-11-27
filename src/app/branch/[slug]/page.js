@@ -35,6 +35,22 @@ const BranchDetail = () => {
     doctor.branch.some((b) => b.loc === branch?.location)
   );
 
+  const trackLead = () => {
+    if (typeof window === "undefined") return;
+    if (!window.fbq) return;
+    window.fbq("track", "Lead", {
+      content_name: `Branch: ${branch?.location || "Unknown"}`,
+    });
+  };
+
+  const trackSchedule = () => {
+    if (typeof window === "undefined") return;
+    if (!window.fbq) return;
+    window.fbq("track", "Schedule", {
+      content_name: `Branch: ${branch?.location || "Unknown"}`,
+    });
+  };
+
   useEffect(() => {
     const prevBg = document.body.style.background;
     document.body.style.background = "#F3FFFB";
@@ -81,16 +97,19 @@ const BranchDetail = () => {
           />
         </div>
       </div>
-      <Features branch={branch.location} usp={branch.usp}/>
-      <Button className="bg-emerald text-white w-[300px] mx-auto mb-4 mt-4 hover:bg-white hover:text-emerald border-2 border-white hover:border-emerald text-sm px-6 py-3">
-            <Link
-              href={branch.whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              KONSULTASI GRATIS VIA WHATSAPP
-            </Link>
-      </Button>      
+      <Features branch={branch.location} usp={branch.usp} />
+      <Button
+        onClick={trackLead}
+        className="bg-emerald text-white w-[300px] mx-auto mb-4 mt-4 hover:bg-white hover:text-emerald border-2 border-white hover:border-emerald text-sm px-6 py-3"
+      >
+        <Link
+          href={branch.whatsappLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          KONSULTASI GRATIS VIA WHATSAPP
+        </Link>
+      </Button>
       <DoctorsSection
         data={selectedDoctors}
         location={branch?.location}
@@ -114,6 +133,7 @@ const BranchDetail = () => {
             <div>
               <Button
                 onClick={() => {
+                  trackSchedule();
                   router.push("/#contact-us");
                 }}
                 size="lg"
@@ -132,6 +152,7 @@ const BranchDetail = () => {
                   href={branch.whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={trackLead}
                 >
                   {branch.phone}
                 </Link>{" "}
