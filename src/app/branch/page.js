@@ -19,47 +19,31 @@ const Branch = () => {
       <div className="relative w-full min-h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/bsd/bsd2.jpg"
+            src="/images/bsd/bsd4.jpg"
             alt="Background Dentalosophy"
             title="Background Dentalosophy"
             fill
             priority
-            className="object-cover object-center"
+            className="object-cover object-center blur-[3px]"
           />
-          <div className="absolute inset-0 bg-black/40 md:bg-black/30" />
+          <div className="absolute inset-0 bg-white/40 md:bg-white/30" />
         </div>
 
-        <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-20">
-          <div className="text-center md:text-left max-w-lg text-white space-y-6">
+        <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-center py-20">
+          <div className="text-center text-black ">
             <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-              Temukan Cabang Dentalosophy Terdekat
+              Semua Cabang Dentalosophy
             </h1>
-            <p className="text-base text-yellow font-bold md:text-lg text-gray-200">
-              Klinik gigi modern dengan dokter berpengalaman dan fasilitas
-              lengkap di berbagai kota.
+            <p className="text-base text-black font-bold md:text-lg text-black-200">
+              Klinik dan ruangan yang bersih, nyaman dan estetik tersebar di
+            lokasi-lokasi strategis. <br />Pilih cabang terdekat untuk konsultasi
+            kesehatan gigi Anda.
             </p>
-          </div>
-          <div className="hidden md:block w-1/2 relative h-[300px] lg:h-[400px]">
-            <Image
-              src="/images/senopati/senopati6-2.jpg"
-              alt="Dokter gigi Dentalosophy"
-              title="Dokter gigi Dentalosophy"
-              fill
-              className="rounded-2xl shadow-lg object-cover object-center"
-            />
           </div>
         </div>
       </div>
       <section className="py-16 text-center">
         <div className="container mx-auto px-6 max-w-3xl">
-          <h2 className="text-2xl text-yellow md:text-3xl font-semibold mb-4">
-            Semua Cabang Dentalosophy
-          </h2>
-          <p className="text-gray text-base md:text-lg">
-            Klinik dan ruangan yang bersih, nyaman dan estetik tersebar di
-            lokasi-lokasi strategis. Pilih cabang terdekat untuk konsultasi
-            kesehatan gigi Anda.
-          </p>
         </div>
       </section>
       <section className="pb-20 ">

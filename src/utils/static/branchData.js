@@ -7,7 +7,7 @@ const branchData = [
     address:
       "Gedung B, Gedung Graha Bintara Jl. Wolter Monginsidi No.43 lantai 2, RT.1/RW.1, Rw. Bar., Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12180, Indonesia",
     phone: "081908663338",
-    cover: "/images/senopati/senopati4.JPG",
+    cover: "/images/senopati/senopati4.jpg",
     maps: "",
     specialist: [
       "implant",
@@ -49,23 +49,45 @@ const branchData = [
         "•⁠  Cashless Payment - Dentalosophy telah bekerjasama dengan berbagai provider asuransi agar dapat mempermudah pembayaran perawatan gigi anda.",
         "•⁠  Lokasi strategis di area senopati - cocok untuk anda yang memiliki mobilisasi tinggi",
       ],
+      images:[
+          {
+            url:"/images/senopati/thumbnail/senopati1.jpg",
+            alt:"cabang senopati - gallery 1",
+            title:"cabang senopati - gallery 1"
+          },
+          {
+            url:"/images/senopati/thumbnail/senopati2.jpg",
+            alt:"cabang senopati - gallery 2",
+            title:"cabang senopati - gallery 2"
+          },
+          {
+            url:"/images/senopati/thumbnail/senopati3.jpg",
+            alt:"cabang senopati - gallery 3",
+            title:"cabang senopati - gallery 3"
+          },
+          {
+            url:"/images/senopati/thumbnail/senopati4.jpg",
+            alt:"cabang senopati - gallery 4",
+            title:"cabang senopati - gallery 4"
+          },                              
+      ]      
     },
     usp:[
       {
-        title:"Perawatan gigi secara holistik",
-        description:"Perawatan gigi dan mulut secara menyeluruh oleh tim dokter gigi umum dan dokter gigi spesialis berpengalaman yang disesuaikan dengan kondisi masing-masing pasien"
+        title:"Holistic Care by General & Specialist Dentists",
+        description:"Tim dokter umum dan spesialis berpengalaman bekerja kolaboratif untuk merancang solusi perawatan yang komprehensif dan tailored untuk setiap kebutuhan pasien."
       },
       {
-        title:"Ruang tunggu kids friendly",
-        description:"dentalosophy selalu mengupayakan untuk menciptakan suasana yang menyenangkan di setiap kunjungan anak ke dokter gigi"
+        title:"Warm & Family-Friendly Environment",
+        description:"Atmosfer profesional namun tetap hangat, memastikan kunjungan yang nyaman dan bebas rasa cemas untuk dewasa maupun anak."
       },
       {
-        title:"Cashless Payment",
-        description:"Dentalosophy telah bekerjasama dengan berbagai provider asuransi agar dapat mempermudah pembayaran perawatan gigi anda."
+        title:"Cashless Insurance Support",
+        description:"Didukung berbagai provider asuransi untuk proses pembayaran yang effortless dan efisien."
       },
       {
-        title:"Lokasi strategis di area senopati",
-        description:"cocok untuk anda yang memiliki mobilisasi tinggi"
+        title:"Prestigious Location in Senopati",
+        description:"Mudah diakses dari pusat bisnis dan area lifestyle utama, ideal untuk profesional dengan agenda yang dinamis."
       }
     ],
     doctorsSection:{
@@ -79,11 +101,33 @@ const branchData = [
         title: "Dentalosophy Senopati – Klinik Gigi Profesional di Jakarta Selatan",
         keywords: "Klinik Gigi Dentalosophy Senopati",
         description: "Dentalosophy Senopati, klinik gigi terdekat dan profesional di Jakarta Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
-        image:{
-          url:"/images/bsd/bsd2.jpg",
-          alt:"cabang senopati",
-          title:"cabang senopati"
-        }
+        images:[
+          {
+            url:"/images/senopati/senopati1.jpg",
+            alt:"cabang senopati - gallery 1",
+            title:"cabang senopati - gallery 1"
+          },
+          {
+            url:"/images/senopati/senopati8.jpg",
+            alt:"cabang senopati - gallery 2",
+            title:"cabang senopati - gallery 2"
+          },
+          {
+            url:"/images/senopati/senopati9.jpg",
+            alt:"cabang senopati - gallery 3",
+            title:"cabang senopati - gallery 3"
+          },
+          {
+            url:"/images/senopati/senopati10.jpg",
+            alt:"cabang senopati - gallery 4",
+            title:"cabang senopati - gallery 4"
+          },
+          {
+            url:"/images/senopati/senopati11.jpg",
+            alt:"cabang senopati - gallery 5",
+            title:"cabang senopati - gallery 5"
+          }
+        ]
       },
     testimonialsData:[
       {
@@ -185,19 +229,36 @@ const branchData = [
         "•⁠  Ruang tunggu kids friendly - dentalosophy selalu mengupayakan untuk menciptakan suasana yang menyenangkan di setiap kunjungan anak ke dokter gigi",
         "•⁠  Cashless Payment - Dentalosophy telah bekerjasama dengan berbagai provider asuransi agar dapat mempermudah pembayaran perawatan gigi anda.",
       ],
+      images:[
+          {
+            url:"/images/bsd/thumbnail/bsd1.jpg",
+            alt:"cabang senopati - gallery 1",
+            title:"cabang senopati - gallery 1"
+          },
+          {
+            url:"/images/bsd/thumbnail/bsd2.jpg",
+            alt:"cabang senopati - gallery 2",
+            title:"cabang senopati - gallery 2"
+          },
+          {
+            url:"/images/bsd/thumbnail/bsd3.jpg",
+            alt:"cabang senopati - gallery 3",
+            title:"cabang senopati - gallery 3"
+          },                    
+      ]
     },
     usp:[
       {
-        title:"Perawatan gigi secara holistik",
-        description:"Perawatan gigi dan mulut secara menyeluruh oleh tim dokter gigi berpengalaman yang disesuaikan dengan kondisi masing-masing pasien"
+        title:"Holistic Dental Care",
+        description:"Pendekatan perawatan menyeluruh oleh tim dokter berpengalaman, dengan treatment plan yang dipersonalisasi sesuai kebutuhan setiap pasien untuk hasil yang optimal dan berkelanjutan."
       },
       {
-        title:"Ruang tunggu kids friendly",
-        description:"dentalosophy selalu mengupayakan untuk menciptakan suasana yang menyenangkan di setiap kunjungan anak ke dokter gigi"
+        title:"Kids-Friendly Waiting Area",
+        description:"Suasana yang nyaman dan playful agar anak merasa aman, tenang, dan antusias setiap berkunjung ke dokter gigi. Ideal untuk perawatan keluarga."
       },
       {
-        title:"Cashless Payment",
-        description:"Dentalosophy telah bekerjasama dengan berbagai provider asuransi agar dapat mempermudah pembayaran perawatan gigi anda."
+        title:"Cashless Insurance Support",
+        description:"Bekerja sama dengan berbagai provider asuransi terpercaya untuk pengalaman pembayaran yang cepat, mudah, dan seamless."
       }
     ],
     doctorsSection:{
@@ -211,11 +272,18 @@ const branchData = [
         title: "Dentalosophy BSD – Klinik Gigi Profesional di Tangerang Selatan",
         keywords: "Klinik Gigi Dentalosophy BSD",
         description: "Dentalosophy BSD, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
-        image:{
-          url:"/images/bsd/bsd2.jpg",
-          alt:"cabang bsd",
-          title:"cabang bsd"
-        }
+        images:[
+          {
+            url:"/images/bsd/bsd4.jpg",
+            alt:"cabang bsd - gallery 1",
+            title:"cabang bsd - gallery 1"
+          },
+          {
+            url:"/images/bsd/bsd5.jpg",
+            alt:"cabang bsd - gallery 2",
+            title:"cabang bsd - gallery 2"
+          }
+        ]
       },
     testimonialsData:[
       {
@@ -274,8 +342,7 @@ const branchData = [
     location: "Gandaria",
     slug: "gandaria",
     city: "Jakarta Selatan",
-    address:
-      "Nikmati pengalaman perawatan gigi yang hangat dan personal di Gandaria, Jakarta Selatan. Kami percaya setiap senyum punya cerita dan kami di sini untuk membantu Anda menampilkan versi terbaiknya, dengan pendekatan yang nyaman dan hasil yang terlihat natural.",
+    address: "JI. Gandaria 1 No.11, Kramat Pela, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130",
     phone: "087885561639",
     cover: "/images/gandaria/gandaria1.jpg",
     maps: "",
@@ -294,7 +361,7 @@ const branchData = [
     },
     headers: {
       title: "Where Aesthetics Meet Confidence",
-      description: "Nikmati pengalaman perawatan gigi yang hangat dan personal di BSD, Tangerang Selatan. Kami percaya setiap senyum punya cerita dan kami di sini untuk membantu Anda menampilkan versi terbaiknya, dengan pendekatan yang nyaman dan hasil yang terlihat natural."
+      description: "Nikmati pengalaman perawatan gigi yang hangat dan personal di Gandaria, Jakarta Selatan. Kami percaya setiap senyum punya cerita dan kami di sini untuk membantu Anda menampilkan versi terbaiknya, dengan pendekatan yang nyaman dan hasil yang terlihat natural."
     },
     openHours: [
       {
@@ -313,19 +380,41 @@ const branchData = [
         "•⁠  Kenyamanan dan Estetika dalam satu Klinik Kami memadukan teknologi terkini, dokter berpengalaman dan layanan yang ramah agar Anda mendapatkan perawatan gigi yang nyaman dan estetis",
         "•⁠  Lokasi yang strategis dan berada di tengah kota Selain berada di tengan kota, dentalosohy gandaria juga mempunyai lahan parkir yang besar, dan akses yang memudahkan.",
       ],
+      images:[
+          {
+            url:"/images/gandaria/thumbnail/gandaria1.jpg",
+            alt:"cabang gandaria - gallery 1",
+            title:"cabang gandaria - gallery 1"
+          },
+          {
+            url:"/images/gandaria/thumbnail/gandaria2.jpg",
+            alt:"cabang gandaria - gallery 2",
+            title:"cabang gandaria - gallery 2"
+          },
+          {
+            url:"/images/gandaria/thumbnail/gandaria3.jpg",
+            alt:"cabang gandaria - gallery 3",
+            title:"cabang gandaria - gallery 3"
+          },
+          {
+            url:"/images/gandaria/thumbnail/gandaria4.jpg",
+            alt:"cabang gandaria - gallery 4",
+            title:"cabang gandaria - gallery 4"
+          },
+      ]
     },
     usp:[
       {
-        title:"Buka setiap hari untuk senyum keluargamu",
-        description:"Kami hadir setiap hari untuk memastikan perawatan gigimu tidak tertunda. Kami paham jadwal setiap hari merupakan rutinitas yang padat. Oleh karena itu dentalosophy gandaria buka setiap hari untuk anda"
+        title:"Open Daily for Your Convenience",
+        description:"Buka setiap hari agar Anda dapat menjadwalkan perawatan dengan fleksibel, tanpa mengganggu rutinitas pekerjaan maupun keluarga."
       },
       {
-        title:"Kenyamanan dan Estetika dalam satu Klinik",
-        description:"Kami memadukan teknologi terkini, dokter berpengalaman dan layanan yang ramah agar Anda mendapatkan perawatan gigi yang nyaman dan estetis"
+        title:"Comfort-Driven Aesthetic Experience",
+        description:"Menggabungkan teknologi modern, dokter berpengalaman, serta hospitality yang hangat untuk menciptakan pengalaman perawatan yang nyaman dan estetis."
       },
       {
-        title:"Lokasi yang strategis dan berada di tengah kota",
-        description:"Selain berada di tengan kota, dentalosohy gandaria juga mempunyai lahan parkir yang besar, dan akses yang memudahkan."
+        title:"Prime Central Location with Spacious Parking",
+        description:"Terletak di pusat kota dengan akses mudah dan area parkir luas, ideal bagi keluarga dan profesional dengan mobilitas tinggi."
       }
     ],
     doctorsSection:{
@@ -339,56 +428,68 @@ const branchData = [
         title: "Dentalosophy Gandaria – Klinik Gigi Profesional di Jakarta Selatan",
         keywords: "Klinik Gigi Dentalosophy Gandaria",
         description: "Dentalosophy Gandaria, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
-        image:{
-          url:"/images/bsd/bsd2.jpg",
-          alt:"cabang gandaria",
-          title:"cabang gandaria"
-        }    
+        images:[
+          {
+            url:"/images/gandaria/gandaria5.jpg",
+            alt:"cabang gandaria - gallery 5",
+            title:"cabang gandaria - gallery 5"
+          },
+          {
+            url:"/images/gandaria/gandaria3.jpg",
+            alt:"cabang gandaria - gallery 3",
+            title:"cabang gandaria - gallery 3"
+          },
+          {
+            url:"/images/gandaria/gandaria6.jpg",
+            alt:"cabang gandaria - gallery 6",
+            title:"cabang gandaria - gallery 6"
+          }
+        ]
     },
     testimonialsData:[
         {
-          name: "I had a pleasant experience with Dentalosophy Gandaria. The dentists are very knowledgeable. During consultation, they quickly identified my concerns and resolved them in a timely manner.",
-          comment: "Aldi",
+          name: "Aldi",
+          comment:"I had a pleasant experience with Dentalosophy Gandaria. The dentists are very knowledgeable. During consultation, they quickly identified my concerns and resolved them in a timely manner.",
           rate:5,
         },
         {
-          name: "Best dental clinic in town. Went to the Gandaria branch and had a lovely experience. The doctors were nice and thorough, and the nurses were informative as well. All around a great experience.",
-          comment: "Munaya Sakina",
+          name: "Munaya Sakina",
+          comment:"Best dental clinic in town. Went to the Gandaria branch and had a lovely experience. The doctors were nice and thorough, and the nurses were informative as well. All around a great experience.",
           rate:5,
         },
         {
-          name: "Selalu ke sini untuk scaling, penambalan gigi, dan kontrol rutin. Nyaman banget, tempatnya bagus. Dokter dan staff super ramah. Biasanya ke dokter gigi selalu takut, tapi tidak kalau ke sini. Hehe.",
-          comment: "Naomi Teella",
+          name: "Naomi Teella",
+          comment:"Selalu ke sini untuk scaling, penambalan gigi, dan kontrol rutin. Nyaman banget, tempatnya bagus. Dokter dan staff super ramah. Biasanya ke dokter gigi selalu takut, tapi tidak kalau ke sini. Hehe.",
           rate:5,
         },
         {
-          name: "Scaling dan fluoride di sini dengan drg. Tara. Beliau sangat ramah dan informatif. Admin juga ramah. Pelayanannya oke semua. Thank you Dentalosophy Gandaria.",
-          comment: "Aisyah Indriani",
+          name: "Aisyah Indriani",
+          comment:"Scaling dan fluoride di sini dengan drg. Tara. Beliau sangat ramah dan informatif. Admin juga ramah. Pelayanannya oke semua. Thank you Dentalosophy Gandaria.",
           rate:5,
         },
         {
-          name: "Scaling di sini super oke. Dr. Tara komunikatif, dan semua staff sangat welcoming. Kurang dari 15 menit karena memang tidak banyak masalah. Sangat puas so far.",
-          comment: "Agatha Odilia",
+          name: "Agatha Odilia",
+          comment:"Scaling di sini super oke. Dr. Tara komunikatif, dan semua staff sangat welcoming. Kurang dari 15 menit karena memang tidak banyak masalah. Sangat puas so far.",
           rate:5,
         },
         {
-          name: "Dokter dan pelayanannya bagus banget. drg. Panji terbaik, sangat ramah dan selalu menjelaskan dengan detail 😊 sukses terus dok.",
-          comment: "Trisha Alya Rahmi",
+          name: "Trisha Alya Rahmi",
+          comment:"Dokter dan pelayanannya bagus banget. drg. Panji terbaik, sangat ramah dan selalu menjelaskan dengan detail 😊 sukses terus dok.",
           rate:5,
         },
         {
-          name: "Pelayanannya cepat, fast response saat booking dan juga saat sampai. Saya ditangani oleh drg. Layli yang sangat baik dan profesional dalam menangani keluhan saya. Terbaik.",
-          comment: "Fadilah Nugroho",
+          name: "Fadilah Nugroho",
+          comment:"Pelayanannya cepat, fast response saat booking dan juga saat sampai. Saya ditangani oleh drg. Layli yang sangat baik dan profesional dalam menangani keluhan saya. Terbaik.",
           rate:5,
         },
         {
-          name: "Thanks Dentalosophy Gandaria atas pelayanannya. Dokternya ramah, profesional, dan tempatnya bersih serta nyaman. Sangat puas.",
-          comment: "Siti Faoja",
+          name: "Siti Faoja",
+          comment:"Thanks Dentalosophy Gandaria atas pelayanannya. Dokternya ramah, profesional, dan tempatnya bersih serta nyaman. Sangat puas.",
           rate:5,
         },
         {
-          name: "Dari tahap reservasi sampai prosedur sangat teratur, teliti, dan efisien dengan hasil berkualitas. Semua staff sangat friendly. Rekomen banget.",
-          comment: "Gibran Yusuf",
+          name: "Gibran Yusuf",
+          comment:"Dari tahap reservasi sampai prosedur sangat teratur, teliti, dan efisien dengan hasil berkualitas. Semua staff sangat friendly. Rekomen banget.",
           rate:5,
         }
     ],
@@ -442,23 +543,40 @@ const branchData = [
         "•⁠  Area Bermain Anak Menyediakan area bermain khusus anak agar mereka merasa aman dan senang selama menunggu.",
         "•⁠  Lokasi Strategis dan Lifestyle Area Terletak dikawasan Pantai Indah Kapuk yang mudah diakses dan dikelilingi banyak tempat kuliner, kafe, dan spot populer sehingga tetap bisa perawatan gigi sambil quality time bareng keluarga.",
       ],
+      images:[
+          {
+            url:"/images/pik/thumbnail/pik1.jpg",
+            alt:"cabang pantai indah kapuk - gallery 1",
+            title:"cabang pantai indah kapuk - gallery 1"
+          },
+          {
+            url:"/images/pik/thumbnail/pik2.jpg",
+            alt:"cabang pantai indah kapuk - gallery 2",
+            title:"cabang pantai indah kapuk - gallery 2"
+          },
+          {
+            url:"/images/pik/thumbnail/pik3.jpg",
+            alt:"cabang pantai indah kapuk - gallery 1",
+            title:"cabang pantai indah kapuk - gallery 1"
+          },
+      ]
     },
     usp:[
       {
-        title:"Fasilitas Lengkap dan Nyaman untuk Keluarga",
-        description:"Dentalosophy PIK memiliki 2 Ruangan dental untuk memberikan kenyamanan serta meminimalkan waktu tunggu."
+        title:"Family-Friendly Complete Facilities",
+        description:"Dilengkapi dua ruangan dental treatment untuk efektivitas waktu dan kenyamanan maksimal bagi seluruh anggota keluarga."
       },
       {
-        title:"Ruang Tunggu yang Luas",
-        description:"Dentalosophy PIK memiliki 2 Ruangan dental untuk memberikan kenyamanan serta meminimalkan waktu tunggu."
+        title:"Spacious & Aesthetic Lounge Area",
+        description:"Ruang tunggu modern yang bersih dan nyaman, menghadirkan atmosfer premium layaknya private lounge."
       },
       {
-        title:"Area Bermain Anak",
-        description:"Dentalosophy PIK memiliki area bermain khusus anak agar mereka merasa aman dan senang selama menunggu."
+        title:"Dedicated Kids Play Area",
+        description:"Area bermain khusus untuk menciptakan pengalaman yang menyenangkan dan bebas rasa takut bagi anak."
       },
       {
-        title:"Lokasi Strategis dan Lifestyle Area",
-        description:"Terletak dikawasan Pantai Indah Kapuk yang mudah diakses dan dikelilingi banyak tempat kuliner, kafe, dan spot populer sehingga tetap bisa perawatan gigi sambil quality time bareng keluarga."
+        title:"Strategic Lifestyle Location in PIK",
+        description:"Berada di kawasan Pantai Indah Kapuk, dikelilingi pilihan dining dan lifestyle spots sehingga Anda dapat merawat gigi sambil quality time."
       }
     ],
     doctorsSection:{
@@ -472,42 +590,49 @@ const branchData = [
         title: "Dentalosophy PIK – Klinik Gigi Profesional di Jakarta Utara",
         keywords: "Klinik Gigi Dentalosophy PIK",
         description: "Dentalosophy PIK, klinik gigi terdekat dan profesional di Jakarta Utara. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
-        image:{
-          url:"/images/bsd/bsd2.jpg",
-          alt:"cabang pik",
-          title:"cabang pik"
-        }    
+        images:[
+          {
+            url:"/images/pik/pik7.jpg",
+            alt:"cabang pik - gallery 7",
+            title:"cabang pik - gallery 7"
+          },
+          {
+            url:"/images/pik/pik8.jpg",
+            alt:"cabang pik - gallery 3",
+            title:"cabang pik - gallery 3"
+          },
+        ]    
     },
     testimonialsData:[
       {
-       name:"Saya sangat puas dengan pelayanan di dokter gigi Jeffrey. Dokter dan stafnya ramah, profesional, dan sangat informatif. Proses perawatan berjalan lancar tanpa rasa sakit berlebih. Kliniknya bersih dan nyaman. Pasti akan kembali lagi ke sini.",
-       comment:"Riyandi",
+       name:"Riyandi",
+       comment:"Saya sangat puas dengan pelayanan di dokter gigi Jeffrey. Dokter dan stafnya ramah, profesional, dan sangat informatif. Proses perawatan berjalan lancar tanpa rasa sakit berlebih. Kliniknya bersih dan nyaman. Pasti akan kembali lagi ke sini.",
        rate:5,
       },
       {
-        name:"Treatment nyaman sampai ngantuk, haha. Staffnya baik, dokternya ramah dan sabar banget.",
-        comment:"Hilary Gondawijaya",
-        rate:5,
+       name:"Hilary Gondawijaya", 
+       comment:"Treatment nyaman sampai ngantuk, haha. Staffnya baik, dokternya ramah dan sabar banget.",
+       rate:5,
       },
       {
-        name:"Pelayanannya super ramah. Dokter Jeffrey sabar dan teliti banget. Selalu diingatkan kalau sudah appointment, tertib jadi tidak antri lama. Thank you Dentalosophy ❤️",
-        comment:"Yune",
-        rate:5,
+       name:"Yune", 
+       comment:"Pelayanannya super ramah. Dokter Jeffrey sabar dan teliti banget. Selalu diingatkan kalau sudah appointment, tertib jadi tidak antri lama. Thank you Dentalosophy ❤️",
+       rate:5,
       },
       {
-        name:"Wow banget, tidak terasa sakit waktu cabut gigi bungsu. Penanganannya cepat, tidak perlu menunggu lama, tiba-tiba sudah selesai dicabut. Lokasinya juga banyak di wilayah Tangerang sampai Jakarta.",
-        comment:"Yus Rizal",
-        rate:5,
+       name:"Yus Rizal", 
+       comment:"Wow banget, tidak terasa sakit waktu cabut gigi bungsu. Penanganannya cepat, tidak perlu menunggu lama, tiba-tiba sudah selesai dicabut. Lokasinya juga banyak di wilayah Tangerang sampai Jakarta.",
+       rate:5,
       },
       {
-        name:"Dokternya ramah banget, staffnya very helpful, dan hasilnya memuaskan. Terima kasih 🥰",
-        comment:"Kyanite Chan",
-        rate:5,
+       name:"Kyanite Chan", 
+       comment:"Dokternya ramah banget, staffnya very helpful, dan hasilnya memuaskan. Terima kasih 🥰",
+       rate:5,
       },
       {
-        name:"drg. Jeffrey sangat membantu dalam perawatan gigi saya dan keluarga saya. Terima kasih atas service yang diberikan. Thanks.",
-        comment:"Hendradi Hendra",
-        rate:5,
+       name:"Hendradi Hendra", 
+       comment:"drg. Jeffrey sangat membantu dalam perawatan gigi saya dan keluarga saya. Terima kasih atas service yang diberikan. Thanks.",
+       rate:5,
       },
     ],
     footer:{
@@ -564,19 +689,51 @@ const branchData = [
         "•⁠  Kualitas Hasil Estetika yang Rapi dan Detail : banyak ulasan dari pasien di google review hasilnya sangat rapi, teliti, dan detail. Menunjukkan komitmen kami terhadap hasil akhir yang sempurna.",
         "•⁠  ⁠Lokasi yang strategis : selain dekat dengan lingkungan akomodasi/kerja, bisa sambil kulineran yang viral di Fresh Market Bintaro",
       ],
+      images:[
+          {
+            url:"/images/bintaro/thumbnail/bintaro1.jpg",
+            alt:"cabang bintaro - gallery 1",
+            title:"cabang bintaro - gallery 1"
+          },
+          {
+            url:"/images/bintaro/thumbnail/bintaro2.jpg",
+            alt:"cabang bintaro - gallery 2",
+            title:"cabang bintaro - gallery 2"
+          },
+          {
+            url:"/images/bintaro/thumbnail/bintaro3.jpg",
+            alt:"cabang bintaro - gallery 3",
+            title:"cabang bintaro - gallery 3"
+          },
+          {
+            url:"/images/bintaro/thumbnail/bintaro4.jpg",
+            alt:"cabang bintaro - gallery 4",
+            title:"cabang bintaro - gallery 4"
+          },
+          {
+            url:"/images/bintaro/thumbnail/bintaro5.jpg",
+            alt:"cabang bintaro - gallery 5",
+            title:"cabang bintaro - gallery 5"
+          },
+          {
+            url:"/images/bintaro/thumbnail/bintaro6.jpg",
+            alt:"cabang bintaro - gallery 6",
+            title:"cabang bintaro - gallery 6"
+          },          
+      ]      
     },
     usp:[
       {
-        title:"Layanan Personal dari Dokter & Staff",
-        description:"Dokter dan staf di Dentalosophy Bintaro dinilai ramah, baik, dan sangat komunikatif, memastikan rencana perawatan disesuaikan dengan kebutuhan unik setiap pasien."
+        title:"Personalized Care by Doctors & Staff",
+        description:"Tim dokter dan staf yang warm, attentive, dan profesional, memastikan setiap pasien merasa diprioritaskan, dipahami, dan mendapat perawatan terbaik."
       },
       {
-        title:"Kualitas Hasil Estetika yang Rapi dan Detail",
-        description:"Banyak ulasan dari pasien di google review hasilnya sangat rapi, teliti, dan detail. Menunjukkan komitmen kami terhadap hasil akhir yang sempurna."
+        title:"Premium Aesthetic Results with Precision",
+        description:"Diakui melalui Google Reviews sebagai klinik dengan hasil treatment yang rapi, detail, dan natural, mencerminkan komitmen kami pada perfection & excellence."
       },
       {
-        title:"Lokasi yang strategis",
-        description:"Selain dekat dengan lingkungan akomodasi/kerja, bisa sambil kulineran yang viral di Fresh Market Bintaro"
+        title:"Strategic Lifestyle Location",
+        description:"Terletak di area Fresh Market Bintaro, memudahkan Anda menikmati kuliner dan quality time setelah menjalani perawatan."
       }
     ],
     doctorsSection:{
@@ -590,56 +747,73 @@ const branchData = [
         title: "Dentalosophy Bintaro – Klinik Gigi Profesional di Tangerang Selatan",
         keywords: "Klinik Gigi Dentalosophy Bintaro",
         description: "Dentalosophy Bintaro, klinik gigi terdekat dan profesional di Tangerang Selatan. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
-        image:{
-          url:"/images/bsd/bsd2.jpg",
-          alt:"cabang bintaro",
-          title:"cabang bintaro"
-        }    
+        images:[
+          {
+            url:"/images/bintaro/bintaro7.jpg",
+            alt:"cabang pik - gallery 7",
+            title:"cabang pik - gallery 7"
+          },
+          {
+            url:"/images/bintaro/bintaro8.jpg",
+            alt:"cabang pik - gallery 8",
+            title:"cabang pik - gallery 8"
+          },
+          {
+            url:"/images/bintaro/bintaro9.jpg",
+            alt:"cabang pik - gallery 9",
+            title:"cabang pik - gallery 9"
+          },
+          {
+            url:"/images/bintaro/bintaro10.jpg",
+            alt:"cabang pik - gallery 10",
+            title:"cabang pik - gallery 10"
+          },          
+        ]   
     },
     testimonialsData:[
       {
-        name:"Friendly staff, affordable prices, and a professional dentist. Recommended.",
-        comment:"Risca Charisma",
+        name:"Risca Charisma",
+        comment:"Friendly staff, affordable prices, and a professional dentist. Recommended.",
         rate:5,
       },
       {
-        name:"Very satisfied with the service. The doctor was incredibly detailed and thorough 💖💖",
-        comment:"Qilla",
+        name:"Qilla",
+        comment:"Very satisfied with the service. The doctor was incredibly detailed and thorough 💖💖",
         rate:5,
       },
       {
-        name:"I bleached my teeth at Dentalosophy Bintaro with drg. Sheila and the result was perfection. Now I have a perfect smile. I’ll be back for more treatments.",
-        comment:"Andyona Badri",
+        name:"Andyona Badri",
+        comment:"I bleached my teeth at Dentalosophy Bintaro with drg. Sheila and the result was perfection. Now I have a perfect smile. I’ll be back for more treatments.",
         rate:5,
       },
       {
-        name:"Great service with drg. Claudia 👍🏽 Definitely will come back again.",
-        comment:"Aulia Nanda",
+        name:"Aulia Nanda",
+        comment:"Great service with drg. Claudia 👍🏽 Definitely will come back again.",
         rate:5,
       },
       {
-        name:"Great experience, friendly, gentle, and professional. Highly recommend!",
-        comment:"Rizaqah Nurul",
+        name:"Rizaqah Nurul",
+        comment:"Great experience, friendly, gentle, and professional. Highly recommend!",
         rate:5,
       },
       {
-        name:"Very professional, welcoming staff, and a cozy, clean place. Definitely will come back again.",
-        comment:"Azka",
+        name:"Azka",
+        comment:"Very professional, welcoming staff, and a cozy, clean place. Definitely will come back again.",
         rate:5,
       },
       {
-        name:"Aku suka banget perawatan gigi di sini. Tempatnya bagus, nyaman banget, dokternya ramah dan detail waktu ngejelasin. Stafnya juga baik. Aku tadi perawatan bleaching dan scaling, ga sakit dan hasilnya langsung keliatan. Thank you, Dentalosophy. Definitely will be back 🙏☺️",
-        comment:"Rara Anindita Swargastha",
+        name:"Rara Anindita Swargastha",
+        comment:"Aku suka banget perawatan gigi di sini. Tempatnya bagus, nyaman banget, dokternya ramah dan detail waktu ngejelasin. Stafnya juga baik. Aku tadi perawatan bleaching dan scaling, ga sakit dan hasilnya langsung keliatan. Thank you, Dentalosophy. Definitely will be back 🙏☺️",
         rate:5, 
       },
       {
-        name:"Pertama kali coba scaling dan bleaching di Dentalosophy. Suka banget sama hasilnya, beneran painless padahal aku termasuk yang sensitif. Hasil bleaching\"nya real dan natural, warna gigiku bahkan naik 9 tingkat. Amazing. Jadi ga takut lagi treatment gigi. Kliniknya nyaman dan bersih, lokasinya strategis di dalam Fresh Market, jadi bisa sekalian belanja atau makan. Dokternya baik dan sangat detail, perawatnya juga super attentive. Happy to give them 10/10. I'll definitely be back for my next treatment. Thank you so much, Dentalosophy 🤗",
-        comment:"Nisrina Permana",
+        name:"Nisrina Permana",
+        comment:"Pertama kali coba scaling dan bleaching di Dentalosophy. Suka banget sama hasilnya, beneran painless padahal aku termasuk yang sensitif. Hasil bleaching\"nya real dan natural, warna gigiku bahkan naik 9 tingkat. Amazing. Jadi ga takut lagi treatment gigi. Kliniknya nyaman dan bersih, lokasinya strategis di dalam Fresh Market, jadi bisa sekalian belanja atau makan. Dokternya baik dan sangat detail, perawatnya juga super attentive. Happy to give them 10/10. I'll definitely be back for my next treatment. Thank you so much, Dentalosophy 🤗",
         rate:5,
       },  
       {
-        name:"Puas banget pengalaman pertama ke Dentalosophy. Hari ini coba scaling dan bleaching. Dari awal masuk sudah disambut hangat, ruangannya bersih dan nyaman. Dokternya ramah, teliti, dan cekatan. Selama perawatan benar\"benar painless padahal gigiku sensitif, sampai ga berasa sudah selesai 🫶🏻",
-        comment:"Gladys Stefanny",
+        name:"Gladys Stefanny",
+        comment:"Puas banget pengalaman pertama ke Dentalosophy. Hari ini coba scaling dan bleaching. Dari awal masuk sudah disambut hangat, ruangannya bersih dan nyaman. Dokternya ramah, teliti, dan cekatan. Selama perawatan benar\"benar painless padahal gigiku sensitif, sampai ga berasa sudah selesai 🫶🏻",
         rate:5,
       }
     ],

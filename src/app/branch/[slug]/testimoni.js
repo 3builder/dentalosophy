@@ -1,11 +1,3 @@
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@components/ui/carousel";
-import { useRef } from "react";
 import StarRatings from "react-star-ratings";
 
 export const Testimonials = ({ data = [] }) => {
@@ -13,10 +5,10 @@ export const Testimonials = ({ data = [] }) => {
     <div className="mt-14 overflow-x-hidden">
       <div>
         <h2 className="text-3xl text-yellow playfair">
-          Dengar Apa Kata Pasien Kami
+          What They Love About Us
         </h2>
         <p className="text-gray md:max-w-[80%] mt-2">
-          Pengalaman nyata pasien tentang perawatan nyaman, bersih, dan profesional.
+          Cerita pasien dari Google Reviews yang merasakan pengalaman perawatan yang nyaman, profesional, dan berkualitas tinggi.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 pb-10 px-2 mt-8 gap-10 md:px-32">
         {data.map((item, index) => (
