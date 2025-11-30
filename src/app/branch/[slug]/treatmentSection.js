@@ -6,6 +6,14 @@ import {
 } from "@components/ui/accordion";
 import treatmentsData from "@utils/static/treatmentsData";
 import Image from "next/image";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 export const TreatmentSection = ({
   data = null,
@@ -65,13 +73,45 @@ export const TreatmentSection = ({
           ))}
           </Accordion>
         </div>
-        <div className="relative mt-5 w-full aspect-square">
-          <Image
-            src={"/images/bsd/bsd2.jpg"}
-            alt={"cabang"}
-            fill
-            className="object-cover object-center rounded-xl"
-          />
+        <div className="relative mt-5 w-full max-w-sm mx-auto aspect-square">
+          <Carousel
+            className="w-full h-full"
+            opts={{ loop: true }}
+            plugins={[
+              Autoplay({
+                delay: 4000,
+                stopOnInteraction: false,
+              }),
+            ]}
+          >
+            <CarouselContent>
+              {(data?.images && data.images.length > 0
+                ? data.images
+                : [
+                    {
+                      url: "/images/bsd/bsd2.jpg",
+                      alt: "cabang",
+                      title: "cabang",
+                    },
+                  ]
+              ).map((img, index) => (
+                <CarouselItem
+                  key={index}
+                  className="relative w-full aspect-square"
+                >
+                  <Image
+                    src={img.url}
+                    alt={img.alt}
+                    title={img.title}
+                    fill
+                    className="object-cover object-center rounded-xl"
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </div>
     </div>

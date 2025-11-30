@@ -11,6 +11,14 @@ import { Testimonials } from "./testimoni";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import { useRouter, useParams } from "next/navigation";
 
 const BranchDetail = () => {
@@ -87,14 +95,39 @@ const BranchDetail = () => {
         googlemapLink={branch.googlemapLink}
       />
       <div>
-        <div className="relative mt-5 w-full h-[300] md:h-[480px]">
-          <Image
-            src={branch.seo.image.url}
-            alt={branch.seo.image.alt}
-            title={branch.seo.image.title}
-            fill
-            className="object-cover object-center rounded-xl"
-          />
+        <div className="relative mt-5 w-full h-[300px] md:h-[480px]">
+          <Carousel
+            className="w-full h-full"
+            opts={{ loop: true }}
+            plugins={[
+              Autoplay({
+                delay: 4000,
+                stopOnInteraction: false,
+              }),
+            ]}
+          >
+            <CarouselContent>
+              {(branch.seo.images && branch.seo.images.length > 0
+                ? branch.seo.images
+                : [branch.seo.image]
+              ).map((img, index) => (
+                <CarouselItem
+                  key={index}
+                  className="relative w-full h-[300px] md:h-[480px]"
+                >
+                  <Image
+                    src={img.url}
+                    alt={img.alt}
+                    title={img.title}
+                    fill
+                    className="object-cover object-center rounded-xl"
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </div>
       <Features branch={branch.location} usp={branch.usp} />

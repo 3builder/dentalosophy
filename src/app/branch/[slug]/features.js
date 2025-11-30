@@ -6,12 +6,18 @@ export const Features = ({ branch = "", usp = [] }) => {
       <h2 className="text-5xl text-emerald chivo text-center">
         Mengapa Memilih
       </h2>
-      <h2 className="text-5xl text-yellow chivo text-center">
+      <h2 className="text-5xl text-emerald chivo text-center">
         Dentalosophy {branch}
         <span className="text-emerald">?</span>
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 mt-8 gap-5">
+      <div
+        className={`grid grid-cols-1 mt-8 gap-5 ${
+          usp.length < 4
+            ? "md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto"
+            : "md:grid-cols-4"
+        }`}
+      >
         {usp.map((item, index) => (
           <div key={index} className="rounded-xl py-8 px-10 bg-white">
             <h5 className="text-lg text-emerald flex items-center font-bold mb-2">
