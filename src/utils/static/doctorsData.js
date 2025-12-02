@@ -355,7 +355,7 @@ const doctorsData = [
     ],
   },
   {
-    name: "drg. Adila falahyati Sp Pedo",
+    name: "drg. Adila Falahyati Sp. KGA",
     title: "Dokter Gigi Umum",
     location: "Cabang Bintaro",
     educations: [],
@@ -364,7 +364,7 @@ const doctorsData = [
     image: "/images/drg-adila-falahyati.jpg",
     seo:{
       alt: "drg-adila-falahyati",
-      title: "drg. Adila falahyati Sp Pedoa",
+      title: "drg. Adila Falahyati Sp. KGA",
       image: "/images/drg-adila-falahyati.jpg",
     },    
     certificate: [],

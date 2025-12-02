@@ -29,6 +29,7 @@ const BranchDetail = () => {
   );
 
   const [isFetching, setIsFetching] = useState(true);
+  const [reviews, setReviews] = useState([]);
   const [accordionOpen, setAccordionOpen] = useState("");
 
   useEffect(() => {
@@ -38,6 +39,26 @@ const BranchDetail = () => {
       }, 2000);
     }
   }, [isFetching, setIsFetching]);
+
+  useEffect(() => {
+    const fetchReviews = async () => {
+      if (!branch?.slug) return;
+
+      try {
+        const res = await fetch(`/api/google-reviews/${branch.slug}`);
+        if (!res.ok) return;
+
+        const json = await res.json();
+        if (Array.isArray(json.reviews) && json.reviews.length > 0) {
+          setReviews(json.reviews);
+        }
+      } catch (error) {
+        // Silently fall back to static testimonialsData
+      }
+    };
+
+    fetchReviews();
+  }, [branch?.slug]);
 
   const selectedDoctors = doctorsData.filter((doctor) =>
     doctor.branch.some((b) => b.loc === branch?.location)
@@ -153,7 +174,7 @@ const BranchDetail = () => {
         accordionOpen={accordionOpen}
         setAccordionOpen={setAccordionOpen}
       />
-      <Testimonials data={branch.testimonialsData}/>
+      <Testimonials data={reviews.length ? reviews : branch.testimonialsData} />
       <div className="mt-14">
         <div className="rounded-xl bg-emerald py-8 flex justify-center items-center">
           <div className="text-center space-y-8">

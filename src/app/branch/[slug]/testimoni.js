@@ -16,7 +16,15 @@ export const Testimonials = ({ data = [] }) => {
             key={item.id ?? index}
             className="px-6 py-8 bg-white rounded-2xl shadow-[-5px_5px_4px_rgba(100,204,206,1)]"
           >
-            <div className="mb-5">
+            <div className="flex items-center gap-4 mb-5">
+              {item.photoUrl && (
+                <img
+                  src={item.photoUrl}
+                  alt={item.name}
+                  className="w-12 h-12 rounded-full object-cover"
+                  loading="lazy"
+                />
+              )}
               <StarRatings
                 rating={item.rate}
                 starRatedColor="#E4C256"
