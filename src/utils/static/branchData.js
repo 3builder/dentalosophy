@@ -5,7 +5,7 @@ const branchData = [
     slug: "senopati",
     city: "Jakarta Selatan",
     address:
-      "Gedung B, Gedung Graha Bintara Jl. Wolter Monginsidi No.43 lantai 2, RT.1/RW.1, Rw. Bar., Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12180, Indonesia",
+      "Gedung B, Gedung Graha Bintara JI. Wolter Monginsidi No. 43 lantai 2, RT.1/RW.1, Rw. Bar., Kec. Koy. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12180",
     phone: "081908663338",
     cover: "/images/senopati/senopati4.jpg",
     maps: "",
@@ -187,7 +187,7 @@ const branchData = [
     slug: "bsd",
     city: "Tangerang",
     address:
-      "BSD City, Kav Commercial International School II No. 8 BSD City, Jl. Sekolah Foresta, Lengkong Kulon, Kec. Pagedangan, Tangerang, Banten 15331, Indonesia",
+      "Ruko The Loop BSD, Blk. B1 No.17, Pagedangan, Kec. Pagedangan, Kabupaten Tangerang, Banten 15339",
     phone: "081291469830",
     cover: "/images/bsd/bsd1.jpg",
     maps: "",
@@ -504,7 +504,7 @@ const branchData = [
     slug: "pantai-indah-kapuk",
     city: "Jakarta Utara",
     address:
-      "Golf Island, Lt 2, Ruko Jl. Pantai Indah Kapuk RGIA No. 12, Jkt Utara, Daerah Khusus Ibukota Jakarta 14460, Indonesia",
+      "Golf Island, Lt 2, Ruko JI. Pantai Indah Kapuk RGIA No. 12, Jkt Utara, Daerah Khusus Ibukota Jakarta 14460",
     phone: "087736908707",
     cover: "/images/pik/pik6.png",
     maps: "",
@@ -646,7 +646,7 @@ const branchData = [
     slug: "bintaro",
     city: "Tangerang Selatan",
     address:
-      "Fresh Market Emerald Bintaro, Blok PR/RA No. 20-21. Jl. Boulevard Bintaro, Bintaro, Tangerang Selatan. 15227.",
+      "Fresh Market Emerald Bintaro, Jl. Emerald Boulevard Bintaro, JI. Titihan, Parigi, Kota Tangerang Selatan, Banten 15227",
     phone: "08567817288",
     cover: "/images/bintaro/bintaro6.jpg",
     maps: "",

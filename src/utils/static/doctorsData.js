@@ -354,6 +354,161 @@ const doctorsData = [
       },
     ],
   },
+  {
+    name: "drg. Adila falahyati Sp Pedo",
+    title: "Dokter Gigi Umum",
+    location: "Cabang Bintaro",
+    educations: [],
+    achievements: [],
+    specialists: [],
+    image: "/images/drg-adila-falahyati.jpg",
+    seo:{
+      alt: "drg-adila-falahyati",
+      title: "drg. Adila falahyati Sp Pedoa",
+      image: "/images/drg-adila-falahyati.jpg",
+    },    
+    certificate: [],
+    seminar: [],
+    branch: [
+      {
+        loc: "Bintaro",
+        schedules: [
+          {
+            day: "Senin",
+            time: ["10.00 - 15.00"],
+          },
+          {
+            day: "Selasa",
+            time: ["10.00 - 15.00"],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "drg. Caesary Cloudya Panjaitan",
+    title: "Dokter Gigi Umum",
+    location: "Cabang Bintaro",
+    educations: [],
+    achievements: [],
+    specialists: [],
+    image: "/images/drg-caesary-cloudya-panjaitan.jpg",
+    seo:{
+      alt: "drg-caesary",
+      title: "drg. Caesary Cloudya Panjaitan",
+      image: "/images/drg-caesary-cloudya-panjaitan.jpg",
+    },    
+    certificate: [],
+    seminar: [],
+    branch: [
+      {
+        loc: "Bintaro",
+        schedules: [
+          {
+            day: "Senin",
+            time: ["15.00 - 20.00"],
+          },
+          {
+            day: "Sabtu",
+            time: ["10.00 - 18.00"],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "drg. Siti Alia ramadhani",
+    title: "Dokter Gigi Umum",
+    location: "Cabang Bintaro",
+    educations: [],
+    achievements: [],
+    specialists: [],
+    image: "/images/drg-siti-alia-ramadhani.jpg",
+    seo:{
+      alt: "drg-siti-alia-ramadhani",
+      title: "drg. Siti Alia ramadhani",
+      image: "/images/drg-siti-alia-ramadhani.jpg",
+    },    
+    certificate: [],
+    seminar: [],
+    branch: [
+      {
+        loc: "Bintaro",
+        schedules: [
+          {
+            day: "Selasa",
+            time: ["15.00 - 20.00"],
+          },
+          {
+            day: "Rabu",
+            time: ["15.00 - 20.00"],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "drg. Sharlita Adarlia",
+    title: "Dokter Gigi Umum",
+    location: "Cabang Bintaro",
+    educations: [],
+    achievements: [],
+    specialists: [],
+    image: "/images/drg-sharlita-adarlia.jpg",
+    seo:{
+      alt: "drg-sharlita-adarlia",
+      title: "drg. Sharlita Adarlia",
+      image: "/images/drg-sharlita-adarlia.jpg",
+    },    
+    certificate: [],
+    seminar: [],
+    branch: [
+      {
+        loc: "Bintaro",
+        schedules: [
+          {
+            day: "Rabu",
+            time: ["10.00 - 15.00"],
+          },
+          {
+            day: "Kamis",
+            time: ["10.00 - 15.00"],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "drg. Sheila Destaria Moerdianti",
+    title: "Dokter Gigi Umum",
+    location: "Cabang Bintaro",
+    educations: [],
+    achievements: [],
+    specialists: [],
+    image: "/images/drg-sheila-destaria-moerdianti.jpg",
+    seo:{
+      alt: "drg-sheila-destaria-moerdianti",
+      title: "drg. Sheila Destaria Moerdianti",
+      image: "/images/drg-sheila-destaria-moerdianti.jpg",
+    },    
+    certificate: [],
+    seminar: [],
+    branch: [
+      {
+        loc: "Bintaro",
+        schedules: [
+          {
+            day: "Kamis",
+            time: ["15.00 - 20.00"],
+          },
+          {
+            day: "Jumat",
+            time: ["10.00 - 15.00", "15.00 - 20.00"],
+          },
+        ],
+      },
+    ],
+  },  
 ];
 
 export default doctorsData;
