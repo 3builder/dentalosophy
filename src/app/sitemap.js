@@ -1,8 +1,9 @@
 import branchData from "@utils/static/branchData";
+import { fetchAllPostSlugs } from "../lib/wp";
 
 const baseUrl = "https://dentalosophy.id";
 
-export default function sitemap() {
+export default async function sitemap() {
   const now = new Date();
 
   const staticRoutes = [
@@ -27,5 +28,14 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...branchRoutes];
+  // Fetch all blog post slugs and create routes
+  const blogSlugs = await fetchAllPostSlugs();
+  const blogRoutes = blogSlugs.map((slug) => ({
+    url: `${baseUrl}/blog/${slug}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.6,
+  }));
+
+  return [...staticRoutes, ...branchRoutes, ...blogRoutes];
 }

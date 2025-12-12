@@ -1,4 +1,14 @@
-User-agent: *
+# Allow Googlebot full access
+User-agent: Googlebot
 Allow: /
 
+# Block Bingbot entirely
+User-agent: Bingbot
+Disallow: /
+
+# Allow all crawlers access to everything else
+User-agent: *
+Disallow: /
+
+# Specify the sitemap
 Sitemap: https://dentalosophy.id/sitemap.xml
