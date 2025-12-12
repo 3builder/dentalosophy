@@ -6,7 +6,7 @@ export const metadata = {
   robots: "index, follow",
   keywords: "Promo Perawatan Gigi",
   alternates: {
-    canonical: "https://dentalosophy.id/promo",
+    canonical: "https://www.dentalosophy.id/promo",
   },
   description: "Dapatkan promo menarik untuk perawatan gigi di Dentalosophy. Diskon Veneer, Whitening, Scaling, Implan, dan layanan lainnya hanya disini.",
 };

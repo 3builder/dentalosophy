@@ -11,4 +11,4 @@ User-agent: *
 Disallow: /
 
 # Specify the sitemap
-Sitemap: https://dentalosophy.id/sitemap.xml
+Sitemap: https://www.dentalosophy.id/sitemap.xml

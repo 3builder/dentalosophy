@@ -1,7 +1,7 @@
 import branchData from "@utils/static/branchData";
 import { fetchAllPostSlugs } from "../lib/wp";
 
-const baseUrl = "https://dentalosophy.id";
+const baseUrl = "https://www.dentalosophy.id";
 
 export default async function sitemap() {
   const now = new Date();

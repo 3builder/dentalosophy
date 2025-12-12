@@ -2,7 +2,7 @@ export const metadata = {
   title: "Perawatan Gigi Lengkap Dentalosophy - Veneer, Scaling, Implan",
   robots: "index, follow",
   alternates: {
-    canonical: "https://dentalosophy.id/our-treatments",
+    canonical: "https://www.dentalosophy.id/our-treatments",
   },
   keywords: "Perawatan Gigi Lengkap",
   description:

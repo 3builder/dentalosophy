@@ -28,9 +28,9 @@ const playfair = Playfair_Display({
 export const metadata = {
   metadataBase: new URL("https://dentalosophy.id"),
   title: "Klinik Gigi Terbaik Dan Terdekat -  Harga Terjangkau | Dentalosophy",
-  robots: "index, follow",
+  robots: "FOLLOW, INDEX, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, MAX-IMAGE-PREVIEW:LARGE",
   alternates: {
-    canonical: "https://dentalosophy.id/",
+    canonical: "https://www.dentalosophy.id",
   },
   keywords: "Klinik Gigi Terdekat Dengan Harga Terjangkau",
   description:

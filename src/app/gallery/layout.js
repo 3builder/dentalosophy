@@ -2,7 +2,7 @@ export const metadata = {
   title: "Dentalosophy – Hasil Perawatan Gigi Dan Transformasi Senyum",
   robots: "index, follow",
   alternates: {
-    canonical: "https://dentalosophy.id/gallery",
+    canonical: "https://www.dentalosophy.id/gallery",
   },
   keywords: "Transformasi Senyum",
   description:

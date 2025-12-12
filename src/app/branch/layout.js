@@ -3,7 +3,7 @@ export const metadata = {
   keywords: "Cabang Klinik Gigi Dentalosophy",
   robots: "index, follow",
   alternates: {
-    canonical: "https://dentalosophy.id/branch",
+    canonical: "https://www.dentalosophy.id/branch",
   },
   description:
     "Temukan cabang Dentalosophy Terdekat. Klinik gigi profesional dengan fasilitas lengkap - mudah diakses dari lokasi Anda Hanya disini.",
