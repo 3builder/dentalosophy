@@ -188,12 +188,11 @@ const BranchDetail = () => {
               <Button
                 onClick={() => {
                   trackSchedule();
-                  router.push("/#contact-us");
                 }}
                 size="lg"
                 className="px-10 py-5 cursor-pointer bg-yellow hover:bg-white border-2 border-yellow hover:border-yellow hover:text-yellow chivo font-bold"
               >
-                <Link href="/#contact-us" scroll={true}>
+                <Link href={branch.contactLink} target="_blank" rel="noopener noreferrer">
                   Jadwalkan Konsultasi Hari Ini
                 </Link>
               </Button>

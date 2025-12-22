@@ -63,7 +63,7 @@ export const DoctorsSection = ({
                     </AccordionTrigger>
                     {/* </div> */}
                     <AccordionContent>
-                      <div className="shadow-md border-l-4 border-emerald py-4 px-4 md:px-6 grid grid-cols-2 text-left text-gray-700 bg-gray-50">
+                      <div className={`shadow-md border-l-4 border-emerald py-4 px-4 md:px-6 grid ${schedules.length > 1 ? 'grid-cols-2' : 'grid-cols-1'} text-left text-gray-700 bg-gray-50`}>
                         {schedules.length > 0 ? (
                           schedules.map((schedule, i) => (
                             <div key={i} className="mb-2">
