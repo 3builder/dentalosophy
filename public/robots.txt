@@ -6,9 +6,5 @@ Allow: /
 User-agent: Bingbot
 Disallow: /
 
-# Allow all crawlers access to everything else
-User-agent: *
-Disallow: /
-
 # Specify the sitemap
 Sitemap: https://www.dentalosophy.id/sitemap.xml
