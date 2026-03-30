@@ -835,48 +835,48 @@ const doctorsData = [
       },
     ],
   },
-  {
-    name: "drg. Jeffrey Dwijayana Susanto, Sp.KG",
-    title: "Dokter Gigi Spesialis Konservasi Gigi",
-    location: "Cabang PIK",
-    educations: [
-      "Program Sarjana Universitas Trisakti Fakultas Kedokteran Gigi tahun 2015",
-      "Program Spesialis Konservasi Gigi Universitas Trisakti Fakultas Kedokteran Gigi tahun 2023",
-    ],
-    achievements: [],
-    specialists: [
-      "Aesthetic Dentistry",
-      "General Dentistry Treatment",
-      "Endodontic and Endodontic Surgery",
-    ],
-    image: "/images/drg-jeffrey-dwijayana-susanto.png",
-    seo:{
-      alt: "drg-jeffrey-dwijayana-susanto",
-      title: "drg. Jeffrey Dwijayana Susanto, Sp.KG",
-      image: "/images/drg-jeffrey-dwijayana-susanto.png",
-    },    
-    certificate: [],
-    seminar: [],
-    branch: [
-      {
-        loc: "Pantai Indah Kapuk",
-        schedules: [
-          {
-            day: "Rabu",
-            time: ["10.00 - 20.00"],
-          },
-          {
-            day: "Sabtu",
-            time: ["10.00 - 20.00"],
-          },
-          {
-            day: "Minggu",
-            time: ["14.00 - 18.00"],
-          },
-        ],
-      }
-    ],
-  },
+  // {
+  //   name: "drg. Jeffrey Dwijayana Susanto, Sp.KG",
+  //   title: "Dokter Gigi Spesialis Konservasi Gigi",
+  //   location: "Cabang PIK",
+  //   educations: [
+  //     "Program Sarjana Universitas Trisakti Fakultas Kedokteran Gigi tahun 2015",
+  //     "Program Spesialis Konservasi Gigi Universitas Trisakti Fakultas Kedokteran Gigi tahun 2023",
+  //   ],
+  //   achievements: [],
+  //   specialists: [
+  //     "Aesthetic Dentistry",
+  //     "General Dentistry Treatment",
+  //     "Endodontic and Endodontic Surgery",
+  //   ],
+  //   image: "/images/drg-jeffrey-dwijayana-susanto.png",
+  //   seo:{
+  //     alt: "drg-jeffrey-dwijayana-susanto",
+  //     title: "drg. Jeffrey Dwijayana Susanto, Sp.KG",
+  //     image: "/images/drg-jeffrey-dwijayana-susanto.png",
+  //   },    
+  //   certificate: [],
+  //   seminar: [],
+  //   branch: [
+  //     {
+  //       loc: "Pantai Indah Kapuk",
+  //       schedules: [
+  //         {
+  //           day: "Rabu",
+  //           time: ["10.00 - 20.00"],
+  //         },
+  //         {
+  //           day: "Sabtu",
+  //           time: ["10.00 - 20.00"],
+  //         },
+  //         {
+  //           day: "Minggu",
+  //           time: ["14.00 - 18.00"],
+  //         },
+  //       ],
+  //     }
+  //   ],
+  // },
   {
     name: "drg. V. Eko Poetrantoe Soegiharto, Sp.Ort",
     title: "Spesialis Orthodonsia",

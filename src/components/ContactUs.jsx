@@ -210,9 +210,9 @@ export const ContactUs = (props) => {
                       <SelectItem value="senopati">Senopati</SelectItem>
                       <SelectItem value="bsd">BSD</SelectItem>
                       <SelectItem value="gandaria">Gandaria</SelectItem>
-                      <SelectItem value="pantai indah kapuk">
+                      {/* <SelectItem value="pantai indah kapuk">
                         Pantai Indah Kapuk
-                      </SelectItem>
+                      </SelectItem> */}
                       <SelectItem value="bintaro">Bintaro</SelectItem>
                     </SelectGroup>
                   </SelectContent>

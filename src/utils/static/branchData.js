@@ -498,148 +498,148 @@ const branchData = [
       description: "Jadwalkan kunjungan Anda dan temukan mengapa pasien mempercayai Dentalosophy Gandaria sebagai klinik gigi yang nyaman, ramah, dan profesional di Tangerang Selatan."
     }    
   },
-  {
-    id: "4",
-    location: "Pantai Indah Kapuk",
-    slug: "pantai-indah-kapuk",
-    city: "Jakarta Utara",
-    address:
-      "Golf Island, Lt 2, Ruko JI. Pantai Indah Kapuk RGIA No. 12, Jkt Utara, Daerah Khusus Ibukota Jakarta 14460",
-    phone: "087736908707",
-    cover: "/images/pik/pik6.png",
-    maps: "",
-    specialist: [
-      "implant",
-      "scaling",
-      "veneer",
-      "gum bleaching",
-      "teeth whitening",
-      "braces/behel",
-      "cabut gigi bungsu",
-    ],
-    maps: {
-      lat: "-6.0943738",
-      lng: "106.7396941",
-    },
-    headers: {
-      title: "Where Aesthetics Meet Confidence",
-      description: "Nikmati pengalaman perawatan gigi yang hangat dan personal di PIK, Jakarta Utara. Kami percaya setiap senyum punya cerita dan kami di sini untuk membantu Anda menampilkan versi terbaiknya, dengan pendekatan yang nyaman dan hasil yang terlihat natural."
-    },
-    openHours: [
-      {
-        day: "Senin - Sabtu",
-        time: "10.00 - 20.00",
-      },
-      {
-        day: "Minggu",
-        time: "10.00 - 18.00",
-      }
-    ],  
-    treatment: {
-      title: "Perawatan Gigi dari Masalah ke Solusi",
-      descriptions: [
-        "•⁠  Fasilitas Lengkap dan Nyaman untuk Keluarga Dentalosophy PIK memiliki 2 Ruangan dental untuk memberikan kenyamanan serta meminimalkan waktu tunggu.",
-        "•⁠  Ruang Tunggu yang Luas Dilengkapi dengan area tunggu yang bersih, nyaman, dan aestetik sehingga membuat pasien merasa relax.",
-        "•⁠  Area Bermain Anak Menyediakan area bermain khusus anak agar mereka merasa aman dan senang selama menunggu.",
-        "•⁠  Lokasi Strategis dan Lifestyle Area Terletak dikawasan Pantai Indah Kapuk yang mudah diakses dan dikelilingi banyak tempat kuliner, kafe, dan spot populer sehingga tetap bisa perawatan gigi sambil quality time bareng keluarga.",
-      ],
-      images:[
-          {
-            url:"/images/pik/thumbnail/pik1.jpg",
-            alt:"cabang pantai indah kapuk - gallery 1",
-            title:"cabang pantai indah kapuk - gallery 1"
-          },
-          {
-            url:"/images/pik/thumbnail/pik2.jpg",
-            alt:"cabang pantai indah kapuk - gallery 2",
-            title:"cabang pantai indah kapuk - gallery 2"
-          },
-          {
-            url:"/images/pik/thumbnail/pik3.jpg",
-            alt:"cabang pantai indah kapuk - gallery 1",
-            title:"cabang pantai indah kapuk - gallery 1"
-          },
-      ]
-    },
-    usp:[
-      {
-        title:"Family-Friendly Complete Facilities",
-        description:"Dilengkapi dua ruangan dental treatment untuk efektivitas waktu dan kenyamanan maksimal bagi seluruh anggota keluarga."
-      },
-      {
-        title:"Spacious & Aesthetic Lounge Area",
-        description:"Ruang tunggu modern yang bersih dan nyaman, menghadirkan atmosfer premium layaknya private lounge."
-      },
-      {
-        title:"Dedicated Kids Play Area",
-        description:"Area bermain khusus untuk menciptakan pengalaman yang menyenangkan dan bebas rasa takut bagi anak."
-      },
-      {
-        title:"Strategic Lifestyle Location in PIK",
-        description:"Berada di kawasan Pantai Indah Kapuk, dikelilingi pilihan dining dan lifestyle spots sehingga Anda dapat merawat gigi sambil quality time."
-      }
-    ],
-    doctorsSection:{
-      title:"Tim Dokter Profesional yang Berpengalaman",
-      description:"Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi spesialis berpengalaman yang profesional dari lulusan universitas terbaik di Indonesia."
-    },
-    contactLink : "https://wa.link/aknsaz",
-    whatsappLink: "https://wa.link/aknsaz",
-    googlemapLink: "https://maps.app.goo.gl/J1rajkyc1MN5Ld7r7",
-    seo:{
-        title: "Dentalosophy PIK – Klinik Gigi Profesional di Jakarta Utara",
-        keywords: "Klinik Gigi Dentalosophy PIK",
-        description: "Dentalosophy PIK, klinik gigi terdekat dan profesional di Jakarta Utara. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
-        images:[
-          {
-            url:"/images/pik/pik7.jpg",
-            alt:"cabang pik - gallery 7",
-            title:"cabang pik - gallery 7"
-          },
-          {
-            url:"/images/pik/pik8.jpg",
-            alt:"cabang pik - gallery 3",
-            title:"cabang pik - gallery 3"
-          },
-        ]    
-    },
-    testimonialsData:[
-      {
-       name:"Riyandi",
-       comment:"Saya sangat puas dengan pelayanan di dokter gigi Jeffrey. Dokter dan stafnya ramah, profesional, dan sangat informatif. Proses perawatan berjalan lancar tanpa rasa sakit berlebih. Kliniknya bersih dan nyaman. Pasti akan kembali lagi ke sini.",
-       rate:5,
-      },
-      {
-       name:"Hilary Gondawijaya", 
-       comment:"Treatment nyaman sampai ngantuk, haha. Staffnya baik, dokternya ramah dan sabar banget.",
-       rate:5,
-      },
-      {
-       name:"Yune", 
-       comment:"Pelayanannya super ramah. Dokter Jeffrey sabar dan teliti banget. Selalu diingatkan kalau sudah appointment, tertib jadi tidak antri lama. Thank you Dentalosophy ❤️",
-       rate:5,
-      },
-      {
-       name:"Yus Rizal", 
-       comment:"Wow banget, tidak terasa sakit waktu cabut gigi bungsu. Penanganannya cepat, tidak perlu menunggu lama, tiba-tiba sudah selesai dicabut. Lokasinya juga banyak di wilayah Tangerang sampai Jakarta.",
-       rate:5,
-      },
-      {
-       name:"Kyanite Chan", 
-       comment:"Dokternya ramah banget, staffnya very helpful, dan hasilnya memuaskan. Terima kasih 🥰",
-       rate:5,
-      },
-      {
-       name:"Hendradi Hendra", 
-       comment:"drg. Jeffrey sangat membantu dalam perawatan gigi saya dan keluarga saya. Terima kasih atas service yang diberikan. Thanks.",
-       rate:5,
-      },
-    ],
-    footer:{
-      title:"Siap Untuk Perawatan Gigi Terbaik?",
-      description: "Jadwalkan kunjungan Anda dan temukan mengapa pasien mempercayai Dentalosophy PIK sebagai klinik gigi yang nyaman, ramah, dan profesional di Jakarta Utara."
-    }     
-  },
+  // {
+  //   id: "4",
+  //   location: "Pantai Indah Kapuk",
+  //   slug: "pantai-indah-kapuk",
+  //   city: "Jakarta Utara",
+  //   address:
+  //     "Golf Island, Lt 2, Ruko JI. Pantai Indah Kapuk RGIA No. 12, Jkt Utara, Daerah Khusus Ibukota Jakarta 14460",
+  //   phone: "087736908707",
+  //   cover: "/images/pik/pik6.png",
+  //   maps: "",
+  //   specialist: [
+  //     "implant",
+  //     "scaling",
+  //     "veneer",
+  //     "gum bleaching",
+  //     "teeth whitening",
+  //     "braces/behel",
+  //     "cabut gigi bungsu",
+  //   ],
+  //   maps: {
+  //     lat: "-6.0943738",
+  //     lng: "106.7396941",
+  //   },
+  //   headers: {
+  //     title: "Where Aesthetics Meet Confidence",
+  //     description: "Nikmati pengalaman perawatan gigi yang hangat dan personal di PIK, Jakarta Utara. Kami percaya setiap senyum punya cerita dan kami di sini untuk membantu Anda menampilkan versi terbaiknya, dengan pendekatan yang nyaman dan hasil yang terlihat natural."
+  //   },
+  //   openHours: [
+  //     {
+  //       day: "Senin - Sabtu",
+  //       time: "10.00 - 20.00",
+  //     },
+  //     {
+  //       day: "Minggu",
+  //       time: "10.00 - 18.00",
+  //     }
+  //   ],  
+  //   treatment: {
+  //     title: "Perawatan Gigi dari Masalah ke Solusi",
+  //     descriptions: [
+  //       "•⁠  Fasilitas Lengkap dan Nyaman untuk Keluarga Dentalosophy PIK memiliki 2 Ruangan dental untuk memberikan kenyamanan serta meminimalkan waktu tunggu.",
+  //       "•⁠  Ruang Tunggu yang Luas Dilengkapi dengan area tunggu yang bersih, nyaman, dan aestetik sehingga membuat pasien merasa relax.",
+  //       "•⁠  Area Bermain Anak Menyediakan area bermain khusus anak agar mereka merasa aman dan senang selama menunggu.",
+  //       "•⁠  Lokasi Strategis dan Lifestyle Area Terletak dikawasan Pantai Indah Kapuk yang mudah diakses dan dikelilingi banyak tempat kuliner, kafe, dan spot populer sehingga tetap bisa perawatan gigi sambil quality time bareng keluarga.",
+  //     ],
+  //     images:[
+  //         {
+  //           url:"/images/pik/thumbnail/pik1.jpg",
+  //           alt:"cabang pantai indah kapuk - gallery 1",
+  //           title:"cabang pantai indah kapuk - gallery 1"
+  //         },
+  //         {
+  //           url:"/images/pik/thumbnail/pik2.jpg",
+  //           alt:"cabang pantai indah kapuk - gallery 2",
+  //           title:"cabang pantai indah kapuk - gallery 2"
+  //         },
+  //         {
+  //           url:"/images/pik/thumbnail/pik3.jpg",
+  //           alt:"cabang pantai indah kapuk - gallery 1",
+  //           title:"cabang pantai indah kapuk - gallery 1"
+  //         },
+  //     ]
+  //   },
+  //   usp:[
+  //     {
+  //       title:"Family-Friendly Complete Facilities",
+  //       description:"Dilengkapi dua ruangan dental treatment untuk efektivitas waktu dan kenyamanan maksimal bagi seluruh anggota keluarga."
+  //     },
+  //     {
+  //       title:"Spacious & Aesthetic Lounge Area",
+  //       description:"Ruang tunggu modern yang bersih dan nyaman, menghadirkan atmosfer premium layaknya private lounge."
+  //     },
+  //     {
+  //       title:"Dedicated Kids Play Area",
+  //       description:"Area bermain khusus untuk menciptakan pengalaman yang menyenangkan dan bebas rasa takut bagi anak."
+  //     },
+  //     {
+  //       title:"Strategic Lifestyle Location in PIK",
+  //       description:"Berada di kawasan Pantai Indah Kapuk, dikelilingi pilihan dining dan lifestyle spots sehingga Anda dapat merawat gigi sambil quality time."
+  //     }
+  //   ],
+  //   doctorsSection:{
+  //     title:"Tim Dokter Profesional yang Berpengalaman",
+  //     description:"Konsultasikan kesehatan gigi kamu ke dokter gigi umum dan dokter gigi spesialis berpengalaman yang profesional dari lulusan universitas terbaik di Indonesia."
+  //   },
+  //   contactLink : "https://wa.link/aknsaz",
+  //   whatsappLink: "https://wa.link/aknsaz",
+  //   googlemapLink: "https://maps.app.goo.gl/J1rajkyc1MN5Ld7r7",
+  //   seo:{
+  //       title: "Dentalosophy PIK – Klinik Gigi Profesional di Jakarta Utara",
+  //       keywords: "Klinik Gigi Dentalosophy PIK",
+  //       description: "Dentalosophy PIK, klinik gigi terdekat dan profesional di Jakarta Utara. Perawatan gigi lengkap untuk senyum sehat Info hanya di sini.",
+  //       images:[
+  //         {
+  //           url:"/images/pik/pik7.jpg",
+  //           alt:"cabang pik - gallery 7",
+  //           title:"cabang pik - gallery 7"
+  //         },
+  //         {
+  //           url:"/images/pik/pik8.jpg",
+  //           alt:"cabang pik - gallery 3",
+  //           title:"cabang pik - gallery 3"
+  //         },
+  //       ]    
+  //   },
+  //   testimonialsData:[
+  //     {
+  //      name:"Riyandi",
+  //      comment:"Saya sangat puas dengan pelayanan di dokter gigi Jeffrey. Dokter dan stafnya ramah, profesional, dan sangat informatif. Proses perawatan berjalan lancar tanpa rasa sakit berlebih. Kliniknya bersih dan nyaman. Pasti akan kembali lagi ke sini.",
+  //      rate:5,
+  //     },
+  //     {
+  //      name:"Hilary Gondawijaya", 
+  //      comment:"Treatment nyaman sampai ngantuk, haha. Staffnya baik, dokternya ramah dan sabar banget.",
+  //      rate:5,
+  //     },
+  //     {
+  //      name:"Yune", 
+  //      comment:"Pelayanannya super ramah. Dokter Jeffrey sabar dan teliti banget. Selalu diingatkan kalau sudah appointment, tertib jadi tidak antri lama. Thank you Dentalosophy ❤️",
+  //      rate:5,
+  //     },
+  //     {
+  //      name:"Yus Rizal", 
+  //      comment:"Wow banget, tidak terasa sakit waktu cabut gigi bungsu. Penanganannya cepat, tidak perlu menunggu lama, tiba-tiba sudah selesai dicabut. Lokasinya juga banyak di wilayah Tangerang sampai Jakarta.",
+  //      rate:5,
+  //     },
+  //     {
+  //      name:"Kyanite Chan", 
+  //      comment:"Dokternya ramah banget, staffnya very helpful, dan hasilnya memuaskan. Terima kasih 🥰",
+  //      rate:5,
+  //     },
+  //     {
+  //      name:"Hendradi Hendra", 
+  //      comment:"drg. Jeffrey sangat membantu dalam perawatan gigi saya dan keluarga saya. Terima kasih atas service yang diberikan. Thanks.",
+  //      rate:5,
+  //     },
+  //   ],
+  //   footer:{
+  //     title:"Siap Untuk Perawatan Gigi Terbaik?",
+  //     description: "Jadwalkan kunjungan Anda dan temukan mengapa pasien mempercayai Dentalosophy PIK sebagai klinik gigi yang nyaman, ramah, dan profesional di Jakarta Utara."
+  //   }     
+  // },
   {
     id: "5",
     location: "Bintaro",
